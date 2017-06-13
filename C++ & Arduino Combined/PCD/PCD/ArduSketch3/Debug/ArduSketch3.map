@@ -1,0 +1,1537 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                              Main.o (_ZN14HardwareSerial5beginEmh)
+C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                              Main.o (Serial)
+C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o) (_ZN5Print5writeEPKhj)
+C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+                              Main.o (attachInterrupt)
+C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                              Main.o (init)
+C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                              Main.o (_ZN9DS3232RTC8setAlarmE13ALARM_TYPES_thhhh)
+C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+                              Main.o (_Z13monthShortStrh)
+C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o) (_Z9breakTimemR12tmElements_t)
+C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o) (_ZN7TwoWire4readEv)
+C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(abi.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o) (__cxa_pure_virtual)
+C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o) (yield)
+C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o) (twi_init)
+C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o) (digitalWrite)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o) (__subsf3)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+                              k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3.o) (__addsf3x)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o) (__ltsf2)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o) (__divsf3)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                              k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(divsf3.o) (__divsf3x)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o) (__fixsfsi)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o) (__fixunssfsi)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o) (__floatunsisf)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                              k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(cmpsf2.o) (__fp_cmp)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                              k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_inf)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                              k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_nan)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                              k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_pscA)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                              k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_pscB)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                              k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3.o) (__fp_round)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                              k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_split3)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                              k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_zero)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o) (__gtsf2)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o) (__mulsf3)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                              k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(mulsf3.o) (__mulsf3x)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o) (__unordsf2)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodqi4.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o) (__udivmodqi4)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_divmodhi4.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o) (__divmodhi4)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o) (__udivmodsi4)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+                              K:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o (exit)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+                              Main.o (__do_copy_data)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+                              Main.o (__do_clear_bss)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ctors.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o) (__do_global_ctors)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_umulhisi3.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o) (__umulhisi3)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_muluhisi3.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o) (__muluhisi3)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_mulshisi3.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o) (__mulshisi3)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodhi4.o)
+                              k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_divmodhi4.o) (__udivmodhi4)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+                              k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ctors.o) (__tablejump2__)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(abort.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(abi.o) (abort)
+k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strcpy_P.o)
+                              C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o) (strcpy_P)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 K:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .bss           0x00000000        0x0 K:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .text          0x00000000        0x0 Main.o
+ .data          0x00000000        0x0 Main.o
+ .bss           0x00000000        0x0 Main.o
+ .group         0x00000000        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .text          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .data          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .bss           0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .text._Z14serialEventRunv
+                0x00000000       0x1c C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .text._ZN14HardwareSerial3endEv
+                0x00000000       0x44 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .text._ZN14HardwareSerial17availableForWriteEv
+                0x00000000       0x1e C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .text          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .data          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .bss           0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .text._Z17Serial0_availablev
+                0x00000000       0x14 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .group         0x00000000        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .group         0x00000000        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .data          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .bss           0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEPK19__FlashStringHelper
+                0x00000000       0x48 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print5printERK6String
+                0x00000000       0x1c C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print5printERK9Printable
+                0x00000000       0x14 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEPK19__FlashStringHelper
+                0x00000000       0x24 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnERK6String
+                0x00000000       0x24 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEPKc
+                0x00000000       0x24 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEc
+                0x00000000       0x24 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnERK9Printable
+                0x00000000       0x24 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEii
+                0x00000000        0xe C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEii
+                0x00000000       0x2e C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEli
+                0x00000000       0x24 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEmi
+                0x00000000       0x1a C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEhi
+                0x00000000        0xe C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEhi
+                0x00000000       0x2e C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEji
+                0x00000000        0xc C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEji
+                0x00000000       0x2c C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEmi
+                0x00000000       0x24 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print10printFloatEdh
+                0x00000000      0x1ca C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEdi
+                0x00000000        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEdi
+                0x00000000       0x24 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .rodata._ZTV5Print
+                0x00000000        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .text          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .data          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .bss           0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .text.detachInterrupt
+                0x00000000       0x24 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .text          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .data          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .bss           0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .text.millis   0x00000000       0x18 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .text.micros   0x00000000       0x4a C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .text.delay    0x00000000       0x78 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .text.delayMicroseconds
+                0x00000000       0x16 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .text          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .data          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .bss           0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .text._ZN9DS3232RTCC2Ev
+                0x00000000        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .text._ZN9DS3232RTC7dec2bcdEh
+                0x00000000       0x18 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .text._ZN9DS3232RTC8setAlarmE13ALARM_TYPES_thhh
+                0x00000000       0x16 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .text._ZN9DS3232RTC5writeER12tmElements_t
+                0x00000000      0x112 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .text._ZN9DS3232RTC3setEm
+                0x00000000       0x4a C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .text._ZN9DS3232RTC10oscStoppedEb
+                0x00000000       0x38 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .text._ZN9DS3232RTC11temperatureEv
+                0x00000000       0x38 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .text          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .data          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .bss           0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .text._Z8monthStrh
+                0x00000000       0x1e C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .text._Z6dayStrh
+                0x00000000       0x1e C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .text._Z11dayShortStrh
+                0x00000000       0x32 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL15dayShortNames_P
+                0x00000000       0x19 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL10dayNames_P
+                0x00000000       0x10 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL7dayStr7
+                0x00000000        0x9 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL7dayStr6
+                0x00000000        0x7 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL7dayStr5
+                0x00000000        0x9 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL7dayStr4
+                0x00000000        0xa C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL7dayStr3
+                0x00000000        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL7dayStr2
+                0x00000000        0x7 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL7dayStr1
+                0x00000000        0x7 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL7dayStr0
+                0x00000000        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL12monthNames_P
+                0x00000000       0x1a C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL10monthStr12
+                0x00000000        0x9 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL10monthStr11
+                0x00000000        0x9 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL10monthStr10
+                0x00000000        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL9monthStr9
+                0x00000000        0xa C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL9monthStr8
+                0x00000000        0x7 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL9monthStr7
+                0x00000000        0x5 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL9monthStr6
+                0x00000000        0x5 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL9monthStr5
+                0x00000000        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL9monthStr4
+                0x00000000        0x6 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL9monthStr3
+                0x00000000        0x6 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL9monthStr2
+                0x00000000        0x9 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL9monthStr1
+                0x00000000        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data._ZL9monthStr0
+                0x00000000        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .text          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .data          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .bss           0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z4isPMm
+                0x00000000       0x16 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z4isAMm
+                0x00000000        0xe C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z12hourFormat12m
+                0x00000000       0x1e C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z7weekdaym
+                0x00000000        0xc C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z7setTimem
+                0x00000000       0x60 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z3nowv  0x00000000      0x118 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z4hourv
+                0x00000000       0x10 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z12hourFormat12v
+                0x00000000        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z4isAMv
+                0x00000000       0x12 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z4isPMv
+                0x00000000        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z6minutev
+                0x00000000       0x10 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z6secondv
+                0x00000000       0x10 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z3dayv  0x00000000       0x10 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z7weekdayv
+                0x00000000       0x10 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z5monthv
+                0x00000000       0x10 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z4yearv
+                0x00000000        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z7setTimeiiiiii
+                0x00000000       0x48 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z10adjustTimel
+                0x00000000       0x36 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z10timeStatusv
+                0x00000000        0xa C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z15setSyncProviderPFmvE
+                0x00000000       0x2c C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .text._Z15setSyncIntervalm
+                0x00000000       0x46 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .bss.getTimePtr
+                0x00000000        0x2 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .bss._ZL6Status
+                0x00000000        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .bss._ZL12nextSyncTime
+                0x00000000        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .bss._ZL10prevMillis
+                0x00000000        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .bss._ZL7sysTime
+                0x00000000        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .data._ZL12syncInterval
+                0x00000000        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .group         0x00000000        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .text          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .data          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .bss           0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .text._ZN7TwoWire16onReceiveServiceEPhi
+                0x00000000       0x48 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .text._ZN7TwoWire16onRequestServiceEv
+                0x00000000       0x18 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .text._ZN7TwoWire5beginEh
+                0x00000000       0x26 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .text._ZN7TwoWire5beginEi
+                0x00000000        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .text._ZN7TwoWire3endEv
+                0x00000000        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .text._ZN7TwoWire8setClockEm
+                0x00000000        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .text._ZN7TwoWire11requestFromEiii
+                0x00000000        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .text._ZN7TwoWire9onReceiveEPFviE
+                0x00000000        0xa C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .text._ZN7TwoWire9onRequestEPFvvE
+                0x00000000        0xa C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .bss._ZN7TwoWire14user_onReceiveE
+                0x00000000        0x2 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .bss._ZN7TwoWire14user_onRequestE
+                0x00000000        0x2 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .text          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(abi.o)
+ .data          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(abi.o)
+ .bss           0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(abi.o)
+ .text.__cxa_pure_virtual
+                0x00000000        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(abi.o)
+ .text.__cxa_deleted_virtual
+                0x00000000        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(abi.o)
+ .debug_info    0x00000000       0x8e C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(abi.o)
+ .debug_abbrev  0x00000000       0x5e C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(abi.o)
+ .debug_aranges
+                0x00000000       0x28 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(abi.o)
+ .debug_ranges  0x00000000       0x18 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(abi.o)
+ .debug_line    0x00000000       0xbf C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(abi.o)
+ .debug_str     0x00000000      0x1c3 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(abi.o)
+ .comment       0x00000000       0x31 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(abi.o)
+ .debug_frame   0x00000000       0x34 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(abi.o)
+ .text          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .data          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .bss           0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .text.__empty  0x00000000        0x2 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_info    0x00000000       0x3e C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_abbrev  0x00000000       0x2a C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_aranges
+                0x00000000       0x20 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_ranges  0x00000000       0x10 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_line    0x00000000       0x41 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_str     0x00000000      0x151 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .comment       0x00000000       0x31 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_frame   0x00000000       0x24 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .text          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .data          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss           0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .text.twi_disable
+                0x00000000       0x1a C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .text.twi_setAddress
+                0x00000000        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .text.twi_setFrequency
+                0x00000000       0x28 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .text.twi_attachSlaveRxEvent
+                0x00000000        0xa C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .text.twi_attachSlaveTxEvent
+                0x00000000        0xa C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .text.twi_reply
+                0x00000000       0x10 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .text          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .data          0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .bss           0x00000000        0x0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .text.pinMode  0x00000000       0x78 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .text.digitalRead
+                0x00000000       0x52 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .progmem.data.port_to_input_PGM
+                0x00000000        0xa C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .progmem.data.port_to_mode_PGM
+                0x00000000        0xa C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .text.avr-libc.fplib
+                0x00000000       0xcc k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .text.avr-libc.fplib
+                0x00000000        0xa k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .text.avr-libc.fplib
+                0x00000000        0x8 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .text.avr-libc.fplib
+                0x00000000       0xdc k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .text.avr-libc.fplib
+                0x00000000       0x5e k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .text.avr-libc.fplib
+                0x00000000       0x7a k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .text.avr-libc.fplib
+                0x00000000       0x48 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .text.avr-libc.fplib
+                0x00000000        0xc k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .text.avr-libc.fplib
+                0x00000000        0x6 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .text.avr-libc.fplib
+                0x00000000       0x22 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .text.avr-libc.fplib
+                0x00000000       0x44 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .text.avr-libc.fplib
+                0x00000000        0xa k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .text.avr-libc.fplib
+                0x00000000        0x8 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .text.avr-libc.fplib
+                0x00000000       0xd2 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .text.avr-libc.fplib
+                0x00000000        0xa k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodqi4.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodqi4.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodqi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodqi4.o)
+ .text.libgcc   0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodqi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodqi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodqi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodqi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodqi4.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_divmodhi4.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_divmodhi4.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc   0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_divmodhi4.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ctors.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ctors.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ctors.o)
+ .text.libgcc   0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ctors.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_umulhisi3.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_umulhisi3.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_umulhisi3.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_muluhisi3.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_muluhisi3.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_muluhisi3.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_mulshisi3.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_mulshisi3.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_mulshisi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_mulshisi3.o)
+ .text.libgcc   0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_mulshisi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_mulshisi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_mulshisi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_mulshisi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_mulshisi3.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(abort.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(abort.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(abort.o)
+ .text.avr-libc
+                0x00000000        0xa k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(abort.o)
+ .text          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strcpy_P.o)
+ .data          0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strcpy_P.o)
+ .bss           0x00000000        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strcpy_P.o)
+ .text.avr-libc
+                0x00000000        0xe k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strcpy_P.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000003         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD K:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+LOAD Main.o
+START GROUP
+LOAD k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a
+LOAD C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a
+END GROUP
+LOAD k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a
+LOAD k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a
+START GROUP
+LOAD k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a
+LOAD k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a
+LOAD k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a
+LOAD K:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a
+END GROUP
+                0x00020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x0000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x1a92
+ *(.vectors)
+ .vectors       0x00000000       0x68 K:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+ .progmem.data._ZL17monthShortNames_P
+                0x00000068       0x28 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .progmem.data.digital_pin_to_timer_PGM
+                0x00000090       0x14 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000090                digital_pin_to_timer_PGM
+ .progmem.data.digital_pin_to_bit_mask_PGM
+                0x000000a4       0x14 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000000a4                digital_pin_to_bit_mask_PGM
+ .progmem.data.digital_pin_to_port_PGM
+                0x000000b8       0x14 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000000b8                digital_pin_to_port_PGM
+ .progmem.data.port_to_output_PGM
+                0x000000cc        0xa C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000000cc                port_to_output_PGM
+                0x000000d6                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000d6                __ctors_start = .
+ *(.ctors)
+ .ctors         0x000000d6        0x2 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .ctors         0x000000d8        0x2 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .ctors         0x000000da        0x2 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x000000dc                __ctors_end = .
+                0x000000dc                __dtors_start = .
+ *(.dtors)
+                0x000000dc                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000dc        0x0 K:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x000000dc                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000dc        0xc K:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000e8       0x16 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+                0x000000e8                __do_copy_data
+ .init4         0x000000fe       0x10 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+                0x000000fe                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x0000010e       0x16 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ctors.o)
+                0x0000010e                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000124        0x8 K:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x0000012c        0x4 K:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x0000012c                __vector_22
+                0x0000012c                __vector_12
+                0x0000012c                __bad_interrupt
+                0x0000012c                __vector_6
+                0x0000012c                __vector_3
+                0x0000012c                __vector_23
+                0x0000012c                __vector_25
+                0x0000012c                __vector_11
+                0x0000012c                __vector_13
+                0x0000012c                __vector_17
+                0x0000012c                __vector_7
+                0x0000012c                __vector_5
+                0x0000012c                __vector_4
+                0x0000012c                __vector_9
+                0x0000012c                __vector_21
+                0x0000012c                __vector_15
+                0x0000012c                __vector_8
+                0x0000012c                __vector_14
+                0x0000012c                __vector_10
+                0x0000012c                __vector_20
+                0x00000130                . = ALIGN (0x2)
+ *(.text.*)
+ .text._Z8alarmIsrv
+                0x00000130        0x8 Main.o
+                0x00000130                _Z8alarmIsrv
+ .text._Z13printDateTimem
+                0x00000138      0x188 Main.o
+                0x00000138                _Z13printDateTimem
+ .text.startup.main
+                0x000002c0       0xfe Main.o
+                0x000002c0                main
+ .text._ZN14HardwareSerial9availableEv
+                0x000003be       0x18 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000003be                _ZN14HardwareSerial9availableEv
+ .text._ZN14HardwareSerial4peekEv
+                0x000003d6       0x1c C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000003d6                _ZN14HardwareSerial4peekEv
+ .text._ZN14HardwareSerial4readEv
+                0x000003f2       0x28 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000003f2                _ZN14HardwareSerial4readEv
+ .text._ZN14HardwareSerial17_tx_udr_empty_irqEv
+                0x0000041a       0x42 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000041a                _ZN14HardwareSerial17_tx_udr_empty_irqEv
+ .text._ZN14HardwareSerial5flushEv
+                0x0000045c       0x44 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000045c                _ZN14HardwareSerial5flushEv
+ .text._ZN14HardwareSerial5writeEh
+                0x000004a0       0x8e C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000004a0                _ZN14HardwareSerial5writeEh
+ .text._ZN14HardwareSerial5beginEmh
+                0x0000052e       0xca C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000052e                _ZN14HardwareSerial5beginEmh
+ .text.__vector_18
+                0x000005f8       0x64 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000005f8                __vector_18
+ .text.__vector_19
+                0x0000065c       0x4c C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x0000065c                __vector_19
+ .text.startup._GLOBAL__sub_I___vector_18
+                0x000006a8       0x5a C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .text._ZN5Print5writeEPKhj
+                0x00000702       0x56 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000702                _ZN5Print5writeEPKhj
+ .text._ZN5Print5writeEPKc
+                0x00000758       0x2a C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000758                _ZN5Print5writeEPKc
+ .text._ZN5Print5printEPKc
+                0x00000782        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000782                _ZN5Print5printEPKc
+ .text._ZN5Print5printEc
+                0x00000786        0xe C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000786                _ZN5Print5printEc
+ .text._ZN5Print7printlnEv
+                0x00000794        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000794                _ZN5Print7printlnEv
+ .text._ZN5Print11printNumberEmh
+                0x0000079c       0xa8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x0000079c                _ZN5Print11printNumberEmh
+ .text._ZN5Print5printEli
+                0x00000844       0x94 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000844                _ZN5Print5printEli
+ .text.nothing  0x000008d8        0x2 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .text.attachInterrupt
+                0x000008da       0x40 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+                0x000008da                attachInterrupt
+ .text.__vector_1
+                0x0000091a       0x4e C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+                0x0000091a                __vector_1
+ .text.__vector_2
+                0x00000968       0x4e C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+                0x00000968                __vector_2
+ .text.__vector_16
+                0x000009b6       0x94 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x000009b6                __vector_16
+ .text.init     0x00000a4a       0x76 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x00000a4a                init
+ .text._ZN9DS3232RTC7bcd2decEh
+                0x00000ac0       0x10 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00000ac0                _ZN9DS3232RTC7bcd2decEh
+ .text.startup._GLOBAL__sub_I__ZN9DS3232RTC7errCodeE
+                0x00000ad0        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .text._ZN9DS3232RTC8writeRTCEhPhh
+                0x00000ad8       0x6a C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00000ad8                _ZN9DS3232RTC8writeRTCEhPhh
+ .text._ZN9DS3232RTC8writeRTCEhh
+                0x00000b42       0x20 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00000b42                _ZN9DS3232RTC8writeRTCEhh
+ .text._ZN9DS3232RTC8setAlarmE13ALARM_TYPES_thhhh
+                0x00000b62       0xac C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00000b62                _ZN9DS3232RTC8setAlarmE13ALARM_TYPES_thhhh
+ .text._ZN9DS3232RTC4readER12tmElements_t
+                0x00000c0e       0xac C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00000c0e                _ZN9DS3232RTC4readER12tmElements_t
+ .text._ZN9DS3232RTC3getEv
+                0x00000cba       0x42 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00000cba                _ZN9DS3232RTC3getEv
+ .text._ZN9DS3232RTC7readRTCEhPhh
+                0x00000cfc       0x6c C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00000cfc                _ZN9DS3232RTC7readRTCEhPhh
+ .text._ZN9DS3232RTC7readRTCEh
+                0x00000d68       0x20 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00000d68                _ZN9DS3232RTC7readRTCEh
+ .text._ZN9DS3232RTC14alarmInterruptEhb
+                0x00000d88       0x50 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00000d88                _ZN9DS3232RTC14alarmInterruptEhb
+ .text._ZN9DS3232RTC5alarmEh
+                0x00000dd8       0x40 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00000dd8                _ZN9DS3232RTC5alarmEh
+ .text._ZN9DS3232RTC10squareWaveE14SQWAVE_FREQS_t
+                0x00000e18       0x34 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00000e18                _ZN9DS3232RTC10squareWaveE14SQWAVE_FREQS_t
+ .text._Z13monthShortStrh
+                0x00000e4c       0x32 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+                0x00000e4c                _Z13monthShortStrh
+ .text._Z9breakTimemR12tmElements_t
+                0x00000e7e      0x1a2 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x00000e7e                _Z9breakTimemR12tmElements_t
+ .text._Z12refreshCachem
+                0x00001020       0x48 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x00001020                _Z12refreshCachem
+ .text._Z4hourm
+                0x00001068        0xc C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x00001068                _Z4hourm
+ .text._Z6minutem
+                0x00001074        0xc C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x00001074                _Z6minutem
+ .text._Z6secondm
+                0x00001080        0xc C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x00001080                _Z6secondm
+ .text._Z3daym  0x0000108c        0xc C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x0000108c                _Z3daym
+ .text._Z5monthm
+                0x00001098        0xc C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x00001098                _Z5monthm
+ .text._Z4yearm
+                0x000010a4       0x10 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x000010a4                _Z4yearm
+ .text._Z8makeTimeR12tmElements_t
+                0x000010b4      0x180 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x000010b4                _Z8makeTimeR12tmElements_t
+ .text._ZN7TwoWire9availableEv
+                0x00001234       0x10 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00001234                _ZN7TwoWire9availableEv
+ .text._ZN7TwoWire4readEv
+                0x00001244       0x28 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00001244                _ZN7TwoWire4readEv
+ .text._ZN7TwoWire4peekEv
+                0x0000126c       0x1e C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x0000126c                _ZN7TwoWire4peekEv
+ .text._ZN7TwoWire5flushEv
+                0x0000128a        0x2 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x0000128a                _ZN7TwoWire5flushEv
+ .text._ZN7TwoWire5writeEPKhj
+                0x0000128c       0x60 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x0000128c                _ZN7TwoWire5writeEPKhj
+ .text._ZN7TwoWire5writeEh
+                0x000012ec       0x5e C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x000012ec                _ZN7TwoWire5writeEh
+ .text._ZN7TwoWireC2Ev
+                0x0000134a       0x20 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x0000134a                _ZN7TwoWireC1Ev
+                0x0000134a                _ZN7TwoWireC2Ev
+ .text._ZN7TwoWire5beginEv
+                0x0000136a       0x14 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x0000136a                _ZN7TwoWire5beginEv
+ .text._ZN7TwoWire17beginTransmissionEh
+                0x0000137e       0x14 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x0000137e                _ZN7TwoWire17beginTransmissionEh
+ .text._ZN7TwoWire17beginTransmissionEi
+                0x00001392        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00001392                _ZN7TwoWire17beginTransmissionEi
+ .text._ZN7TwoWire15endTransmissionEh
+                0x00001396       0x26 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00001396                _ZN7TwoWire15endTransmissionEh
+ .text._ZN7TwoWire11requestFromEhhmhh
+                0x000013bc       0xa8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x000013bc                _ZN7TwoWire11requestFromEhhmhh
+ .text._ZN7TwoWire11requestFromEhhh
+                0x00001464       0x20 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00001464                _ZN7TwoWire11requestFromEhhh
+ .text._ZN7TwoWire11requestFromEhh
+                0x00001484        0x6 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00001484                _ZN7TwoWire11requestFromEhh
+ .text._ZN7TwoWire11requestFromEii
+                0x0000148a        0x6 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x0000148a                _ZN7TwoWire11requestFromEii
+ .text._ZN7TwoWire15endTransmissionEv
+                0x00001490        0x6 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00001490                _ZN7TwoWire15endTransmissionEv
+ .text.startup._GLOBAL__sub_I__ZN7TwoWire8rxBufferE
+                0x00001496        0x8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .text.twi_init
+                0x0000149e       0x3c C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x0000149e                twi_init
+ .text.twi_readFrom
+                0x000014da       0x90 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x000014da                twi_readFrom
+ .text.twi_writeTo
+                0x0000156a       0xac C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x0000156a                twi_writeTo
+ .text.twi_transmit
+                0x00001616       0x50 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x00001616                twi_transmit
+ .text.twi_stop
+                0x00001666       0x14 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x00001666                twi_stop
+ .text.twi_releaseBus
+                0x0000167a        0xc C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x0000167a                twi_releaseBus
+ .text.__vector_24
+                0x00001686      0x25a C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x00001686                __vector_24
+ .text.turnOffPWM
+                0x000018e0       0x52 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .text.digitalWrite
+                0x00001932       0x60 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00001932                digitalWrite
+ .text.libgcc.div
+                0x00001992       0x18 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodqi4.o)
+                0x00001992                __udivmodqi4
+ .text.libgcc.div
+                0x000019aa       0x28 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_divmodhi4.o)
+                0x000019aa                _div
+                0x000019aa                __divmodhi4
+ .text.libgcc.div
+                0x000019d2       0x44 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+                0x000019d2                __udivmodsi4
+ .text.libgcc.mul
+                0x00001a16       0x1e k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_umulhisi3.o)
+                0x00001a16                __umulhisi3
+ .text.libgcc.mul
+                0x00001a34       0x16 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_muluhisi3.o)
+                0x00001a34                __muluhisi3
+ .text.libgcc.mul
+                0x00001a4a       0x10 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_mulshisi3.o)
+                0x00001a4a                __mulshisi3
+                0x00001a50                __mulohisi3
+ .text.libgcc.div
+                0x00001a5a       0x28 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodhi4.o)
+                0x00001a5a                __udivmodhi4
+ .text.libgcc   0x00001a82        0xc k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+                0x00001a82                __tablejump2__
+                0x00001a8e                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00001a8e        0x0 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+                0x00001a8e                _exit
+                0x00001a8e                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00001a8e        0x4 k:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00001a92                _etext = .
+
+.data           0x00800100       0x72 load address 0x00001a92
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ .data.intFunc  0x00800100        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x00800104       0x30 Main.o
+                                 0x33 (size before relaxing)
+ .rodata._ZTV14HardwareSerial
+                0x00800134       0x10 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00800134                _ZTV14HardwareSerial
+ .rodata.str1.1
+                0x00800144       0x11 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .rodata._ZL9monthDays
+                0x00800155        0xc C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .rodata._ZTV7TwoWire
+                0x00800161       0x10 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00800161                _ZTV7TwoWire
+ *(.gnu.linkonce.d*)
+                0x00800172                . = ALIGN (0x2)
+ *fill*         0x00800171        0x1 
+                0x00800172                _edata = .
+                0x00800172                PROVIDE (__data_end, .)
+
+.bss            0x00800172      0x17e
+                0x00800172                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.alarmIsrWasCalled
+                0x00800172        0x1 Main.o
+                0x00800172                alarmIsrWasCalled
+ .bss.Serial    0x00800173       0x9d C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00800173                Serial
+ .bss.timer0_fract
+                0x00800210        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .bss.timer0_millis
+                0x00800211        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x00800211                timer0_millis
+ .bss.timer0_overflow_count
+                0x00800215        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x00800215                timer0_overflow_count
+ .bss.RTC       0x00800219        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00800219                RTC
+ .bss._ZN9DS3232RTC7errCodeE
+                0x0080021a        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x0080021a                _ZN9DS3232RTC7errCodeE
+ .bss._ZL6buffer
+                0x0080021b        0xa C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .bss._ZL9cacheTime
+                0x00800225        0x4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .bss._ZL2tm    0x00800229        0x7 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .bss.Wire      0x00800230        0xc C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00800230                Wire
+ .bss._ZN7TwoWire12transmittingE
+                0x0080023c        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x0080023c                _ZN7TwoWire12transmittingE
+ .bss._ZN7TwoWire14txBufferLengthE
+                0x0080023d        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x0080023d                _ZN7TwoWire14txBufferLengthE
+ .bss._ZN7TwoWire13txBufferIndexE
+                0x0080023e        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x0080023e                _ZN7TwoWire13txBufferIndexE
+ .bss._ZN7TwoWire8txBufferE
+                0x0080023f       0x20 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x0080023f                _ZN7TwoWire8txBufferE
+ .bss._ZN7TwoWire9txAddressE
+                0x0080025f        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x0080025f                _ZN7TwoWire9txAddressE
+ .bss._ZN7TwoWire14rxBufferLengthE
+                0x00800260        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00800260                _ZN7TwoWire14rxBufferLengthE
+ .bss._ZN7TwoWire13rxBufferIndexE
+                0x00800261        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00800261                _ZN7TwoWire13rxBufferIndexE
+ .bss._ZN7TwoWire8rxBufferE
+                0x00800262       0x20 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00800262                _ZN7TwoWire8rxBufferE
+ .bss.twi_error
+                0x00800282        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_rxBufferIndex
+                0x00800283        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_rxBuffer
+                0x00800284       0x20 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_txBufferLength
+                0x008002a4        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_txBufferIndex
+                0x008002a5        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_txBuffer
+                0x008002a6       0x20 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_masterBufferLength
+                0x008002c6        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_masterBufferIndex
+                0x008002c7        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_masterBuffer
+                0x008002c8       0x20 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_onSlaveReceive
+                0x008002e8        0x2 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_onSlaveTransmit
+                0x008002ea        0x2 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_inRepStart
+                0x008002ec        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_sendStop
+                0x008002ed        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_slarw
+                0x008002ee        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_state
+                0x008002ef        0x1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ *(COMMON)
+                0x008002f0                PROVIDE (__bss_end, .)
+                0x00001a92                __data_load_start = LOADADDR (.data)
+                0x00001b04                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008002f0        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x008002f0                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 Main.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000030       0x31 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .comment       0x00000030       0x31 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .comment       0x00000030       0x31 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .comment       0x00000030       0x31 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .comment       0x00000030       0x31 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .comment       0x00000030       0x31 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .comment       0x00000030       0x31 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .comment       0x00000030       0x31 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .comment       0x00000030       0x31 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .comment       0x00000030       0x31 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .comment       0x00000030       0x31 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 K:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x5d8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x30 Main.o
+ .debug_aranges
+                0x00000030       0x68 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_aranges
+                0x00000098       0x38 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_aranges
+                0x000000d0       0xf0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_aranges
+                0x000001c0       0x40 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .debug_aranges
+                0x00000200       0x48 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_aranges
+                0x00000248       0xb0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .debug_aranges
+                0x000002f8       0x38 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .debug_aranges
+                0x00000330      0x108 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .debug_aranges
+                0x00000438       0xe8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .debug_aranges
+                0x00000520       0x80 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .debug_aranges
+                0x000005a0       0x38 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0xd5ff
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x5f4 K:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_info    0x000005f4     0x10c2 Main.o
+ .debug_info    0x000016b6     0x1d91 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_info    0x00003447     0x198a C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_info    0x00004dd1     0x293b C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_info    0x0000770c      0x217 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .debug_info    0x00007923      0x2c8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_info    0x00007beb     0x1588 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .debug_info    0x00009173      0x58c C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .debug_info    0x000096ff      0xc7b C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .debug_info    0x0000a37a     0x2683 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .debug_info    0x0000c9fd      0x609 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .debug_info    0x0000d006      0x5f9 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+
+.debug_abbrev   0x00000000     0x2aea
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x5a2 K:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_abbrev  0x000005a2      0x3aa Main.o
+ .debug_abbrev  0x0000094c      0x460 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_abbrev  0x00000dac      0x399 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_abbrev  0x00001145      0x46f C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_abbrev  0x000015b4       0xfc C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .debug_abbrev  0x000016b0      0x145 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_abbrev  0x000017f5      0x516 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .debug_abbrev  0x00001d0b      0x10f C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .debug_abbrev  0x00001e1a      0x368 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .debug_abbrev  0x00002182      0x5ae C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .debug_abbrev  0x00002730      0x25f C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .debug_abbrev  0x0000298f      0x15b C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+
+.debug_line     0x00000000     0x336b
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x133 K:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_line    0x00000133      0x45a Main.o
+ .debug_line    0x0000058d      0x43b C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_line    0x000009c8      0x26c C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_line    0x00000c34      0x653 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_line    0x00001287      0x1b5 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .debug_line    0x0000143c      0x2ae C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_line    0x000016ea      0x677 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .debug_line    0x00001d61      0x1c1 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .debug_line    0x00001f22      0x769 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .debug_line    0x0000268b      0x56f C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .debug_line    0x00002bfa      0x50a C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .debug_line    0x00003104      0x267 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+
+.debug_frame    0x00000000     0x1174
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x78 Main.o
+ .debug_frame   0x00000078      0x110 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_frame   0x00000188       0xc0 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_frame   0x00000248      0x39c C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_frame   0x000005e4       0xf4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .debug_frame   0x000006d8       0xc4 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_frame   0x0000079c      0x290 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .debug_frame   0x00000a2c       0x54 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .debug_frame   0x00000a80      0x2ec C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .debug_frame   0x00000d6c      0x258 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .debug_frame   0x00000fc4      0x134 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .debug_frame   0x000010f8       0x7c C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+
+.debug_str      0x00000000     0x2c97
+ *(.debug_str)
+ .debug_str     0x00000000      0x208 K:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_str     0x00000208      0x7ce Main.o
+                                0x878 (size before relaxing)
+ .debug_str     0x000009d6      0xff2 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                               0x12d9 (size before relaxing)
+ .debug_str     0x000019c8       0x8b C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                               0x10d3 (size before relaxing)
+ .debug_str     0x00001a53      0x35d C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                                0xf53 (size before relaxing)
+ .debug_str     0x00001db0      0x149 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+                                0x249 (size before relaxing)
+ .debug_str     0x00001ef9       0x8e C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                                0x25c (size before relaxing)
+ .debug_str     0x00001f87      0x268 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                                0x969 (size before relaxing)
+ .debug_str     0x000021ef      0x173 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+                                0x3a9 (size before relaxing)
+ .debug_str     0x00002362      0x27d C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                                0x5f7 (size before relaxing)
+ .debug_str     0x000025df      0x490 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                               0x1576 (size before relaxing)
+ .debug_str     0x00002a6f      0x15e C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                                0x3dc (size before relaxing)
+ .debug_str     0x00002bcd       0xca C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                                0x2c1 (size before relaxing)
+
+.debug_loc      0x00000000     0x5fcd
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x189 Main.o
+ .debug_loc     0x00000189      0x497 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_loc     0x00000620      0x161 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_loc     0x00000781     0x1ef5 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_loc     0x00002676      0x235 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .debug_loc     0x000028ab      0x269 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_loc     0x00002b14     0x11c3 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .debug_loc     0x00003cd7      0x223 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .debug_loc     0x00003efa      0xb35 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .debug_loc     0x00004a2f      0xb72 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .debug_loc     0x000055a1      0x449 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .debug_loc     0x000059ea      0x5e3 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x5f0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x38 Main.o
+ .debug_ranges  0x00000038       0x70 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_ranges  0x000000a8       0x28 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_ranges  0x000000d0      0x128 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_ranges  0x000001f8       0x30 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .debug_ranges  0x00000228       0x38 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_ranges  0x00000260       0xe8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .debug_ranges  0x00000348       0x40 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .debug_ranges  0x00000388       0xf8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .debug_ranges  0x00000480       0xd8 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .debug_ranges  0x00000558       0x70 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .debug_ranges  0x000005c8       0x28 C:\Users\HANSV~1.RAS\DOCUME~1\GitHub\CHICKE~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(ArduSketch3.elf elf32-avr)
+LOAD linker stubs
