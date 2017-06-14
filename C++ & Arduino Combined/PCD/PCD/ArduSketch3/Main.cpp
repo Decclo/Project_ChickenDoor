@@ -2,20 +2,47 @@
  * Project Chicken Door
  * Author:    Hans V. Rasmussen
  * Created:   30/03-2017 18:42
- * Modified:  13/06-2017 20:40
- * Version:   0.81
+ * Modified:  14/06-2017 18:21
+ * Version:   0.82
 */
 
+//Change log
 /*
-Version: 0.81
+Version: 0.82
 
 	Added:
+	- Made research and comments about how to set the timers. 
+	- Made new class in Supp_Func.h called 'Human_Machine_Interface', this class and its object 'HMI' contain functions to interact with the user.
+	- Added functions to use tmElements_t to set timers.
 	
 	Changed:
 	
+	
 	Removed:
 	
+	
 	Notes:
+		- Next version will be about introducing the EEPROM to store the alarm values for later.
+
+
+Version: 0.81
+
+	Added:
+	- class 'DS3231RTC_Alarms' and object thereof 'RTC_alarm'
+	- 'DS3231RTC_Alarms' contains:
+		~ init_alarms
+		~ alarm_Check
+
+	Changed:
+	- Moved the alarm initialization, interrupt and check to Supp_Func.h
+	
+	Removed:
+	
+	
+	Notes:
+	- To Do: 
+		~ Research and document how to change alarms and time.
+		~ Make a function that can change the time/set the time by using a time type.
 
 
 Version: 0.8
@@ -35,8 +62,10 @@ Version: 0.8
 	NOTES:
 	- Major revision, remade the Arduino sketch, and using a whole different set of libraries now.
 
+
 Materials List:
 	- Alarm interrupt and square wave: https://github.com/JChristensen/DS3232RTC/issues/5#issuecomment-68143652
+	
 */
 
 
@@ -55,71 +84,47 @@ Materials List:
  *  Wire is standard library included with Arduino, and is for I2C communication
  */
 
-
 // Extra includes and defines:
 #include "Supp_Func.h"
 
 
-// Global Variables:
-volatile boolean alarmIsrWasCalled = false;	// Variable to check if the interrupt has happened.
-
-
-// Function Prototypes:
-void alarmIsr();	// Interrupt function prototype, Arduino style!
-
-
 int main(void)
 {
-	init();	// Initializes the Arduino Core.
+	init();						// Initializes the Arduino Core.
+	Serial.begin(9600);			// Start the serial communication at 9600 a baud rate.
+	RTC_alarm.init_alarms();	// Start the alarms.
 	
-	// Starting serial at 9600 a baud rate.
-	Serial.begin(9600);
+	// Local Variables:
+	uint8_t alarm_stat = 0;
+	
 	
 	// print he current time:
 	Serial << "Current time is: ";
-	printDateTime(RTC.get());
+	HMI.printDateTime(RTC.get());
 	Serial << endl;
 	
+	HMI.printDateTime(HMI.ConvTotm(RTC.get()));
 	
-	// Setup the SQW interrupt:
-	DDRD &= ~(1 << DDD2); // make INT0 an input.
-	PORTD |= (1 << DDD2); // enable pull-up on INT0.
-	attachInterrupt(INT0, alarmIsr, FALLING);	// Initializing the INT0 interrupt in the Arduino way.
-	
-	//Disable the default square wave of the SQW pin.
-	RTC.squareWave(SQWAVE_NONE);
-	
-	//Set an alarm at every 20th second of every minute.
-	RTC.setAlarm(ALM1_MATCH_SECONDS, 20, 0, 0, 1);    //daydate parameter should be between 1 and 7
-	RTC.alarm(ALARM_1);                   //ensure RTC interrupt flag is cleared
-	RTC.alarmInterrupt(ALARM_1, true);
-
-	//Set an alarm every minute.
-	RTC.setAlarm(ALM2_EVERY_MINUTE, 0, 0, 0, 1);    //daydate parameter should be between 1 and 7
-	RTC.alarm(ALARM_2);                   //ensure RTC interrupt flag is cleared
-	RTC.alarmInterrupt(ALARM_2, true);
-  
-  
 	while (1)
 	{
-		if (alarmIsrWasCalled)
+		RTC_alarm.alarm_Check(&alarm_stat);	// get the alarm status.
+		
+		switch(alarm_stat)					// switch statement to decide what should happen if alarm has happened.
 		{
-			if (RTC.alarm(ALARM_1))
-			{
-				printDateTime( RTC.get() );
+			case 1:							// alarm1:
+				HMI.printDateTime( RTC.get() );
 				Serial << " --> Alarm 1!" << endl;
-			}
-			if (RTC.alarm(ALARM_2))
-			{
-				printDateTime( RTC.get() );
+			break;
+			
+			case 2:							// alarm1:
+				HMI.printDateTime( RTC.get() );
 				Serial << " --> Alarm 2!" << endl;
-			}
-			alarmIsrWasCalled = false;
+			break;
+				
+			default:						// if there was no alarm:
+				
+			break;
 		}
+		delay(100);	// small delay
 	}
-}
-
-void alarmIsr()	// INT0 triggered function.
-{
-	alarmIsrWasCalled = true;
 }
