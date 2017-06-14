@@ -2,11 +2,29 @@
  * Project Chicken Door
  * Author:    Hans V. Rasmussen
  * Created:   30/03-2017 18:42
- * Modified:  13/06-2017 22:35
- * Version:   0.81
+ * Modified:  14/06-2017 18:21
+ * Version:   0.82
 */
 
+//Change log
 /*
+Version: 0.82
+
+	Added:
+	- Made research and comments about how to set the timers. 
+	- Made new class in Supp_Func.h called 'Human_Machine_Interface', this class and its object 'HMI' contain functions to interact with the user.
+	- Added functions to use tmElements_t to set timers.
+	
+	Changed:
+	
+	
+	Removed:
+	
+	
+	Notes:
+		- Next version will be about introducing the EEPROM to store the alarm values for later.
+
+
 Version: 0.81
 
 	Added:
@@ -27,7 +45,6 @@ Version: 0.81
 		~ Make a function that can change the time/set the time by using a time type.
 
 
-
 Version: 0.8
 
 	Included:
@@ -44,6 +61,7 @@ Version: 0.8
 	
 	NOTES:
 	- Major revision, remade the Arduino sketch, and using a whole different set of libraries now.
+
 
 Materials List:
 	- Alarm interrupt and square wave: https://github.com/JChristensen/DS3232RTC/issues/5#issuecomment-68143652
@@ -66,7 +84,6 @@ Materials List:
  *  Wire is standard library included with Arduino, and is for I2C communication
  */
 
-
 // Extra includes and defines:
 #include "Supp_Func.h"
 
@@ -74,7 +91,7 @@ Materials List:
 int main(void)
 {
 	init();						// Initializes the Arduino Core.
-	Serial.begin(9600);			// Start the serial commuication at 9600 a baud rate.
+	Serial.begin(9600);			// Start the serial communication at 9600 a baud rate.
 	RTC_alarm.init_alarms();	// Start the alarms.
 	
 	// Local Variables:
@@ -83,10 +100,11 @@ int main(void)
 	
 	// print he current time:
 	Serial << "Current time is: ";
-	printDateTime(RTC.get());
+	HMI.printDateTime(RTC.get());
 	Serial << endl;
 	
-  
+	HMI.printDateTime(HMI.ConvTotm(RTC.get()));
+	
 	while (1)
 	{
 		RTC_alarm.alarm_Check(&alarm_stat);	// get the alarm status.
@@ -94,12 +112,12 @@ int main(void)
 		switch(alarm_stat)					// switch statement to decide what should happen if alarm has happened.
 		{
 			case 1:							// alarm1:
-				printDateTime( RTC.get() );
+				HMI.printDateTime( RTC.get() );
 				Serial << " --> Alarm 1!" << endl;
 			break;
 			
 			case 2:							// alarm1:
-				printDateTime( RTC.get() );
+				HMI.printDateTime( RTC.get() );
 				Serial << " --> Alarm 2!" << endl;
 			break;
 				
