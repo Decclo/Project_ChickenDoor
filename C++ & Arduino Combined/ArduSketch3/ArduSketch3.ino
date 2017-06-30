@@ -9,12 +9,14 @@
 #include <Streaming.h>        //http://arduiniana.org/libraries/streaming/
 #include <TimeLib.h>          //http://playground.arduino.cc/Code/Time
 #include <Wire.h>             //http://arduino.cc/en/Reference/Wire
+#include <LiquidCrystal.h>
 /*
  * Note about includes:
  *  DS3232RTC are the function to communicate with the timer module.
  *  Streaming is for having a more C++/CLR like way of outputting serial or LCD data.
  *  TimeLib are support functions for DS3232RTC, it includes date fomats and functions.
- *  Wire is standard library included with arduino, and is for I2C communication
+ *  Wire is standard library included with arduino, and is for I2C communication.
+ *  LiquidCrystal is standard library for using a LCD screen.
  */
 
 
