@@ -2,12 +2,27 @@
  * Project Chicken Door
  * Author:    Hans V. Rasmussen
  * Created:   30/03-2017 18:42
- * Modified:  14/06-2017 18:21
- * Version:   0.82
+ * Modified:  26/06-2017 15:43
+ * Version:   0.83
 */
 
 //Change log
 /*
+Version: 0.83
+
+	Added:
+	
+
+	Changed:
+	- added EEPROM functionality in Supp_Func.h 
+	- Preparing to migrate to LCD screen.
+	
+	Removed:
+	
+	
+	Notes:
+
+
 Version: 0.82
 
 	Added:
