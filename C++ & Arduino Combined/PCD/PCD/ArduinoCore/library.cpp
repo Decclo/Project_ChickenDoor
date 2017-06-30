@@ -1,8 +1,8 @@
 /*
  * ArduinoCore.cpp
  *
- * Created: 13-06-2017 17:46:51
- * Author : Hans V. Rasmussen
+ * Created: 30-06-2017 09:04:54
+ * Author : Hans
  */ 
 
 #include <avr/io.h>

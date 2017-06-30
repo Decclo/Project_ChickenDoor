@@ -54,6 +54,8 @@ src\core\WString.cpp
 
 src\libraries\ds3232rtc\DS3232RTC.cpp
 
+src\libraries\LiquidCrystal\LiquidCrystal.cpp
+
 src\libraries\time\DateStrings.cpp
 
 src\libraries\time\Time.cpp

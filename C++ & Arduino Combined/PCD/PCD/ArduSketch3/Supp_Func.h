@@ -4,18 +4,21 @@
  * Supp_Func.h
  * Author:		Hans V. Rasmussen
  * Created:		13/06-2017 18:47
- * Modified:	26/06-2017 15:43
+ * Modified:	30/06-2017 11:43
  * Version:		1.1
  * 
  * Description:
  *	This library includes some extra functionality for the DS3231.
+ */
 
- //Change log
+//Change log
+/*
 Version: 1.1
 
 	Added:
 	- UIupdate in Human_Machine_Interface
 	- EEPROM functionality
+	- LCD functionality
 	
 	Changed:
 	
@@ -44,10 +47,34 @@ Version: 1.0
 #include <DS3232RTC.h>
 #include <TimeLib.h>
 #include <Streaming.h>
+#include <LiquidCrystal.h>
+
+// Define Buttons for LCD
+#define btnPIN		A0
+#define btnSELECT	1
+#define btnRESET	2
+#define btnRIGHT	3
+#define btnUP		4
+#define btnDOWN		5
+#define btnLEFT		6
+
+// Declare external global lcd
+extern LiquidCrystal lcd;
+
+// Define commands for Relay Array
+#define liftSTOP	0
+#define liftCW		1
+#define liftCCW		2
+
+// define pins of Relay Array
+#define ARControl1	DDC3
+#define ARControl2	DDC2
+#define ARControl3	DDC1
+
 
 volatile boolean alarmIsrWasCalled = false;	// Variable to check if the interrupt has happened.
 
-// addresses of the alarms on the eeprom
+// addresses of the alarms on the EEPROM
 uint8_t alarm1_addr = 0;
 uint8_t alarm2_addr = 7;
 
@@ -58,6 +85,7 @@ void alarmIsr()	// INT0 triggered function.
 	alarmIsrWasCalled = true;
 }
 
+// Classes
 
 class Human_Machine_Interface
 {
@@ -92,8 +120,25 @@ public:
 	 * \return tmElements_t
 	 */
 	tmElements_t ConvTotm(time_t t);
+
+	/**
+	 * \brief Checks LCD buttons and returns value corresponding to button.
+	 * 
+	 * \param void
+	 * 
+	 * \return uint8_t
+	 */
+	uint8_t read_LCD_buttons(void);
 	
+	/**
+	 * \brief handles user input/output, should be called regurlarly
+	 * 
+	 * \param void
+	 * 
+	 * \return void
+	 */
 	void UIupdate(void);
+
 protected:
 private:
 	uint8_t UIstate;
@@ -206,9 +251,33 @@ private:
 	} alarm2_time;
 };
 
+class liftRelayArray
+{
+public:
+	liftRelayArray();	// Constructor
+
+	void relayArrayInit(void);
+
+	/**
+	 * \brief Executes a command for the lift
+	 * 
+	 * \param cmd - liftCW, liftCCW, liftSTOP
+	 * 
+	 * \return void
+	 */
+	void relayArrayCommand(uint8_t cmd);
+	
+protected:
+private:
+};
+
+
 // make objects of the classes:
-DS3231RTC_Alarms RTC_alarm;	// Make a object of the 'class DS3231RTC_Alarms' named 'RTC_alarm'
 Human_Machine_Interface HMI;// Make a object of the 'class Human_Machine_Interface' named 'HMI'
+DS3231RTC_Alarms RTC_alarm;	// Make a object of the 'class DS3231RTC_Alarms' named 'RTC_alarm'
+liftRelayArray relayArray;	// Make a object of the 'class liftRelayArray' named 'relayArray'
+
+
 
 Human_Machine_Interface::Human_Machine_Interface()
 {
@@ -245,6 +314,21 @@ tmElements_t Human_Machine_Interface::ConvTotm(time_t t)
 	TM.Second = second(t);
 	
 	return TM;
+}
+
+uint8_t Human_Machine_Interface::read_LCD_buttons(void)
+{
+	// read the value from the sensor
+	int adc_key_in = analogRead(btnPIN);
+	
+	if (adc_key_in > 1000) return btnRESET;
+	if (adc_key_in < 50)   return btnRIGHT;
+	if (adc_key_in < 250)  return btnUP;
+	if (adc_key_in < 450)  return btnDOWN;
+	if (adc_key_in < 650)  return btnLEFT;
+	if (adc_key_in < 850)  return btnSELECT;
+	
+	return 0;                // when all others fail, return this.
 }
 
 void Human_Machine_Interface::UIupdate(void)
@@ -369,6 +453,47 @@ void DS3231RTC_Alarms::alarm2_set(tmElements_t TM)
 	for (int i = 0; i < 7; i++)
 	{
 		eeprom_write_byte((uint8_t *)alarm2_addr+i, u.byte_array[0+i]);
+	}
+}
+
+
+liftRelayArray::liftRelayArray()
+{
+
+}
+
+void liftRelayArray::relayArrayInit(void)
+{
+	// Initialize Buttons
+	DDRC |= (1 << ARControl1) | (1 << ARControl2) | (1 << ARControl3);		// Marks pins as output.
+	PORTC &= ~(1 << ARControl1) & ~(1 << ARControl2) & ~(1 << ARControl3);	// Puts pins into off state.
+
+	/*
+	Use ports:
+	PORTC |= (1 << DDC1);	// Make PC1 = 1 (on)
+	PORTC &= ~(1 << DDC1);	// Puts PC1 = 0 (off).
+	*/
+}
+
+void liftRelayArray::relayArrayCommand(uint8_t cmd)
+{
+	switch (cmd)
+	{
+		case liftCW:
+			PORTC |= (1 << ARControl1);
+			PORTC &= ~(1 << ARControl2);
+			PORTC |= (1 << ARControl3);
+		break;
+		case liftCCW:
+			PORTC |= (1 << ARControl1);
+			PORTC |= (1 << ARControl2);
+			PORTC |= (1 << ARControl3);
+		break;
+		default:	// default, aka. liftSTOP
+			PORTC &= ~(1 << ARControl1);
+			PORTC &= ~(1 << ARControl2);
+			PORTC &= ~(1 << ARControl3);
+		break;
 	}
 }
 

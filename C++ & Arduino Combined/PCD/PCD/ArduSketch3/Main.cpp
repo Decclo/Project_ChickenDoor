@@ -2,7 +2,7 @@
  * Project Chicken Door
  * Author:    Hans V. Rasmussen
  * Created:   30/03-2017 18:42
- * Modified:  26/06-2017 15:43
+ * Modified:  30/06-2017 11:43
  * Version:   0.83
 */
 
@@ -11,11 +11,11 @@
 Version: 0.83
 
 	Added:
-	
+	- added EEPROM functionality in Supp_Func.h
+	- Adding LCD functionality, including libraries.
 
 	Changed:
-	- added EEPROM functionality in Supp_Func.h 
-	- Preparing to migrate to LCD screen.
+
 	
 	Removed:
 	
@@ -92,22 +92,42 @@ Materials List:
 #include <Streaming.h>        //http://arduiniana.org/libraries/streaming/
 #include <TimeLib.h>          //http://playground.arduino.cc/Code/Time
 #include <Wire.h>             //http://arduino.cc/en/Reference/Wire
+#include <LiquidCrystal.h>
 /* Note about includes:
  *  DS3232RTC are the function to communicate with the timer module.
  *  Streaming is for having a more C++/CLR like way of outputting serial or LCD data.
  *  TimeLib are support functions for DS3232RTC, it includes date formats and functions.
- *  Wire is standard library included with Arduino, and is for I2C communication
+ *  Wire is standard library included with Arduino, and is for I2C communication.
+ *  LiquidCrystal is standard library included with Arduino for LCD communication.
  */
 
 // Extra includes and defines:
 #include "Supp_Func.h"
+
+/* Initialize the library with the numbers of the interface pins
+  The circuit:
+  * LCD RS pin to digital pin 13
+  * LCD Enable pin to digital pin 12
+  * LCD D4 pin to digital pin 8
+  * LCD D5 pin to digital pin 9
+  * LCD D6 pin to digital pin 10
+  * LCD D7 pin to digital pin 11
+  * LCD R/W pin to ground
+  * LCD VSS pin to ground
+  * LCD VCC pin to 5V
+  * 10K resistor: Mounted
+  * ends to +5V and ground
+  */
+LiquidCrystal lcd(13, 12, 8, 9, 10, 11);
 
 
 int main(void)
 {
 	init();						// Initializes the Arduino Core.
 	Serial.begin(9600);			// Start the serial communication at 9600 a baud rate.
+	lcd.begin(16, 2);			// Start LCD.
 	RTC_alarm.init_alarms();	// Start the alarms.
+	relayArray.relayArrayInit();
 	
 	// Local Variables:
 	uint8_t alarm_stat = 0;
@@ -117,6 +137,7 @@ int main(void)
 	Serial << "Current time is: ";
 	HMI.printDateTime(RTC.get());
 	Serial << endl;
+	lcd << "Test";
 	
 	HMI.printDateTime(HMI.ConvTotm(RTC.get()));
 	
@@ -129,11 +150,13 @@ int main(void)
 			case 1:							// alarm1:
 				HMI.printDateTime( RTC.get() );
 				Serial << " --> Alarm 1!" << endl;
+				relayArray.relayArrayCommand(liftCW);
 			break;
 			
 			case 2:							// alarm1:
 				HMI.printDateTime( RTC.get() );
 				Serial << " --> Alarm 2!" << endl;
+				relayArray.relayArrayCommand(liftCCW);
 			break;
 				
 			default:						// if there was no alarm:

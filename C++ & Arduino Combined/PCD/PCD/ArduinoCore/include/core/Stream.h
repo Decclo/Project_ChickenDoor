@@ -59,14 +59,14 @@ class Stream : public Print
     virtual int available() = 0;
     virtual int read() = 0;
     virtual int peek() = 0;
-    virtual void flush() = 0;
 
     Stream() {_timeout=1000;}
 
 // parsing methods
 
   void setTimeout(unsigned long timeout);  // sets maximum milliseconds to wait for stream data, default is 1 second
-
+  unsigned long getTimeout(void) { return _timeout; }
+  
   bool find(char *target);   // reads data from the stream until the target string is found
   bool find(uint8_t *target) { return find ((char *)target); }
   // returns true if target string is found, false if timed out (see setTimeout)

@@ -37,6 +37,7 @@ SUBDIRS :=  \
 ../include/core/ \
 ../include/libraries/ \
 ../include/libraries/ds3232rtc/ \
+../include/libraries/LiquidCrystal/ \
 ../include/libraries/streaming/ \
 ../include/libraries/time/ \
 ../include/libraries/Wire/ \
@@ -49,6 +50,7 @@ SUBDIRS :=  \
 ../src/core/PreprocessingAssembly/ \
 ../src/libraries/ \
 ../src/libraries/ds3232rtc/ \
+../src/libraries/LiquidCrystal/ \
 ../src/libraries/time/ \
 ../src/libraries/Wire/ \
 ../src/libraries/Wire/utility/
@@ -81,6 +83,7 @@ C_SRCS +=  \
 ../src/core/WMath.cpp \
 ../src/core/WString.cpp \
 ../src/libraries/ds3232rtc/DS3232RTC.cpp \
+../src/libraries/LiquidCrystal/LiquidCrystal.cpp \
 ../src/libraries/time/DateStrings.cpp \
 ../src/libraries/time/Time.cpp \
 ../src/libraries/Wire/utility/twi.c \
@@ -121,6 +124,7 @@ src/core/wiring_shift.o \
 src/core/WMath.o \
 src/core/WString.o \
 src/libraries/ds3232rtc/DS3232RTC.o \
+src/libraries/LiquidCrystal/LiquidCrystal.o \
 src/libraries/time/DateStrings.o \
 src/libraries/time/Time.o \
 src/libraries/Wire/utility/twi.o \
@@ -153,6 +157,7 @@ src/core/wiring_shift.o \
 src/core/WMath.o \
 src/core/WString.o \
 src/libraries/ds3232rtc/DS3232RTC.o \
+src/libraries/LiquidCrystal/LiquidCrystal.o \
 src/libraries/time/DateStrings.o \
 src/libraries/time/Time.o \
 src/libraries/Wire/utility/twi.o \
@@ -185,6 +190,7 @@ src/core/wiring_shift.d \
 src/core/WMath.d \
 src/core/WString.d \
 src/libraries/ds3232rtc/DS3232RTC.d \
+src/libraries/LiquidCrystal/LiquidCrystal.d \
 src/libraries/time/DateStrings.d \
 src/libraries/time/Time.d \
 src/libraries/Wire/utility/twi.d \
@@ -217,6 +223,7 @@ src/core/wiring_shift.d \
 src/core/WMath.d \
 src/core/WString.d \
 src/libraries/ds3232rtc/DS3232RTC.d \
+src/libraries/LiquidCrystal/LiquidCrystal.d \
 src/libraries/time/DateStrings.d \
 src/libraries/time/Time.d \
 src/libraries/Wire/utility/twi.d \
@@ -295,45 +302,54 @@ LINKER_SCRIPT_DEP+=
 
 
 
+
+
 src/core/%.o: ../src/core/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
-	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR  -I"D:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.2.132\include" -I"..\include\libraries\ds3232rtc" -I"..\include\libraries\streaming" -I"..\include\libraries\time" -I"..\include\libraries\Wire" -I"..\include\libraries\Wire\utility" -I"..\include\core" -I"..\include\variants\eightanaloginputs" -I"..\include\variants\standard"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu99 -std=gnu11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10803 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR  -I"D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\include" -I"..\include\libraries\ds3232rtc" -I"..\include\libraries\streaming" -I"..\include\libraries\time" -I"..\include\libraries\Wire" -I"..\include\libraries\Wire\utility" -I"..\include\libraries\LiquidCrystal" -I"..\include\core" -I"..\include\variants\eightanaloginputs" -I"..\include\variants\standard"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu99 -std=gnu11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 src/core/%.o: ../src/core/%.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
-	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR  -I"D:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.2.132\include" -I"..\include\libraries\ds3232rtc" -I"..\include\libraries\streaming" -I"..\include\libraries\time" -I"..\include\libraries\Wire" -I"..\include\libraries\Wire\utility" -I"..\include\core" -I"..\include\variants\eightanaloginputs" -I"..\include\variants\standard"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10803 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR  -I"D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\include" -I"..\include\libraries\ds3232rtc" -I"..\include\libraries\streaming" -I"..\include\libraries\time" -I"..\include\libraries\Wire" -I"..\include\libraries\Wire\utility" -I"..\include\libraries\LiquidCrystal" -I"..\include\core" -I"..\include\variants\eightanaloginputs" -I"..\include\variants\standard"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 src/libraries/ds3232rtc/%.o: ../src/libraries/ds3232rtc/%.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
-	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR  -I"D:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.2.132\include" -I"..\include\libraries\ds3232rtc" -I"..\include\libraries\streaming" -I"..\include\libraries\time" -I"..\include\libraries\Wire" -I"..\include\libraries\Wire\utility" -I"..\include\core" -I"..\include\variants\eightanaloginputs" -I"..\include\variants\standard"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10803 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR  -I"D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\include" -I"..\include\libraries\ds3232rtc" -I"..\include\libraries\streaming" -I"..\include\libraries\time" -I"..\include\libraries\Wire" -I"..\include\libraries\Wire\utility" -I"..\include\libraries\LiquidCrystal" -I"..\include\core" -I"..\include\variants\eightanaloginputs" -I"..\include\variants\standard"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+src/libraries/LiquidCrystal/%.o: ../src/libraries/LiquidCrystal/%.cpp
+	@echo Building file: $<
+	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
+	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10803 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR  -I"D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\include" -I"..\include\libraries\ds3232rtc" -I"..\include\libraries\streaming" -I"..\include\libraries\time" -I"..\include\libraries\Wire" -I"..\include\libraries\Wire\utility" -I"..\include\libraries\LiquidCrystal" -I"..\include\core" -I"..\include\variants\eightanaloginputs" -I"..\include\variants\standard"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 src/libraries/time/%.o: ../src/libraries/time/%.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
-	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR  -I"D:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.2.132\include" -I"..\include\libraries\ds3232rtc" -I"..\include\libraries\streaming" -I"..\include\libraries\time" -I"..\include\libraries\Wire" -I"..\include\libraries\Wire\utility" -I"..\include\core" -I"..\include\variants\eightanaloginputs" -I"..\include\variants\standard"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10803 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR  -I"D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\include" -I"..\include\libraries\ds3232rtc" -I"..\include\libraries\streaming" -I"..\include\libraries\time" -I"..\include\libraries\Wire" -I"..\include\libraries\Wire\utility" -I"..\include\libraries\LiquidCrystal" -I"..\include\core" -I"..\include\variants\eightanaloginputs" -I"..\include\variants\standard"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 src/libraries/Wire/utility/%.o: ../src/libraries/Wire/utility/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
-	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR  -I"D:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.2.132\include" -I"..\include\libraries\ds3232rtc" -I"..\include\libraries\streaming" -I"..\include\libraries\time" -I"..\include\libraries\Wire" -I"..\include\libraries\Wire\utility" -I"..\include\core" -I"..\include\variants\eightanaloginputs" -I"..\include\variants\standard"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu99 -std=gnu11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10803 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR  -I"D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\include" -I"..\include\libraries\ds3232rtc" -I"..\include\libraries\streaming" -I"..\include\libraries\time" -I"..\include\libraries\Wire" -I"..\include\libraries\Wire\utility" -I"..\include\libraries\LiquidCrystal" -I"..\include\core" -I"..\include\variants\eightanaloginputs" -I"..\include\variants\standard"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu99 -std=gnu11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 src/libraries/Wire/%.o: ../src/libraries/Wire/%.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
-	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR  -I"D:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.2.132\include" -I"..\include\libraries\ds3232rtc" -I"..\include\libraries\streaming" -I"..\include\libraries\time" -I"..\include\libraries\Wire" -I"..\include\libraries\Wire\utility" -I"..\include\core" -I"..\include\variants\eightanaloginputs" -I"..\include\variants\standard"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10803 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR  -I"D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\include" -I"..\include\libraries\ds3232rtc" -I"..\include\libraries\streaming" -I"..\include\libraries\time" -I"..\include\libraries\Wire" -I"..\include\libraries\Wire\utility" -I"..\include\libraries\LiquidCrystal" -I"..\include\core" -I"..\include\variants\eightanaloginputs" -I"..\include\variants\standard"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
@@ -347,7 +363,7 @@ src/libraries/Wire/%.o: ../src/libraries/Wire/%.cpp
 src/core/PreprocessingAssembly/wiring_pulse.o: ../src/core/PreprocessingAssembly/wiring_pulse.S
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU Assembler : 5.4.0
-	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -I "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.2.132\include"  -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -Wa,-g   -o "$@" "$<" 
+	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -I "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\include"  -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -Wa,-g   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
@@ -355,7 +371,7 @@ src/core/PreprocessingAssembly/wiring_pulse.o: ../src/core/PreprocessingAssembly
 src/core/PreprocessingAssembly/%.o: ../src/core/PreprocessingAssembly/%.S
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU Assembler : 5.4.0
-	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -I "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.2.132\include"  -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -Wa,-g   -o "$@" "$<" 
+	$(QUOTE)D:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -mmcu=atmega328p -B "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -I "D:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\include"  -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -Wa,-g   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
