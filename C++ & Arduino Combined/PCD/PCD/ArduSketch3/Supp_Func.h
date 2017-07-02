@@ -19,6 +19,8 @@ Version: 1.1
 	- UIupdate in Human_Machine_Interface
 	- EEPROM functionality
 	- LCD functionality
+	- UI functionality (Work In Progress)
+	- Added timer1 to make interrupt ever 1 ms
 	
 	Changed:
 	
@@ -67,12 +69,15 @@ extern LiquidCrystal lcd;
 #define liftCCW		2
 
 // define pins of Relay Array
-#define ARControl1	DDC3
-#define ARControl2	DDC2
-#define ARControl3	DDC1
+#define ARControl1	DDD4
+#define ARControl2	DDD5
+#define ARControl3	DDD6
+#define ARControl4	DDD7
 
 
 volatile boolean alarmIsrWasCalled = false;	// Variable to check if the interrupt has happened.
+volatile uint16_t T1Timer = 0;
+volatile uint8_t test = 0;
 
 // addresses of the alarms on the EEPROM
 uint8_t alarm1_addr = 0;
@@ -85,6 +90,38 @@ void alarmIsr()	// INT0 triggered function.
 	alarmIsrWasCalled = true;
 }
 
+ISR (TIMER1_COMPA_vect)
+{
+	TCNT1 = 63535;            // preload timer
+	
+	if (T1Timer >= 500)
+	{
+		test++;
+		T1Timer = 0;
+	}
+	else
+	{
+		T1Timer++;
+	}
+}
+
+/*
+ISR(TIMER1_OVF_vect)
+{
+	TCNT1 = 63535;            // preload timer
+	
+	if (T1Timer >= 500)
+	{
+		test++;
+		T1Timer = 0;
+	} 
+	else
+	{
+		T1Timer++;
+	}
+}
+
+*/
 // Classes
 
 class Human_Machine_Interface
@@ -465,14 +502,26 @@ liftRelayArray::liftRelayArray()
 void liftRelayArray::relayArrayInit(void)
 {
 	// Initialize Buttons
-	DDRC |= (1 << ARControl1) | (1 << ARControl2) | (1 << ARControl3);		// Marks pins as output.
-	PORTC &= ~(1 << ARControl1) & ~(1 << ARControl2) & ~(1 << ARControl3);	// Puts pins into off state.
+	DDRD |= (1 << ARControl1) | (1 << ARControl2) | (1 << ARControl3) | (1 << ARControl4);		// Marks pins as output.
+	PORTD &= ~(1 << ARControl1) & ~(1 << ARControl2) & ~(1 << ARControl3) & ~(1 << ARControl4);	// Puts pins into off state.
 
 	/*
 	Use ports:
 	PORTC |= (1 << DDC1);	// Make PC1 = 1 (on)
 	PORTC &= ~(1 << DDC1);	// Puts PC1 = 0 (off).
 	*/
+
+	// setup timer1 to make an interrupt every 1 ms
+	noInterrupts();           // disable all interrupts
+	TCCR1A = 0;
+	TCCR1B = 0;
+	TCNT1  = 0;
+
+	OCR1A = 16000;            // compare match register 16MHz/1000
+	TCCR1B |= (1 << WGM12);   // CTC mode
+	TCCR1B |= (1 << CS10);    // No prescaler
+	TIMSK1 |= (1 << OCIE1A);  // enable timer compare interrupt
+	interrupts();             // enable all interrupts
 }
 
 void liftRelayArray::relayArrayCommand(uint8_t cmd)
@@ -480,19 +529,19 @@ void liftRelayArray::relayArrayCommand(uint8_t cmd)
 	switch (cmd)
 	{
 		case liftCW:
-			PORTC |= (1 << ARControl1);
-			PORTC &= ~(1 << ARControl2);
-			PORTC |= (1 << ARControl3);
+			PORTD |= (1 << ARControl1);
+			PORTD &= ~(1 << ARControl2);
+			PORTD |= (1 << ARControl3);
 		break;
 		case liftCCW:
-			PORTC |= (1 << ARControl1);
-			PORTC |= (1 << ARControl2);
-			PORTC |= (1 << ARControl3);
+			PORTD |= (1 << ARControl1);
+			PORTD |= (1 << ARControl2);
+			PORTD |= (1 << ARControl3);
 		break;
 		default:	// default, aka. liftSTOP
-			PORTC &= ~(1 << ARControl1);
-			PORTC &= ~(1 << ARControl2);
-			PORTC &= ~(1 << ARControl3);
+			PORTD &= ~(1 << ARControl1);
+			PORTD &= ~(1 << ARControl2);
+			PORTD &= ~(1 << ARControl3);
 		break;
 	}
 }
