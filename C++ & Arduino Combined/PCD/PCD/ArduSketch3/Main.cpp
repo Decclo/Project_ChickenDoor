@@ -163,6 +163,7 @@ int main(void)
 				
 			break;
 		}
+		HMI.UIupdate();
 		delay(100);	// small delay
 	}
 }

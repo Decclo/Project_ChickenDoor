@@ -23,11 +23,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   9 .debug_frame  0000176c  00000000  00000000  0001a3b4  2**2
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_str    00003b91  00000000  00000000  0001bb20  2**0
+ 10 .debug_str    00003c08  00000000  00000000  0001bb20  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    00008240  00000000  00000000  0001f6b1  2**0
+ 11 .debug_loc    00008240  00000000  00000000  0001f728  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_ranges 000007b8  00000000  00000000  000278f1  2**0
+ 12 .debug_ranges 000007b8  00000000  00000000  00027968  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -4409,12 +4409,6 @@ TwoWire Wire = TwoWire();
     1cb4:	0c 94 b2 0d 	jmp	0x1b64	; 0x1b64 <_ZN7TwoWireC1Ev>
 
 00001cb8 <yield>:
- * libraries or sketches that supports cooperative threads.
- *
- * Its defined as a weak symbol and it can be redefined to implement a
- * real cooperative scheduler.
- */
-static void __empty() {
     1cb8:	08 95       	ret
 
 00001cba <twi_init>:

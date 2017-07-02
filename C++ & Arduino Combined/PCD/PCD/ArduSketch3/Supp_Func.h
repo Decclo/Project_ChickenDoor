@@ -71,6 +71,7 @@ extern LiquidCrystal lcd;
 #define ARControl2	DDC2
 #define ARControl3	DDC1
 
+extern LiquidCrystal lcd;
 
 volatile boolean alarmIsrWasCalled = false;	// Variable to check if the interrupt has happened.
 
@@ -142,6 +143,7 @@ public:
 protected:
 private:
 	uint8_t UIstate;
+	tmElements_t tid;
 };
 
 
@@ -282,6 +284,10 @@ liftRelayArray relayArray;	// Make a object of the 'class liftRelayArray' named 
 Human_Machine_Interface::Human_Machine_Interface()
 {
 	UIstate = 0;
+	time_t temp = 0;
+	tid = HMI.ConvTotm(temp);
+	tid.Hour = 8;
+	tid.Minute = 30;
 }
 
 void Human_Machine_Interface::printDateTime(tmElements_t TM)
@@ -321,7 +327,7 @@ uint8_t Human_Machine_Interface::read_LCD_buttons(void)
 	// read the value from the sensor
 	int adc_key_in = analogRead(btnPIN);
 	
-	if (adc_key_in > 1000) return btnRESET;
+	if (adc_key_in > 1050) return btnRESET;
 	if (adc_key_in < 50)   return btnRIGHT;
 	if (adc_key_in < 250)  return btnUP;
 	if (adc_key_in < 450)  return btnDOWN;
@@ -333,17 +339,644 @@ uint8_t Human_Machine_Interface::read_LCD_buttons(void)
 
 void Human_Machine_Interface::UIupdate(void)
 {
-	uint8_t userState = 0;	// insert user input here.
+	uint8_t userState = HMI.read_LCD_buttons();	// insert user input here.
 
 	switch (UIstate)
 	{
-		case 1:
-			printDateTime(RTC_alarm.alarm1_get());
+		case 0:
+			// Update tid with time from DS3231
+			//tid = HMI.ConvTotm(RTC.get());
+
+			// Print time here on LCD
+			lcd.clear();
+			lcd.setCursor(0,0);
+			lcd << "Klokkeslaet";
+			lcd.setCursor(0,1);
+			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+
 			// user input
+			switch (userState)
+			{
+				case btnSELECT:
+				/* Your code here */ // Go to UIstate 1, To change C1
+				UIstate = 1;
+
+				break;
+				case btnRESET:
+				/* Your code here */ //Nothing happens
+				break;
+				case btnUP:
+				/* Your code here */ //nothing happens
+				break;
+				case btnDOWN:
+				/* Your code here */ //nothing happens
+				break;
+				case btnLEFT:
+				/* Your code here */ //Go to UIstate 20, we go to alarm 2
+				UIstate = 20;
+
+				break;
+				case btnRIGHT:
+				/* Your code here */ //Go to UIstate 10, we go to alarm 1
+				UIstate = 10;
+
+				break;
+				default:
+				/* Your code here */
+				break;
+			}
+		break;
+		case 1:
+		// Show time, blink C1
+			lcd.clear();
+			lcd.setCursor(0,0);
+			lcd << "Skift Klokkeslet";
+			lcd.setCursor(0,1);
+			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+			
+			switch (userState)
+			{
+				case btnSELECT:
+				/* Your code here */ //Do nothing
+
+				break;
+				case btnRESET:
+				/* Your code here */ //Do nothing
+
+				break;
+				case btnUP:
+				/* Your code here */ //Add 10 to variable hours
+				//If variable hours is 23< then subtract 20
+				if (tid.Hour >= 24)
+				{
+					tid.Hour =- 20;
+				} 
+				else
+				{
+					tid.Hour =+ 10;
+				}
+				
+				break;
+				case btnDOWN:
+				/* Your code here */ //subtract 10 to variable hours
+				// If variable hours is <0 then add 20
+				if (tid.Hour <= 0)
+				{
+					tid.Hour =+ 20;
+				}
+				else
+				{
+					tid.Hour =- 10;
+				}
+
+				break;
+				case btnLEFT:
+				/* Your code here */ //Go to UIstate 0, revert changes, see time
+				UIstate = 0;
+
+				break;
+				case btnRIGHT:
+				/* Your code here */ //Go to UIstate 2, To change C2
+				UIstate = 2;
+
+				break;
+				default:
+				/* Your code here */
+				break;
+			}
 		break;
 		case 2:
-			printDateTime(RTC_alarm.alarm2_get());
-			// user input
+			// Show time, blink C2
+			lcd.clear();
+			lcd.setCursor(0,0);
+			lcd << "Skift Klokkeslet";
+			lcd.setCursor(0,1);
+			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+
+			switch (userState)
+			{
+				case btnSELECT:
+				/* Your code here */ //Do nothing
+
+				break;
+				case btnRESET:
+				/* Your code here */ //Do nothing
+
+				break;
+				case btnUP:
+				/* Your code here */ //Add 1 to variable hours
+				//If variable hours is 23< then subtract 3
+				if (tid.Hour >= 24)
+				{
+					tid.Hour =- 3;
+				}
+				else
+				{
+					tid.Hour =+ 1;
+				}
+
+				break;
+				case btnDOWN:
+				/* Your code here */ //subtract 1 to variable hours
+				// If variable hours is <0 then add 9
+				if (tid.Hour <= 0)
+				{
+					tid.Hour =+ 9;
+				}
+				else
+				{
+					tid.Hour =- 1;
+				}
+
+				break;
+				case btnLEFT:
+				/* Your code here */ //Go to UIstate 1, to change C1
+				UIstate = 1;
+
+				break;
+				case btnRIGHT:
+				/* Your code here */ // Go to UIstate 3, To change C3
+				UIstate = 3;
+
+				break;
+				default:
+				/* Your code here */
+				break;
+			}
+		break;
+		case 3:
+			// Show time, blink C3
+			lcd.clear();
+			lcd.setCursor(0,0);
+			lcd << "Skift Klokkeslet";
+			lcd.setCursor(0,1);
+			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+
+			switch (userState)
+			{
+				case btnSELECT:
+				/* Your code here */ // Do nothing
+
+				break;
+				case btnRESET:
+				/* Your code here */ //Do nothing
+
+				break;
+				case btnUP:
+				/* Your code here */ //Add 10 to variable minutes
+				//If variable minutes is 59< then subtract 50
+				if (tid.Hour >= 59)
+				{
+					tid.Hour =- 50;
+				}
+				else
+				{
+					tid.Hour =+ 10;
+				}
+
+				break;
+				case btnDOWN:
+				/* Your code here */ //subtract 10 to variable minutes
+				// If variable minutes is <0 then add 50
+				if (tid.Hour <= 0)
+				{
+					tid.Hour =+ 50;
+				}
+				else
+				{
+					tid.Hour =- 10;
+				}
+
+				break;
+				case btnLEFT:
+				/* Your code here */ //Go to UIstate 2, to change C2
+				UIstate = 2;
+
+				break;
+				case btnRIGHT:
+				/* Your code here */ //Go to UIstate 4, To change C4
+				UIstate = 4;
+
+				break;
+				default:
+				/* Your code here */
+				break;
+			}
+		break;
+		case 4:
+			// Show time, blink C4
+			lcd.clear();
+			lcd.setCursor(0,0);
+			lcd << "Skift Klokkeslet";
+			lcd.setCursor(0,1);
+
+			switch (userState)
+			{
+				case btnSELECT:
+				/* Your code here */ // Go to UIstate 0, write time to timer module, 
+				UIstate = 0;
+				RTC.set(makeTime(tid));
+
+				break;
+				case btnRESET:
+				/* Your code here */ //Do nothing
+
+				break;
+				case btnUP:
+				/* Your code here */ //Add 1 to variable minutes
+				//If variable minutes is 59< then subtract 9
+				if (tid.Hour >= 59)
+				{
+					tid.Hour =- 9;
+				}
+				else
+				{
+					tid.Hour =+ 1;
+				}
+
+				break;
+				case btnDOWN:
+				/* Your code here */ //subtract 1 to variable minutes
+				// If variable minutes is >0 then add 9
+				if (tid.Hour <= 0)
+				{
+					tid.Hour =+ 9;
+				}
+				else
+				{
+					tid.Hour =- 1;
+				}
+
+				break;
+				case btnLEFT:
+				/* Your code here */ //Go to UIstate 3, to change C3
+				UIstate = 3;
+
+				break;
+				case btnRIGHT:
+				/* Your code here */ //Do nothing
+
+				break;
+				default:
+				/* Your code here */
+				break;
+			}
+		break;
+		case 10:
+			// Show Alarm1
+			lcd.clear();
+			lcd.setCursor(0,0);
+			lcd << "Doeren aabner";
+			lcd.setCursor(0,1);
+			
+
+			tid = HMI.ConvTotm(RTC_alarm.alarm1_get());
+			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+
+			switch (userState)
+			{
+				case btnSELECT:
+				/* Your code here */ // Go to UIstate 11, to change C1
+				UIstate = 11;
+
+				break;
+				case btnRESET:
+				/* Your code here */ //Do nothing
+
+				break;
+				case btnUP:
+				/* Your code here */ //Do nothing
+
+				break;
+				case btnDOWN:
+				/* Your code here */ //Do nothing
+
+				break;
+				case btnLEFT:
+				/* Your code here */ //Go to UIstate 0, we go to Time
+				UIstate = 0;
+
+				break;
+				case btnRIGHT:
+				/* Your code here */ //Go to UIstate 20, we go to Alarm2
+				UIstate = 20;
+
+				break;
+				default:
+				/* Your code here */
+				break;
+			}
+		break;
+		case 11:
+			// Show Alarm1, blink C1
+			lcd.clear();
+			lcd.setCursor(0,0);
+			lcd << "Skift Abningstid";
+			lcd.setCursor(0,1);
+
+			switch (userState)
+			{
+				case btnSELECT:
+				/* Your code here */ //Do nothing
+
+				break;
+				case btnRESET:
+				/* Your code here */ //Do nothing
+				break;
+				case btnUP:
+				/* Your code here */ //Add 10 to variable hours
+				//If variable hours is 23< then subtract 20
+				if (tid.Hour >= 24)
+				{
+					tid.Hour =- 20;
+				}
+				else
+				{
+					tid.Hour =+ 10;
+				}
+
+				break;
+				case btnDOWN:
+				/* Your code here */ //subtract 10 to variable hours
+				// If variable hours is <0 then add 20
+				if (tid.Hour <= 0)
+				{
+					tid.Hour =+ 20;
+				}
+				else
+				{
+					tid.Hour =- 10;
+				}
+
+				break;
+				case btnLEFT:
+				/* Your code here */ //Go to UIstate 10, revert changes, see alarm1
+				UIstate = 10;
+
+				break;
+				case btnRIGHT:
+				/* Your code here */ // Go to UIstate 12, To change C2
+				UIstate = 12;
+
+				break;
+				default:
+				/* Your code here */
+				break;
+			}
+		break;
+		case 12:
+			// Show Alarm1, blink C2
+			switch (userState)
+			{
+				case btnSELECT:
+				/* Your code here */ //Do nothing
+				break;
+				case btnRESET:
+				/* Your code here */ //Do nothing
+				break;
+				case btnUP:
+				/* Your code here */ //Add 1 to variable hours
+				//If variable hours is 23< then subtract 3
+				if (tid.Hour <= 0)
+				{
+					tid.Hour =+ 9;
+				}
+				else
+				{
+					tid.Hour =- 1;
+				}
+
+				break;
+				case btnDOWN:
+				/* Your code here */ //subtract 1 to variable hours
+				// If variable hours is >0 then add 9
+				if (tid.Hour <= 0)
+				{
+					tid.Hour =+ 9;
+				}
+				else
+				{
+					tid.Hour =- 1;
+				}
+
+				break;
+				case btnLEFT:
+				/* Your code here */ //Go to UIstate 11, To change C1
+				UIstate = 11;
+
+				break;
+				case btnRIGHT:
+				/* Your code here */ // Go to UIstate 13, To change C3
+				UIstate = 13;
+
+				break;
+				default:
+				/* Your code here */
+				break;
+			}
+		break;
+		case 13:
+			// Show Alarm1, blink C3
+			switch (userState)
+			{
+				case btnSELECT:
+				/* Your code here */ // Go to UIstate 14, To change C4
+				break;
+				case btnRESET:
+				/* Your code here */ //Go to UIstate 12, To change C2
+				break;
+				case btnUP:
+				/* Your code here */ //Add 10 to variable minutes
+				//If variable hours is 59< then subtract 50
+				break;
+				case btnDOWN:
+				/* Your code here */ //subtract 10 to variable minutes
+				// If variable hours is >0 then add 50
+				break;
+				case btnLEFT:
+				/* Your code here */ //Do nothing
+				break;
+				case btnRIGHT:
+				/* Your code here */ //Do nothing
+				break;
+				default:
+				/* Your code here */
+			break;
+			}
+		break;
+		case 14:
+			// Show Alarm1, blink C4
+			switch (userState)
+			{
+				case btnSELECT:
+				/* Your code here */ // Go to UIstate 10, Write Alarm1 to timer module
+				RTC_alarm.alarm1_set(tid);
+
+				break;
+				case btnRESET:
+				/* Your code here */ //Go to UIstate 13, To change C3
+				break;
+				case btnUP:
+				/* Your code here */ //Add 1 to variable minutes
+				//If variable hours is 59< then subtract 9
+				break;
+				case btnDOWN:
+				/* Your code here */ //subtract 1 to variable minutes
+				// If variable hours is >0 then add 9
+				break;
+				case btnLEFT:
+				/* Your code here */ //Do nothing
+				break;
+				case btnRIGHT:
+				/* Your code here */ //Do nothing
+				break;
+				default:
+				/* Your code here */
+				break;
+			}
+		break;
+		case 20:
+			// Show Alarm2
+			switch (userState)
+			{
+				case btnSELECT:
+				/* Your code here */ // Go to UIstate 21, To change C1
+				break;
+				case btnRESET:
+				/* Your code here */ //Do nothing
+				break;
+				case btnUP:
+				/* Your code here */ //Do nothing
+				break;
+				case btnDOWN:
+				/* Your code here */ //Do nothing
+				break;
+				case btnLEFT:
+				/* Your code here */ //Go to UIstate 10, we go to Alarm1
+				break;
+				case btnRIGHT:
+				/* Your code here */ //Go to UIstate 0, we go to Time
+				break;
+				default:
+				/* Your code here */
+				break;
+			}
+		break;
+		case 21:
+			// Show Alarm2, blink C1
+			switch (userState)
+			{
+				case btnSELECT:
+				/* Your code here */ // Go to UIstate 22, To change C2
+				break;
+				case btnRESET:
+				/* Your code here */ //Go to UIstate 20, revert changes, see Alarm2
+				break;
+				case btnUP:
+				/* Your code here */ //Add 10 to variable hours
+				//If variable hours is 23< then subtract 20
+				break;
+				case btnDOWN:
+				/* Your code here */ //subtract 10 to variable hours
+				// If variable hours is >0 then add 20
+				break;
+				case btnLEFT:
+				/* Your code here */ //Do nothing
+				break;
+				case btnRIGHT:
+				/* Your code here */ //Do nothing
+				break;
+				default:
+				/* Your code here */
+				break;
+			}
+		break;
+		case 22:
+			// Show Alarm2, blink C2
+			switch (userState)
+			{
+				case btnSELECT:
+				/* Your code here */ // Go to UIstate 23, To change C3
+				break;
+				case btnRESET:
+				/* Your code here */ //Go to UIstate 21, To change C1
+				break;
+				case btnUP:
+				/* Your code here */ //Add 1 to variable hours
+				//If variable hours is 23< then subtract 3
+				break;
+				case btnDOWN:
+				/* Your code here */ //subtract 1 to variable hours
+				// If variable hours is >0 then add 9
+				break;
+				case btnLEFT:
+				/* Your code here */ //Do nothing
+				break;
+				case btnRIGHT:
+				/* Your code here */ //Do nothing
+				break;
+				default:
+				/* Your code here */
+				break;
+			}
+		break;
+		case 23:
+			// Show Alarm2, blink C3
+			switch (userState)
+			{
+				case btnSELECT:
+				/* Your code here */ // Go to UIstate 24, To change C4
+				break;
+				case btnRESET:
+				/* Your code here */ //Go to UIstate 22, To change C2
+				break;
+				case btnUP:
+				/* Your code here */ //Add 10 to variable minutes
+				//If variable hours is 59< then subtract 50
+				break;
+				case btnDOWN:
+				/* Your code here */ //subtract 10 to variable minutes
+				// If variable hours is >0 then add 50
+				break;
+				case btnLEFT:
+				/* Your code here */ //Do nothing
+				break;
+				case btnRIGHT:
+				/* Your code here */ //Do nothing
+				break;
+				default:
+				/* Your code here */
+				break;
+			}
+		break;
+		case 24:
+			// Show Alarm2, blink C4
+			switch (userState)
+			{
+				case btnSELECT:
+				/* Your code here */ // Go to UIstate 23, To change C3
+				break;
+				case btnRESET:
+				/* Your code here */ //Go to UIstate 20, write Alarm2 to timer module
+				break;
+				case btnUP:
+				/* Your code here */ //Add 1 to variable minutes
+				//If variable hours is 59< then subtract 9
+				break;
+				case btnDOWN:
+				/* Your code here */ //subtract 1 to variable minutes
+				// If variable hours is >0 then add 9
+				break;
+				case btnLEFT:
+				/* Your code here */ //Do nothing
+				break;
+				case btnRIGHT:
+				/* Your code here */ //Do nothing
+				break;
+				default:
+				/* Your code here */
+				break;
+			}
 		break;
 		default:	// default state, aka state 0.
 			printDateTime(ConvTotm(RTC.get()));
