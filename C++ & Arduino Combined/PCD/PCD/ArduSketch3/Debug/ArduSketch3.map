@@ -76,6 +76,8 @@ d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
                               D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o) (__udivmodsi4)
 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
                               D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o (exit)
+d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                              Main.o (__tablejump2__)
 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
                               Main.o (__do_copy_data)
 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
@@ -90,8 +92,6 @@ d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
                               D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o) (__mulshisi3)
 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
                               d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o) (__udivmodhi4)
-d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
-                              d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o) (__tablejump2__)
 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(abort.o)
                               D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(abi.o) (abort)
 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcpy_P.o)
@@ -109,20 +109,12 @@ Discarded input sections
  .text          0x00000000        0x0 Main.o
  .data          0x00000000        0x0 Main.o
  .bss           0x00000000        0x0 Main.o
- .text._ZN23Human_Machine_InterfaceC2Ev
-                0x00000000        0x6 Main.o
- .text._ZN23Human_Machine_Interface16read_LCD_buttonsEv
-                0x00000000       0x4c Main.o
- .text._ZN23Human_Machine_Interface8UIupdateEv
-                0x00000000       0x9e Main.o
  .text._ZN16DS3231RTC_AlarmsC2Ev
                 0x00000000       0x14 Main.o
  .text._ZN16DS3231RTC_Alarms10alarm1_getEv
                 0x00000000        0xc Main.o
  .text._ZN16DS3231RTC_Alarms10alarm2_getEv
                 0x00000000        0xc Main.o
- .text._ZN16DS3231RTC_Alarms10alarm1_setE12tmElements_t
-                0x00000000       0xac Main.o
  .text._ZN16DS3231RTC_Alarms10alarm2_setE12tmElements_t
                 0x00000000       0xac Main.o
  .text._ZN14liftRelayArrayC2Ev
@@ -205,22 +197,8 @@ Discarded input sections
  .bss           0x00000000        0x0 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
  .text.analogReference
                 0x00000000        0x6 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
- .text.analogRead
-                0x00000000       0x3a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
  .text.analogWrite
                 0x00000000       0xbe D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
- .data.analog_reference
-                0x00000000        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_info    0x00000000      0x26d D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_abbrev  0x00000000      0x16b D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_loc     0x00000000       0xfe D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_aranges
-                0x00000000       0x30 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_ranges  0x00000000       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_line    0x00000000      0x224 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_str     0x00000000      0x25e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
- .comment       0x00000000       0x31 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_frame   0x00000000       0x54 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
  .text          0x00000000        0x0 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
  .data          0x00000000        0x0 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
  .bss           0x00000000        0x0 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
@@ -235,14 +213,8 @@ Discarded input sections
                 0x00000000        0x8 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
  .text._ZN9DS3232RTC7dec2bcdEh
                 0x00000000       0x16 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
- .text._ZN9DS3232RTC8setAlarmE13ALARM_TYPES_thhhh
-                0x00000000       0xae D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
  .text._ZN9DS3232RTC8setAlarmE13ALARM_TYPES_thhh
                 0x00000000       0x16 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
- .text._ZN9DS3232RTC5writeER12tmElements_t
-                0x00000000      0x112 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
- .text._ZN9DS3232RTC3setEm
-                0x00000000       0x4a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
  .text._ZN9DS3232RTC10oscStoppedEb
                 0x00000000       0x3a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
  .text._ZN9DS3232RTC11temperatureEv
@@ -263,8 +235,6 @@ Discarded input sections
                 0x00000000       0x10 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
  .text._ZN13LiquidCrystal4homeEv
                 0x00000000        0xe D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
- .text._ZN13LiquidCrystal9setCursorEhh
-                0x00000000       0x26 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
  .text._ZN13LiquidCrystal9noDisplayEv
                 0x00000000        0xe D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
  .text._ZN13LiquidCrystal4initEhhhhhhhhhhhh
@@ -575,8 +545,6 @@ Discarded input sections
  .bss           0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodqi4.o)
  .text.libgcc.mul
                 0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodqi4.o)
- .text.libgcc.div
-                0x00000000       0x18 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodqi4.o)
  .text.libgcc   0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodqi4.o)
  .text.libgcc.prologue
                 0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodqi4.o)
@@ -630,6 +598,21 @@ Discarded input sections
                 0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.fixed
                 0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
  .text          0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
  .data          0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
  .bss           0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
@@ -734,21 +717,6 @@ Discarded input sections
                 0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .text.libgcc.fixed
                 0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
- .text          0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
- .data          0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
- .bss           0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
- .text.libgcc.mul
-                0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
- .text.libgcc.div
-                0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
- .text.libgcc.prologue
-                0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
- .text.libgcc.builtins
-                0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
- .text.libgcc.fmul
-                0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
- .text.libgcc.fixed
-                0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
  .text          0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(abort.o)
  .data          0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(abort.o)
  .bss           0x00000000        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(abort.o)
@@ -765,13 +733,6 @@ Discarded input sections
  .text          0x00000000        0x0 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
  .data          0x00000000        0x0 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
  .bss           0x00000000        0x0 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
- .text.avr-libc
-                0x00000000       0x1c D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
- .debug_line    0x00000000       0x9e D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
- .debug_info    0x00000000       0xac D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
- .debug_abbrev  0x00000000       0x14 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
- .debug_aranges
-                0x00000000       0x20 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
 
 Memory Configuration
 
@@ -900,434 +861,471 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x22dc
+.text           0x00000000     0x2cfc
  *(.vectors)
  .vectors       0x00000000       0x68 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000000                __vector_default
                 0x00000000                __vectors
  *(.vectors)
  *(.progmem.gcc*)
-                0x00000068                . = ALIGN (0x2)
-                0x00000068                __trampolines_start = .
+ .progmem.gcc_sw_table._ZN23Human_Machine_Interface8UIupdateEv
+                0x00000068       0x32 Main.o
+                0x0000009a                . = ALIGN (0x2)
+                0x0000009a                __trampolines_start = .
  *(.trampolines)
- .trampolines   0x00000068        0x0 linker stubs
+ .trampolines   0x0000009a        0x0 linker stubs
  *(.trampolines*)
-                0x00000068                __trampolines_end = .
+                0x0000009a                __trampolines_end = .
  *libprintf_flt.a:*(.progmem.data)
  *libc.a:*(.progmem.data)
  *(.progmem*)
  .progmem.data.digital_pin_to_timer_PGM
-                0x00000068       0x14 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00000068                digital_pin_to_timer_PGM
+                0x0000009a       0x14 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x0000009a                digital_pin_to_timer_PGM
  .progmem.data.digital_pin_to_bit_mask_PGM
-                0x0000007c       0x14 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
-                0x0000007c                digital_pin_to_bit_mask_PGM
+                0x000000ae       0x14 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000000ae                digital_pin_to_bit_mask_PGM
  .progmem.data.digital_pin_to_port_PGM
-                0x00000090       0x14 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00000090                digital_pin_to_port_PGM
+                0x000000c2       0x14 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000000c2                digital_pin_to_port_PGM
  .progmem.data.port_to_output_PGM
-                0x000000a4        0xa D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
-                0x000000a4                port_to_output_PGM
+                0x000000d6        0xa D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000000d6                port_to_output_PGM
  .progmem.data.port_to_mode_PGM
-                0x000000ae        0xa D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
-                0x000000ae                port_to_mode_PGM
+                0x000000e0        0xa D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000000e0                port_to_mode_PGM
  .progmem.data._ZL17monthShortNames_P
-                0x000000b8       0x28 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
-                0x000000e0                . = ALIGN (0x2)
+                0x000000ea       0x28 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+                0x00000112                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
  *(.lowtext*)
-                0x000000e0                __ctors_start = .
+                0x00000112                __ctors_start = .
  *(.ctors)
- .ctors         0x000000e0        0x2 Main.o
- .ctors         0x000000e2        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .ctors         0x000000e4        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
- .ctors         0x000000e6        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x000000e8                __ctors_end = .
-                0x000000e8                __dtors_start = .
+ .ctors         0x00000112        0x2 Main.o
+ .ctors         0x00000114        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .ctors         0x00000116        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .ctors         0x00000118        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x0000011a                __ctors_end = .
+                0x0000011a                __dtors_start = .
  *(.dtors)
-                0x000000e8                __dtors_end = .
+                0x0000011a                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x000000e8        0x0 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
-                0x000000e8                __init
+ .init0         0x0000011a        0x0 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x0000011a                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x000000e8        0xc D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .init2         0x0000011a        0xc D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x000000f4       0x16 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
-                0x000000f4                __do_copy_data
- .init4         0x0000010a       0x10 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
-                0x0000010a                __do_clear_bss
+ .init4         0x00000126       0x16 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x00000126                __do_copy_data
+ .init4         0x0000013c       0x10 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000013c                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
  *(.init6)
- .init6         0x0000011a       0x16 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
-                0x0000011a                __do_global_ctors
+ .init6         0x0000014c       0x16 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                0x0000014c                __do_global_ctors
  *(.init6)
  *(.init7)
  *(.init7)
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000130        0x8 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .init9         0x00000162        0x8 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
  *(.init9)
  *(.text)
- .text          0x00000138        0x4 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
-                0x00000138                __vector_22
-                0x00000138                __vector_12
-                0x00000138                __bad_interrupt
-                0x00000138                __vector_6
-                0x00000138                __vector_3
-                0x00000138                __vector_23
-                0x00000138                __vector_25
-                0x00000138                __vector_13
-                0x00000138                __vector_17
-                0x00000138                __vector_7
-                0x00000138                __vector_5
-                0x00000138                __vector_4
-                0x00000138                __vector_9
-                0x00000138                __vector_21
-                0x00000138                __vector_15
-                0x00000138                __vector_8
-                0x00000138                __vector_14
-                0x00000138                __vector_10
-                0x00000138                __vector_20
-                0x0000013c                . = ALIGN (0x2)
+ .text          0x0000016a        0x4 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x0000016a                __vector_22
+                0x0000016a                __vector_12
+                0x0000016a                __bad_interrupt
+                0x0000016a                __vector_6
+                0x0000016a                __vector_3
+                0x0000016a                __vector_23
+                0x0000016a                __vector_25
+                0x0000016a                __vector_13
+                0x0000016a                __vector_17
+                0x0000016a                __vector_7
+                0x0000016a                __vector_5
+                0x0000016a                __vector_4
+                0x0000016a                __vector_9
+                0x0000016a                __vector_21
+                0x0000016a                __vector_15
+                0x0000016a                __vector_8
+                0x0000016a                __vector_14
+                0x0000016a                __vector_10
+                0x0000016a                __vector_20
+                0x0000016e                . = ALIGN (0x2)
  *(.text.*)
  .text._Z8alarmIsrv
-                0x0000013c        0x8 Main.o
-                0x0000013c                _Z8alarmIsrv
+                0x0000016e        0x8 Main.o
+                0x0000016e                _Z8alarmIsrv
  .text._ZlsR5PrintRK6_BASED
-                0x00000144       0x20 Main.o
-                0x00000144                _ZlsR5PrintRK6_BASED
- .text.__vector_11
-                0x00000164       0x60 Main.o
-                0x00000164                __vector_11
+                0x00000176       0x20 Main.o
+                0x00000176                _ZlsR5PrintRK6_BASED
  .text._ZN23Human_Machine_Interface13printDateTimeE12tmElements_t
-                0x000001c4      0x10e Main.o
-                0x000001c4                _ZN23Human_Machine_Interface13printDateTimeE12tmElements_t
+                0x00000196      0x10e Main.o
+                0x00000196                _ZN23Human_Machine_Interface13printDateTimeE12tmElements_t
  .text._ZN23Human_Machine_Interface13printDateTimeEm
-                0x000002d2      0x1d0 Main.o
-                0x000002d2                _ZN23Human_Machine_Interface13printDateTimeEm
+                0x000002a4      0x1d0 Main.o
+                0x000002a4                _ZN23Human_Machine_Interface13printDateTimeEm
  .text._ZN23Human_Machine_Interface8ConvTotmEm
-                0x000004a2       0x98 Main.o
-                0x000004a2                _ZN23Human_Machine_Interface8ConvTotmEm
+                0x00000474       0x98 Main.o
+                0x00000474                _ZN23Human_Machine_Interface8ConvTotmEm
+ .text._ZN23Human_Machine_InterfaceC2Ev
+                0x0000050c       0x2e Main.o
+                0x0000050c                _ZN23Human_Machine_InterfaceC1Ev
+                0x0000050c                _ZN23Human_Machine_InterfaceC2Ev
+ .text._ZN23Human_Machine_Interface16read_LCD_buttonsEv
+                0x0000053a       0x4c Main.o
+                0x0000053a                _ZN23Human_Machine_Interface16read_LCD_buttonsEv
  .text._ZN16DS3231RTC_Alarms11init_alarmsEv
-                0x0000053a       0xaa Main.o
-                0x0000053a                _ZN16DS3231RTC_Alarms11init_alarmsEv
+                0x00000586       0xaa Main.o
+                0x00000586                _ZN16DS3231RTC_Alarms11init_alarmsEv
  .text._ZN16DS3231RTC_Alarms11alarm_CheckEPh
-                0x000005e4       0x42 Main.o
-                0x000005e4                _ZN16DS3231RTC_Alarms11alarm_CheckEPh
+                0x00000630       0x42 Main.o
+                0x00000630                _ZN16DS3231RTC_Alarms11alarm_CheckEPh
+ .text._ZN16DS3231RTC_Alarms10alarm1_setE12tmElements_t
+                0x00000672       0xac Main.o
+                0x00000672                _ZN16DS3231RTC_Alarms10alarm1_setE12tmElements_t
+ .text._ZN23Human_Machine_Interface8UIupdateEv
+                0x0000071e      0x638 Main.o
+                0x0000071e                _ZN23Human_Machine_Interface8UIupdateEv
  .text._ZN14liftRelayArray14relayArrayInitEv
-                0x00000626       0x46 Main.o
-                0x00000626                _ZN14liftRelayArray14relayArrayInitEv
+                0x00000d56       0x46 Main.o
+                0x00000d56                _ZN14liftRelayArray14relayArrayInitEv
  .text._ZN14liftRelayArray17relayArrayCommandEh
-                0x0000066c       0x1e Main.o
-                0x0000066c                _ZN14liftRelayArray17relayArrayCommandEh
+                0x00000d9c       0x1e Main.o
+                0x00000d9c                _ZN14liftRelayArray17relayArrayCommandEh
+ .text.__vector_11
+                0x00000dba       0xa2 Main.o
+                0x00000dba                __vector_11
  .text.startup.main
-                0x0000068a      0x166 Main.o
-                0x0000068a                main
+                0x00000e5c      0x112 Main.o
+                0x00000e5c                main
  .text.startup._GLOBAL__sub_I_alarmIsrWasCalled
-                0x000007f0       0x3e Main.o
+                0x00000f6e       0x42 Main.o
  .text._ZN14HardwareSerial9availableEv
-                0x0000082e       0x18 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x0000082e                _ZN14HardwareSerial9availableEv
+                0x00000fb0       0x18 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00000fb0                _ZN14HardwareSerial9availableEv
  .text._ZN14HardwareSerial4peekEv
-                0x00000846       0x1c D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00000846                _ZN14HardwareSerial4peekEv
+                0x00000fc8       0x1c D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00000fc8                _ZN14HardwareSerial4peekEv
  .text._ZN14HardwareSerial4readEv
-                0x00000862       0x28 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00000862                _ZN14HardwareSerial4readEv
+                0x00000fe4       0x28 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00000fe4                _ZN14HardwareSerial4readEv
  .text._ZN14HardwareSerial17availableForWriteEv
-                0x0000088a       0x1e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x0000088a                _ZN14HardwareSerial17availableForWriteEv
+                0x0000100c       0x1e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000100c                _ZN14HardwareSerial17availableForWriteEv
  .text._ZN14HardwareSerial17_tx_udr_empty_irqEv
-                0x000008a8       0x42 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000008a8                _ZN14HardwareSerial17_tx_udr_empty_irqEv
+                0x0000102a       0x42 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000102a                _ZN14HardwareSerial17_tx_udr_empty_irqEv
  .text._ZN14HardwareSerial5writeEh
-                0x000008ea       0x8e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000008ea                _ZN14HardwareSerial5writeEh
+                0x0000106c       0x8e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000106c                _ZN14HardwareSerial5writeEh
  .text._ZN14HardwareSerial5flushEv
-                0x00000978       0x44 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00000978                _ZN14HardwareSerial5flushEv
+                0x000010fa       0x44 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000010fa                _ZN14HardwareSerial5flushEv
  .text._ZN14HardwareSerial5beginEmh
-                0x000009bc       0xca D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000009bc                _ZN14HardwareSerial5beginEmh
+                0x0000113e       0xca D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000113e                _ZN14HardwareSerial5beginEmh
  .text._ZN5Print17availableForWriteEv
-                0x00000a86        0x6 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00000a86                _ZN5Print17availableForWriteEv
+                0x00001208        0x6 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00001208                _ZN5Print17availableForWriteEv
  .text._ZN5Print5flushEv
-                0x00000a8c        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00000a8c                _ZN5Print5flushEv
+                0x0000120e        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x0000120e                _ZN5Print5flushEv
  .text.__vector_18
-                0x00000a8e       0x64 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00000a8e                __vector_18
+                0x00001210       0x64 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00001210                __vector_18
  .text.__vector_19
-                0x00000af2       0x4c D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00000af2                __vector_19
+                0x00001274       0x4c D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00001274                __vector_19
  .text.startup._GLOBAL__sub_I___vector_18
-                0x00000b3e       0x5a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000012c0       0x5a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
  .text._ZN5Print5writeEPKhj
-                0x00000b98       0x54 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x00000b98                _ZN5Print5writeEPKhj
+                0x0000131a       0x54 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x0000131a                _ZN5Print5writeEPKhj
  .text._ZN5Print5writeEPKc
-                0x00000bec       0x2a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x00000bec                _ZN5Print5writeEPKc
+                0x0000136e       0x2a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x0000136e                _ZN5Print5writeEPKc
  .text._ZN5Print5printEPKc
-                0x00000c16        0x4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x00000c16                _ZN5Print5printEPKc
+                0x00001398        0x4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00001398                _ZN5Print5printEPKc
  .text._ZN5Print5printEc
-                0x00000c1a        0xe D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x00000c1a                _ZN5Print5printEc
+                0x0000139c        0xe D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x0000139c                _ZN5Print5printEc
  .text._ZN5Print7printlnEv
-                0x00000c28        0x8 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x00000c28                _ZN5Print7printlnEv
+                0x000013aa        0x8 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x000013aa                _ZN5Print7printlnEv
  .text._ZN5Print11printNumberEmh
-                0x00000c30       0x92 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x00000c30                _ZN5Print11printNumberEmh
+                0x000013b2       0x92 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x000013b2                _ZN5Print11printNumberEmh
  .text._ZN5Print5printEmi
-                0x00000cc2       0x1a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x00000cc2                _ZN5Print5printEmi
+                0x00001444       0x1a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00001444                _ZN5Print5printEmi
  .text._ZN5Print5printEhi
-                0x00000cdc        0xe D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x00000cdc                _ZN5Print5printEhi
+                0x0000145e        0xe D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x0000145e                _ZN5Print5printEhi
  .text._ZN5Print5printEli
-                0x00000cea       0x90 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x00000cea                _ZN5Print5printEli
- .text.nothing  0x00000d7a        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+                0x0000146c       0x90 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x0000146c                _ZN5Print5printEli
+ .text.nothing  0x000014fc        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
  .text.attachInterrupt
-                0x00000d7c       0x40 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
-                0x00000d7c                attachInterrupt
+                0x000014fe       0x40 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+                0x000014fe                attachInterrupt
  .text.__vector_1
-                0x00000dbc       0x4e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
-                0x00000dbc                __vector_1
+                0x0000153e       0x4e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+                0x0000153e                __vector_1
  .text.__vector_2
-                0x00000e0a       0x4e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
-                0x00000e0a                __vector_2
+                0x0000158c       0x4e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+                0x0000158c                __vector_2
  .text.__vector_16
-                0x00000e58       0x94 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x00000e58                __vector_16
- .text.micros   0x00000eec       0x4a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x00000eec                micros
- .text.delay    0x00000f36       0x78 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x00000f36                delay
+                0x000015da       0x94 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x000015da                __vector_16
+ .text.micros   0x0000166e       0x4a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x0000166e                micros
+ .text.delay    0x000016b8       0x78 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x000016b8                delay
  .text.delayMicroseconds
-                0x00000fae       0x16 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x00000fae                delayMicroseconds
- .text.init     0x00000fc4       0x76 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x00000fc4                init
+                0x00001730       0x16 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x00001730                delayMicroseconds
+ .text.init     0x00001746       0x76 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x00001746                init
+ .text.analogRead
+                0x000017bc       0x3a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
+                0x000017bc                analogRead
  .text.turnOffPWM
-                0x0000103a       0x52 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
- .text.pinMode  0x0000108c       0x78 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
-                0x0000108c                pinMode
+                0x000017f6       0x52 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .text.pinMode  0x00001848       0x78 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00001848                pinMode
  .text.digitalWrite
-                0x00001104       0x5e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00001104                digitalWrite
+                0x000018c0       0x5e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000018c0                digitalWrite
  .text._ZN9DS3232RTC7bcd2decEh
-                0x00001162       0x10 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
-                0x00001162                _ZN9DS3232RTC7bcd2decEh
+                0x0000191e       0x10 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x0000191e                _ZN9DS3232RTC7bcd2decEh
  .text.startup._GLOBAL__sub_I__ZN9DS3232RTC7errCodeE
-                0x00001172        0x8 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x0000192e        0x8 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
  .text._ZN9DS3232RTC8writeRTCEhPhh
-                0x0000117a       0x58 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
-                0x0000117a                _ZN9DS3232RTC8writeRTCEhPhh
+                0x00001936       0x58 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00001936                _ZN9DS3232RTC8writeRTCEhPhh
  .text._ZN9DS3232RTC8writeRTCEhh
-                0x000011d2       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
-                0x000011d2                _ZN9DS3232RTC8writeRTCEhh
+                0x0000198e       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x0000198e                _ZN9DS3232RTC8writeRTCEhh
+ .text._ZN9DS3232RTC8setAlarmE13ALARM_TYPES_thhhh
+                0x000019ae       0xae D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x000019ae                _ZN9DS3232RTC8setAlarmE13ALARM_TYPES_thhhh
  .text._ZN9DS3232RTC4readER12tmElements_t
-                0x000011f2       0xac D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
-                0x000011f2                _ZN9DS3232RTC4readER12tmElements_t
+                0x00001a5c       0xac D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00001a5c                _ZN9DS3232RTC4readER12tmElements_t
  .text._ZN9DS3232RTC3getEv
-                0x0000129e       0x42 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
-                0x0000129e                _ZN9DS3232RTC3getEv
+                0x00001b08       0x42 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00001b08                _ZN9DS3232RTC3getEv
  .text._ZN9DS3232RTC7readRTCEhPhh
-                0x000012e0       0x6c D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
-                0x000012e0                _ZN9DS3232RTC7readRTCEhPhh
+                0x00001b4a       0x6c D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00001b4a                _ZN9DS3232RTC7readRTCEhPhh
  .text._ZN9DS3232RTC7readRTCEh
-                0x0000134c       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
-                0x0000134c                _ZN9DS3232RTC7readRTCEh
+                0x00001bb6       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00001bb6                _ZN9DS3232RTC7readRTCEh
+ .text._ZN9DS3232RTC5writeER12tmElements_t
+                0x00001bd6      0x112 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00001bd6                _ZN9DS3232RTC5writeER12tmElements_t
+ .text._ZN9DS3232RTC3setEm
+                0x00001ce8       0x4a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00001ce8                _ZN9DS3232RTC3setEm
  .text._ZN9DS3232RTC14alarmInterruptEhb
-                0x0000136c       0x42 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
-                0x0000136c                _ZN9DS3232RTC14alarmInterruptEhb
+                0x00001d32       0x42 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00001d32                _ZN9DS3232RTC14alarmInterruptEhb
  .text._ZN9DS3232RTC5alarmEh
-                0x000013ae       0x40 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
-                0x000013ae                _ZN9DS3232RTC5alarmEh
+                0x00001d74       0x40 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00001d74                _ZN9DS3232RTC5alarmEh
  .text._ZN9DS3232RTC10squareWaveE14SQWAVE_FREQS_t
-                0x000013ee       0x34 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
-                0x000013ee                _ZN9DS3232RTC10squareWaveE14SQWAVE_FREQS_t
+                0x00001db4       0x34 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00001db4                _ZN9DS3232RTC10squareWaveE14SQWAVE_FREQS_t
  .text._ZN13LiquidCrystal11pulseEnableEv
-                0x00001422       0x3a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
-                0x00001422                _ZN13LiquidCrystal11pulseEnableEv
+                0x00001de8       0x3a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x00001de8                _ZN13LiquidCrystal11pulseEnableEv
  .text._ZN13LiquidCrystal10write4bitsEh
-                0x0000145c       0x5a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
-                0x0000145c                _ZN13LiquidCrystal10write4bitsEh
+                0x00001e22       0x5a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x00001e22                _ZN13LiquidCrystal10write4bitsEh
  .text._ZN13LiquidCrystal10write8bitsEh
-                0x000014b6       0x5a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
-                0x000014b6                _ZN13LiquidCrystal10write8bitsEh
+                0x00001e7c       0x5a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x00001e7c                _ZN13LiquidCrystal10write8bitsEh
  .text._ZN13LiquidCrystal4sendEhh
-                0x00001510       0x52 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
-                0x00001510                _ZN13LiquidCrystal4sendEhh
+                0x00001ed6       0x52 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x00001ed6                _ZN13LiquidCrystal4sendEhh
  .text._ZN13LiquidCrystal7commandEh
-                0x00001562        0x6 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
-                0x00001562                _ZN13LiquidCrystal7commandEh
+                0x00001f28        0x6 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x00001f28                _ZN13LiquidCrystal7commandEh
  .text._ZN13LiquidCrystal5clearEv
-                0x00001568        0xe D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
-                0x00001568                _ZN13LiquidCrystal5clearEv
+                0x00001f2e        0xe D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x00001f2e                _ZN13LiquidCrystal5clearEv
+ .text._ZN13LiquidCrystal9setCursorEhh
+                0x00001f3c       0x26 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x00001f3c                _ZN13LiquidCrystal9setCursorEhh
  .text._ZN13LiquidCrystal7displayEv
-                0x00001576       0x10 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
-                0x00001576                _ZN13LiquidCrystal7displayEv
+                0x00001f62       0x10 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x00001f62                _ZN13LiquidCrystal7displayEv
  .text._ZN13LiquidCrystal5beginEhhh
-                0x00001586      0x14a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
-                0x00001586                _ZN13LiquidCrystal5beginEhhh
+                0x00001f72      0x14a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x00001f72                _ZN13LiquidCrystal5beginEhhh
  .text._ZN13LiquidCrystalC2Ehhhhhh
-                0x000016d0       0x40 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
-                0x000016d0                _ZN13LiquidCrystalC1Ehhhhhh
-                0x000016d0                _ZN13LiquidCrystalC2Ehhhhhh
+                0x000020bc       0x40 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x000020bc                _ZN13LiquidCrystalC1Ehhhhhh
+                0x000020bc                _ZN13LiquidCrystalC2Ehhhhhh
  .text._ZN13LiquidCrystal5writeEh
-                0x00001710        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
-                0x00001710                _ZN13LiquidCrystal5writeEh
+                0x000020fc        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x000020fc                _ZN13LiquidCrystal5writeEh
  .text._Z13monthShortStrh
-                0x0000171c       0x32 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
-                0x0000171c                _Z13monthShortStrh
+                0x00002108       0x32 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+                0x00002108                _Z13monthShortStrh
  .text._Z9breakTimemR12tmElements_t
-                0x0000174e      0x1ca D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
-                0x0000174e                _Z9breakTimemR12tmElements_t
+                0x0000213a      0x1ca D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x0000213a                _Z9breakTimemR12tmElements_t
  .text._Z12refreshCachem
-                0x00001918       0x48 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
-                0x00001918                _Z12refreshCachem
+                0x00002304       0x48 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x00002304                _Z12refreshCachem
  .text._Z4hourm
-                0x00001960        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
-                0x00001960                _Z4hourm
+                0x0000234c        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x0000234c                _Z4hourm
  .text._Z6minutem
-                0x0000196c        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
-                0x0000196c                _Z6minutem
+                0x00002358        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x00002358                _Z6minutem
  .text._Z6secondm
-                0x00001978        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
-                0x00001978                _Z6secondm
- .text._Z3daym  0x00001984        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
-                0x00001984                _Z3daym
+                0x00002364        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x00002364                _Z6secondm
+ .text._Z3daym  0x00002370        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x00002370                _Z3daym
  .text._Z5monthm
-                0x00001990        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
-                0x00001990                _Z5monthm
+                0x0000237c        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x0000237c                _Z5monthm
  .text._Z4yearm
-                0x0000199c       0x10 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
-                0x0000199c                _Z4yearm
+                0x00002388       0x10 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x00002388                _Z4yearm
  .text._Z8makeTimeR12tmElements_t
-                0x000019ac      0x190 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
-                0x000019ac                _Z8makeTimeR12tmElements_t
+                0x00002398      0x190 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x00002398                _Z8makeTimeR12tmElements_t
  .text._ZN7TwoWire9availableEv
-                0x00001b3c       0x10 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00001b3c                _ZN7TwoWire9availableEv
+                0x00002528       0x10 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00002528                _ZN7TwoWire9availableEv
  .text._ZN7TwoWire4readEv
-                0x00001b4c       0x28 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00001b4c                _ZN7TwoWire4readEv
+                0x00002538       0x28 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00002538                _ZN7TwoWire4readEv
  .text._ZN7TwoWire4peekEv
-                0x00001b74       0x1e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00001b74                _ZN7TwoWire4peekEv
+                0x00002560       0x1e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00002560                _ZN7TwoWire4peekEv
  .text._ZN7TwoWire5flushEv
-                0x00001b92        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00001b92                _ZN7TwoWire5flushEv
+                0x0000257e        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x0000257e                _ZN7TwoWire5flushEv
  .text._ZN7TwoWire5writeEPKhj
-                0x00001b94       0x5a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00001b94                _ZN7TwoWire5writeEPKhj
+                0x00002580       0x5a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00002580                _ZN7TwoWire5writeEPKhj
  .text._ZN7TwoWire5writeEh
-                0x00001bee       0x5e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00001bee                _ZN7TwoWire5writeEh
+                0x000025da       0x5e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x000025da                _ZN7TwoWire5writeEh
  .text._ZN7TwoWireC2Ev
-                0x00001c4c       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00001c4c                _ZN7TwoWireC1Ev
-                0x00001c4c                _ZN7TwoWireC2Ev
+                0x00002638       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00002638                _ZN7TwoWireC1Ev
+                0x00002638                _ZN7TwoWireC2Ev
  .text._ZN7TwoWire5beginEv
-                0x00001c6c       0x14 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00001c6c                _ZN7TwoWire5beginEv
+                0x00002658       0x14 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00002658                _ZN7TwoWire5beginEv
  .text._ZN7TwoWire17beginTransmissionEh
-                0x00001c80       0x14 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00001c80                _ZN7TwoWire17beginTransmissionEh
+                0x0000266c       0x14 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x0000266c                _ZN7TwoWire17beginTransmissionEh
  .text._ZN7TwoWire17beginTransmissionEi
-                0x00001c94        0x4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00001c94                _ZN7TwoWire17beginTransmissionEi
+                0x00002680        0x4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00002680                _ZN7TwoWire17beginTransmissionEi
  .text._ZN7TwoWire15endTransmissionEh
-                0x00001c98       0x26 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00001c98                _ZN7TwoWire15endTransmissionEh
+                0x00002684       0x26 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00002684                _ZN7TwoWire15endTransmissionEh
  .text._ZN7TwoWire11requestFromEhhmhh
-                0x00001cbe       0xa8 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00001cbe                _ZN7TwoWire11requestFromEhhmhh
+                0x000026aa       0xa8 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x000026aa                _ZN7TwoWire11requestFromEhhmhh
  .text._ZN7TwoWire11requestFromEhhh
-                0x00001d66       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00001d66                _ZN7TwoWire11requestFromEhhh
+                0x00002752       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00002752                _ZN7TwoWire11requestFromEhhh
  .text._ZN7TwoWire11requestFromEhh
-                0x00001d86        0x6 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00001d86                _ZN7TwoWire11requestFromEhh
+                0x00002772        0x6 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00002772                _ZN7TwoWire11requestFromEhh
  .text._ZN7TwoWire11requestFromEii
-                0x00001d8c        0x6 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00001d8c                _ZN7TwoWire11requestFromEii
+                0x00002778        0x6 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00002778                _ZN7TwoWire11requestFromEii
  .text._ZN7TwoWire15endTransmissionEv
-                0x00001d92        0x6 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00001d92                _ZN7TwoWire15endTransmissionEv
+                0x0000277e        0x6 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x0000277e                _ZN7TwoWire15endTransmissionEv
  .text.startup._GLOBAL__sub_I__ZN7TwoWire8rxBufferE
-                0x00001d98        0x8 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
- .text.__empty  0x00001da0        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
-                0x00001da0                yield
+                0x00002784        0x8 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .text.__empty  0x0000278c        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+                0x0000278c                yield
  .text.twi_init
-                0x00001da2       0x3c D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
-                0x00001da2                twi_init
+                0x0000278e       0x3c D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x0000278e                twi_init
  .text.twi_readFrom
-                0x00001dde       0x90 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
-                0x00001dde                twi_readFrom
+                0x000027ca       0x90 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x000027ca                twi_readFrom
  .text.twi_writeTo
-                0x00001e6e       0xac D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
-                0x00001e6e                twi_writeTo
+                0x0000285a       0xac D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x0000285a                twi_writeTo
  .text.twi_transmit
-                0x00001f1a       0x50 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
-                0x00001f1a                twi_transmit
+                0x00002906       0x50 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x00002906                twi_transmit
  .text.twi_stop
-                0x00001f6a       0x14 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
-                0x00001f6a                twi_stop
+                0x00002956       0x14 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x00002956                twi_stop
  .text.twi_releaseBus
-                0x00001f7e        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
-                0x00001f7e                twi_releaseBus
+                0x0000296a        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x0000296a                twi_releaseBus
  .text.__vector_24
-                0x00001f8a      0x25a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
-                0x00001f8a                __vector_24
+                0x00002976      0x25a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x00002976                __vector_24
  .text.libgcc.div
-                0x000021e4       0x28 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
-                0x000021e4                _div
-                0x000021e4                __divmodhi4
+                0x00002bd0       0x18 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodqi4.o)
+                0x00002bd0                __udivmodqi4
  .text.libgcc.div
-                0x0000220c       0x44 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
-                0x0000220c                __udivmodsi4
- .text.libgcc.mul
-                0x00002250       0x1e d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
-                0x00002250                __umulhisi3
- .text.libgcc.mul
-                0x0000226e       0x16 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
-                0x0000226e                __muluhisi3
- .text.libgcc.mul
-                0x00002284       0x10 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulshisi3.o)
-                0x00002284                __mulshisi3
-                0x0000228a                __mulohisi3
+                0x00002be8       0x28 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                0x00002be8                _div
+                0x00002be8                __divmodhi4
  .text.libgcc.div
-                0x00002294       0x28 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
-                0x00002294                __udivmodhi4
- .text.libgcc   0x000022bc        0xc d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
-                0x000022bc                __tablejump2__
+                0x00002c10       0x44 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00002c10                __udivmodsi4
+ .text.libgcc   0x00002c54        0xc d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x00002c54                __tablejump2__
+ .text.libgcc.mul
+                0x00002c60       0x1e d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+                0x00002c60                __umulhisi3
+ .text.libgcc.mul
+                0x00002c7e       0x16 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+                0x00002c7e                __muluhisi3
+ .text.libgcc.mul
+                0x00002c94       0x10 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulshisi3.o)
+                0x00002c94                __mulshisi3
+                0x00002c9a                __mulohisi3
+ .text.libgcc.div
+                0x00002ca4       0x28 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x00002ca4                __udivmodhi4
  .text.avr-libc
-                0x000022c8       0x10 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
-                0x000022c8                eeprom_read_byte
-                0x000022d8                . = ALIGN (0x2)
+                0x00002ccc       0x10 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+                0x00002ccc                eeprom_read_byte
+ .text.avr-libc
+                0x00002cdc       0x1c D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+                0x00002cdc                eeprom_write_byte
+                0x00002cde                eeprom_write_r18
+                0x00002cf8                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000022d8        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x000022d8                _exit
-                0x000022d8                exit
+ .fini9         0x00002cf8        0x0 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00002cf8                _exit
+                0x00002cf8                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -1346,11 +1344,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000022d8        0x4 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00002cf8        0x4 d:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x000022dc                _etext = .
+                0x00002cfc                _etext = .
 
-.data           0x00800100       0x86 load address 0x000022dc
+.data           0x00800100       0xca load address 0x00002cfc
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -1358,140 +1356,143 @@ END GROUP
                 0x00800100        0x1 Main.o
                 0x00800100                alarm2_addr
  .data.intFunc  0x00800101        0x4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .data.analog_reference
+                0x00800105        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
+                0x00800105                analog_reference
  *(.rodata)
  *(.rodata*)
  .rodata.str1.1
-                0x00800105       0x35 Main.o
-                                 0x38 (size before relaxing)
+                0x00800106       0x78 Main.o
+                                 0x7b (size before relaxing)
  .rodata._ZTV14HardwareSerial
-                0x0080013a       0x12 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x0080013a                _ZTV14HardwareSerial
+                0x0080017e       0x12 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0080017e                _ZTV14HardwareSerial
  .rodata.str1.1
-                0x0080014c        0xf D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00800190        0xf D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
  .rodata._ZTV13LiquidCrystal
-                0x0080015b        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
-                0x0080015b                _ZTV13LiquidCrystal
+                0x0080019f        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x0080019f                _ZTV13LiquidCrystal
  .rodata._ZL9monthDays
-                0x00800167        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x008001ab        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
  .rodata._ZTV7TwoWire
-                0x00800173       0x12 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00800173                _ZTV7TwoWire
+                0x008001b7       0x12 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x008001b7                _ZTV7TwoWire
  *(.gnu.linkonce.d*)
-                0x00800186                . = ALIGN (0x2)
- *fill*         0x00800185        0x1 
-                0x00800186                _edata = .
-                0x00800186                PROVIDE (__data_end, .)
+                0x008001ca                . = ALIGN (0x2)
+ *fill*         0x008001c9        0x1 
+                0x008001ca                _edata = .
+                0x008001ca                PROVIDE (__data_end, .)
 
-.bss            0x00800186      0x1aa
-                0x00800186                PROVIDE (__bss_start, .)
+.bss            0x008001ca      0x1b1
+                0x008001ca                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.lcd       0x00800186       0x18 Main.o
-                0x00800186                lcd
+ .bss.lcd       0x008001ca       0x18 Main.o
+                0x008001ca                lcd
  .bss.relayArray
-                0x0080019e        0x1 Main.o
-                0x0080019e                relayArray
+                0x008001e2        0x1 Main.o
+                0x008001e2                relayArray
  .bss.RTC_alarm
-                0x0080019f        0xe Main.o
-                0x0080019f                RTC_alarm
- .bss.HMI       0x008001ad        0x1 Main.o
-                0x008001ad                HMI
+                0x008001e3        0xe Main.o
+                0x008001e3                RTC_alarm
+ .bss.HMI       0x008001f1        0x8 Main.o
+                0x008001f1                HMI
  .bss.alarm1_addr
-                0x008001ae        0x1 Main.o
-                0x008001ae                alarm1_addr
- .bss.test      0x008001af        0x1 Main.o
-                0x008001af                test
- .bss.T1Timer   0x008001b0        0x2 Main.o
-                0x008001b0                T1Timer
+                0x008001f9        0x1 Main.o
+                0x008001f9                alarm1_addr
+ .bss.test      0x008001fa        0x1 Main.o
+                0x008001fa                test
+ .bss.T1Timer   0x008001fb        0x2 Main.o
+                0x008001fb                T1Timer
  .bss.alarmIsrWasCalled
-                0x008001b2        0x1 Main.o
-                0x008001b2                alarmIsrWasCalled
- .bss.Serial    0x008001b3       0x9d D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x008001b3                Serial
+                0x008001fd        0x1 Main.o
+                0x008001fd                alarmIsrWasCalled
+ .bss.Serial    0x008001fe       0x9d D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x008001fe                Serial
  .bss.timer0_fract
-                0x00800250        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x0080029b        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
  .bss.timer0_millis
-                0x00800251        0x4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x00800251                timer0_millis
+                0x0080029c        0x4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x0080029c                timer0_millis
  .bss.timer0_overflow_count
-                0x00800255        0x4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x00800255                timer0_overflow_count
- .bss.RTC       0x00800259        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
-                0x00800259                RTC
+                0x008002a0        0x4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x008002a0                timer0_overflow_count
+ .bss.RTC       0x008002a4        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x008002a4                RTC
  .bss._ZN9DS3232RTC7errCodeE
-                0x0080025a        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
-                0x0080025a                _ZN9DS3232RTC7errCodeE
+                0x008002a5        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x008002a5                _ZN9DS3232RTC7errCodeE
  .bss._ZL6buffer
-                0x0080025b        0xa D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+                0x008002a6        0xa D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
  .bss._ZL9cacheTime
-                0x00800265        0x4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
- .bss._ZL2tm    0x00800269        0x7 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
- .bss.Wire      0x00800270        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x00800270                Wire
+                0x008002b0        0x4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .bss._ZL2tm    0x008002b4        0x7 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .bss.Wire      0x008002bb        0xc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x008002bb                Wire
  .bss._ZN7TwoWire12transmittingE
-                0x0080027c        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x0080027c                _ZN7TwoWire12transmittingE
+                0x008002c7        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x008002c7                _ZN7TwoWire12transmittingE
  .bss._ZN7TwoWire14txBufferLengthE
-                0x0080027d        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x0080027d                _ZN7TwoWire14txBufferLengthE
+                0x008002c8        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x008002c8                _ZN7TwoWire14txBufferLengthE
  .bss._ZN7TwoWire13txBufferIndexE
-                0x0080027e        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x0080027e                _ZN7TwoWire13txBufferIndexE
+                0x008002c9        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x008002c9                _ZN7TwoWire13txBufferIndexE
  .bss._ZN7TwoWire8txBufferE
-                0x0080027f       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x0080027f                _ZN7TwoWire8txBufferE
+                0x008002ca       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x008002ca                _ZN7TwoWire8txBufferE
  .bss._ZN7TwoWire9txAddressE
-                0x0080029f        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x0080029f                _ZN7TwoWire9txAddressE
+                0x008002ea        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x008002ea                _ZN7TwoWire9txAddressE
  .bss._ZN7TwoWire14rxBufferLengthE
-                0x008002a0        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x008002a0                _ZN7TwoWire14rxBufferLengthE
+                0x008002eb        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x008002eb                _ZN7TwoWire14rxBufferLengthE
  .bss._ZN7TwoWire13rxBufferIndexE
-                0x008002a1        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x008002a1                _ZN7TwoWire13rxBufferIndexE
+                0x008002ec        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x008002ec                _ZN7TwoWire13rxBufferIndexE
  .bss._ZN7TwoWire8rxBufferE
-                0x008002a2       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
-                0x008002a2                _ZN7TwoWire8rxBufferE
+                0x008002ed       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x008002ed                _ZN7TwoWire8rxBufferE
  .bss.twi_error
-                0x008002c2        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x0080030d        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
  .bss.twi_rxBufferIndex
-                0x008002c3        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x0080030e        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
  .bss.twi_rxBuffer
-                0x008002c4       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x0080030f       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
  .bss.twi_txBufferLength
-                0x008002e4        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
- .bss.twi_txBufferIndex
-                0x008002e5        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
- .bss.twi_txBuffer
-                0x008002e6       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
- .bss.twi_masterBufferLength
-                0x00800306        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
- .bss.twi_masterBufferIndex
-                0x00800307        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
- .bss.twi_masterBuffer
-                0x00800308       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
- .bss.twi_onSlaveReceive
-                0x00800328        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
- .bss.twi_onSlaveTransmit
-                0x0080032a        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
- .bss.twi_inRepStart
-                0x0080032c        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
- .bss.twi_sendStop
-                0x0080032d        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
- .bss.twi_slarw
-                0x0080032e        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
- .bss.twi_state
                 0x0080032f        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_txBufferIndex
+                0x00800330        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_txBuffer
+                0x00800331       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_masterBufferLength
+                0x00800351        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_masterBufferIndex
+                0x00800352        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_masterBuffer
+                0x00800353       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_onSlaveReceive
+                0x00800373        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_onSlaveTransmit
+                0x00800375        0x2 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_inRepStart
+                0x00800377        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_sendStop
+                0x00800378        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_slarw
+                0x00800379        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .bss.twi_state
+                0x0080037a        0x1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
  *(COMMON)
-                0x00800330                PROVIDE (__bss_end, .)
-                0x000022dc                __data_load_start = LOADADDR (.data)
-                0x00002362                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0080037b                PROVIDE (__bss_end, .)
+                0x00002cfc                __data_load_start = LOADADDR (.data)
+                0x00002dc6                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800330        0x0
+.noinit         0x0080037b        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800330                _end = .
+                0x0080037b                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -1540,6 +1541,7 @@ END GROUP
  .comment       0x00000030       0x31 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
  .comment       0x00000030       0x31 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
  .comment       0x00000030       0x31 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .comment       0x00000030       0x31 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
  .comment       0x00000030       0x31 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
  .comment       0x00000030       0x31 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
  .comment       0x00000030       0x31 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
@@ -1569,7 +1571,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x7e8
+.debug_aranges  0x00000000      0x838
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0xc0 Main.o
@@ -1584,148 +1586,162 @@ END GROUP
  .debug_aranges
                 0x000002b0       0x48 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
  .debug_aranges
-                0x000002f8       0x38 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000002f8       0x30 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
  .debug_aranges
-                0x00000330       0xb0 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+                0x00000328       0x38 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
  .debug_aranges
-                0x000003e0      0x110 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x00000360       0xb0 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
  .debug_aranges
-                0x000004f0       0x38 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+                0x00000410      0x110 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
  .debug_aranges
-                0x00000528      0x108 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+                0x00000520       0x38 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
  .debug_aranges
-                0x00000630       0xf8 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+                0x00000558      0x108 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
  .debug_aranges
-                0x00000728       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+                0x00000660       0xf8 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
  .debug_aranges
-                0x00000748       0x80 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+                0x00000758       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
  .debug_aranges
-                0x000007c8       0x20 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+                0x00000778       0x80 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .debug_aranges
+                0x000007f8       0x20 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_aranges
+                0x00000818       0x20 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x10667
+.debug_info     0x00000000    0x11698
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_info    0x000005f4     0x22ab Main.o
- .debug_info    0x0000289f     0x1e89 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_info    0x00004728     0x1b16 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_info    0x0000623e     0x28ff D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_info    0x00008b3d      0x21c D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
- .debug_info    0x00008d59      0x2cb D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_info    0x00009024      0x5fe D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_info    0x00009622     0x13b9 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
- .debug_info    0x0000a9db     0x1bdd D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
- .debug_info    0x0000c5b8      0x582 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
- .debug_info    0x0000cb3a      0xc8b D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
- .debug_info    0x0000d7c5     0x27b4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
- .debug_info    0x0000ff79       0x3e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
- .debug_info    0x0000ffb7      0x604 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
- .debug_info    0x000105bb       0xac D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_info    0x000005f4     0x2fc3 Main.o
+ .debug_info    0x000035b7     0x1e89 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_info    0x00005440     0x1b16 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_info    0x00006f56     0x28ff D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_info    0x00009855      0x21c D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .debug_info    0x00009a71      0x2cb D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_info    0x00009d3c      0x26d D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_info    0x00009fa9      0x5fe D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_info    0x0000a5a7     0x13b9 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .debug_info    0x0000b960     0x1bdd D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .debug_info    0x0000d53d      0x582 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .debug_info    0x0000dabf      0xc8b D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .debug_info    0x0000e74a     0x27b4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .debug_info    0x00010efe       0x3e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_info    0x00010f3c      0x604 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .debug_info    0x00011540       0xac D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_info    0x000115ec       0xac D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
 
-.debug_abbrev   0x00000000     0x3058
+.debug_abbrev   0x00000000     0x322c
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x5a2 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_abbrev  0x000005a2      0x5c0 Main.o
- .debug_abbrev  0x00000b62      0x432 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_abbrev  0x00000f94      0x3ce D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_abbrev  0x00001362      0x47a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_abbrev  0x000017dc       0xfc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
- .debug_abbrev  0x000018d8      0x146 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_abbrev  0x00001a1e      0x15b D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_abbrev  0x00001b79      0x4de D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
- .debug_abbrev  0x00002057      0x365 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
- .debug_abbrev  0x000023bc      0x107 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
- .debug_abbrev  0x000024c3      0x376 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
- .debug_abbrev  0x00002839      0x581 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
- .debug_abbrev  0x00002dba       0x2a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
- .debug_abbrev  0x00002de4      0x260 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
- .debug_abbrev  0x00003044       0x14 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_abbrev  0x000005a2      0x615 Main.o
+ .debug_abbrev  0x00000bb7      0x432 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_abbrev  0x00000fe9      0x3ce D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_abbrev  0x000013b7      0x47a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_abbrev  0x00001831       0xfc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .debug_abbrev  0x0000192d      0x146 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_abbrev  0x00001a73      0x16b D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_abbrev  0x00001bde      0x15b D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_abbrev  0x00001d39      0x4de D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .debug_abbrev  0x00002217      0x365 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .debug_abbrev  0x0000257c      0x107 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .debug_abbrev  0x00002683      0x376 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .debug_abbrev  0x000029f9      0x581 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .debug_abbrev  0x00002f7a       0x2a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_abbrev  0x00002fa4      0x260 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .debug_abbrev  0x00003204       0x14 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_abbrev  0x00003218       0x14 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
 
-.debug_line     0x00000000     0x43ea
+.debug_line     0x00000000     0x49e7
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x133 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_line    0x00000133      0xa4a Main.o
- .debug_line    0x00000b7d      0x43b D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_line    0x00000fb8      0x2a1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_line    0x00001259      0x69a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_line    0x000018f3      0x1b5 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
- .debug_line    0x00001aa8      0x2ae D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_line    0x00001d56      0x267 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_line    0x00001fbd      0x61d D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
- .debug_line    0x000025da      0x93d D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
- .debug_line    0x00002f17      0x1c9 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
- .debug_line    0x000030e0      0x759 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
- .debug_line    0x00003839      0x5ec D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
- .debug_line    0x00003e25       0x41 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
- .debug_line    0x00003e66      0x50a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
- .debug_line    0x00004370       0x7a D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_line    0x00000133      0xd85 Main.o
+ .debug_line    0x00000eb8      0x43b D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_line    0x000012f3      0x2a1 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_line    0x00001594      0x69a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_line    0x00001c2e      0x1b5 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .debug_line    0x00001de3      0x2ae D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_line    0x00002091      0x224 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_line    0x000022b5      0x267 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_line    0x0000251c      0x61d D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .debug_line    0x00002b39      0x93d D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .debug_line    0x00003476      0x1c9 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .debug_line    0x0000363f      0x759 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .debug_line    0x00003d98      0x5ec D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .debug_line    0x00004384       0x41 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_line    0x000043c5      0x50a D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .debug_line    0x000048cf       0x7a D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_line    0x00004949       0x9e D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
 
-.debug_frame    0x00000000     0x1798
+.debug_frame    0x00000000     0x1838
  *(.debug_frame)
- .debug_frame   0x00000000      0x2d8 Main.o
- .debug_frame   0x000002d8      0x110 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_frame   0x000003e8       0xe0 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_frame   0x000004c8      0x3ac D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_frame   0x00000874       0xf4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
- .debug_frame   0x00000968       0xc4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_frame   0x00000a2c       0x7c D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_frame   0x00000aa8      0x278 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
- .debug_frame   0x00000d20      0x354 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
- .debug_frame   0x00001074       0x54 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
- .debug_frame   0x000010c8      0x2f4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
- .debug_frame   0x000013bc      0x284 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
- .debug_frame   0x00001640       0x24 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
- .debug_frame   0x00001664      0x134 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .debug_frame   0x00000000      0x324 Main.o
+ .debug_frame   0x00000324      0x110 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_frame   0x00000434       0xe0 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_frame   0x00000514      0x3ac D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_frame   0x000008c0       0xf4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .debug_frame   0x000009b4       0xc4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_frame   0x00000a78       0x54 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_frame   0x00000acc       0x7c D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_frame   0x00000b48      0x278 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .debug_frame   0x00000dc0      0x354 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .debug_frame   0x00001114       0x54 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .debug_frame   0x00001168      0x2f4 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .debug_frame   0x0000145c      0x284 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .debug_frame   0x000016e0       0x24 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_frame   0x00001704      0x134 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
 
-.debug_str      0x00000000     0x3bb2
+.debug_str      0x00000000     0x3c00
  *(.debug_str)
  .debug_str     0x00000000      0x208 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_str     0x00000208      0xdbf Main.o
-                                0xe9a (size before relaxing)
- .debug_str     0x00000fc7     0x1301 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_str     0x00000208      0xde9 Main.o
+                                0xec9 (size before relaxing)
+ .debug_str     0x00000ff1     0x1301 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
                                0x15fc (size before relaxing)
- .debug_str     0x000022c8       0x86 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_str     0x000022f2       0x86 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
                                0x1418 (size before relaxing)
- .debug_str     0x0000234e      0x379 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_str     0x00002378      0x379 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
                                0x1252 (size before relaxing)
- .debug_str     0x000026c7      0x146 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .debug_str     0x000026f1      0x146 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
                                 0x247 (size before relaxing)
- .debug_str     0x0000280d       0x88 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_str     0x00002837       0x88 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
                                 0x25a (size before relaxing)
- .debug_str     0x00002895       0xd7 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_str     0x000028bf       0x7c D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
+                                0x25e (size before relaxing)
+ .debug_str     0x0000293b       0xa9 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
                                 0x2bf (size before relaxing)
- .debug_str     0x0000296c      0x23f D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .debug_str     0x000029e4      0x23f D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
                                 0x979 (size before relaxing)
- .debug_str     0x00002bab      0x5e3 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .debug_str     0x00002c23      0x5b9 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
                                 0x959 (size before relaxing)
- .debug_str     0x0000318e      0x173 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .debug_str     0x000031dc      0x173 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
                                 0x3a7 (size before relaxing)
- .debug_str     0x00003301      0x278 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .debug_str     0x0000334f      0x278 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
                                 0x5f5 (size before relaxing)
- .debug_str     0x00003579      0x4cc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .debug_str     0x000035c7      0x4cc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
                                0x18d1 (size before relaxing)
- .debug_str     0x00003a45       0x1c D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_str     0x00003a93       0x1c D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
                                 0x14f (size before relaxing)
- .debug_str     0x00003a61      0x151 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .debug_str     0x00003aaf      0x151 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
                                 0x3da (size before relaxing)
 
-.debug_loc      0x00000000     0x82a9
+.debug_loc      0x00000000     0x86a0
  *(.debug_loc)
- .debug_loc     0x00000000      0xe45 Main.o
- .debug_loc     0x00000e45      0x482 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_loc     0x000012c7      0x1b0 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_loc     0x00001477     0x1c87 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_loc     0x000030fe      0x235 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
- .debug_loc     0x00003333      0x28d D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_loc     0x000035c0      0x5fc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_loc     0x00003bbc      0xf46 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
- .debug_loc     0x00004b02     0x1a6e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
- .debug_loc     0x00006570      0x223 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
- .debug_loc     0x00006793      0xb33 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
- .debug_loc     0x000072c6      0xbfd D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
- .debug_loc     0x00007ec3      0x3e6 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .debug_loc     0x00000000     0x113e Main.o
+ .debug_loc     0x0000113e      0x482 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_loc     0x000015c0      0x1b0 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_loc     0x00001770     0x1c87 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_loc     0x000033f7      0x235 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
+ .debug_loc     0x0000362c      0x28d D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_loc     0x000038b9       0xfe D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_loc     0x000039b7      0x5fc D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_loc     0x00003fb3      0xf46 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .debug_loc     0x00004ef9     0x1a6e D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .debug_loc     0x00006967      0x223 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .debug_loc     0x00006b8a      0xb33 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .debug_loc     0x000076bd      0xbfd D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .debug_loc     0x000082ba      0x3e6 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1745,7 +1761,7 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x7c0
+.debug_ranges   0x00000000      0x7e0
  *(.debug_ranges)
  .debug_ranges  0x00000000       0xc8 Main.o
  .debug_ranges  0x000000c8       0x58 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
@@ -1753,14 +1769,15 @@ END GROUP
  .debug_ranges  0x00000158      0x120 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
  .debug_ranges  0x00000278       0x30 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(WInterrupts.o)
  .debug_ranges  0x000002a8       0x38 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_ranges  0x000002e0       0x28 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_ranges  0x00000308       0xa0 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
- .debug_ranges  0x000003a8      0x178 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
- .debug_ranges  0x00000520       0x40 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
- .debug_ranges  0x00000560       0xf8 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
- .debug_ranges  0x00000658       0xe8 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
- .debug_ranges  0x00000740       0x10 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
- .debug_ranges  0x00000750       0x70 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
+ .debug_ranges  0x000002e0       0x20 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_ranges  0x00000300       0x28 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_ranges  0x00000328       0xa0 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DS3232RTC.o)
+ .debug_ranges  0x000003c8      0x178 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .debug_ranges  0x00000540       0x40 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(DateStrings.o)
+ .debug_ranges  0x00000580       0xf8 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Time.o)
+ .debug_ranges  0x00000678       0xe8 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(Wire.o)
+ .debug_ranges  0x00000760       0x10 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_ranges  0x00000770       0x70 D:\Users\death\DOCUME~1\GitHub\PROJEC~1\C__&AR~1\PCD\PCD\ARDUIN~1\Debug\libArduinoCore.a(twi.o)
 
 .debug_macro
  *(.debug_macro)

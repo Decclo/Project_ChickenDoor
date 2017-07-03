@@ -120,8 +120,6 @@ Materials List:
   */
 LiquidCrystal lcd(13, 12, 8, 9, 10, 11);
 
-//extern volatile uint8_t test;
-
 
 int main(void)
 {
@@ -130,7 +128,6 @@ int main(void)
 	lcd.begin(16, 2);			// Start LCD.
 	RTC_alarm.init_alarms();	// Start the alarms.
 	relayArray.relayArrayInit();
-
 	
 	// Local Variables:
 	uint8_t alarm_stat = 0;
@@ -140,33 +137,29 @@ int main(void)
 	Serial << "Current time is: ";
 	HMI.printDateTime(RTC.get());
 	Serial << endl;
-	lcd << "Test";
-	
+
 	tmElements_t tidtemp = HMI.ConvTotm(RTC.get());
 	HMI.printDateTime(tidtemp);
 	
 	while (1)
 	{
-		lcd.clear();
-		lcd << test;
-
 		RTC_alarm.alarm_Check(&alarm_stat);	// get the alarm status.
 		
 		switch(alarm_stat)					// switch statement to decide what should happen if alarm has happened.
 		{
 			case 1:							// alarm1:
 				HMI.printDateTime( RTC.get() );
-				lcd.clear();
-				lcd << " --> Alarm 1!";
 				Serial << " --> Alarm 1!" << endl;
+//  				lcd.clear();
+//  				lcd << " --> Alarm 1!";
 				relayArray.relayArrayCommand(liftCW);
 			break;
 			
 			case 2:							// alarm1:
 				HMI.printDateTime( RTC.get() );
-				lcd.clear();
-				lcd << " --> Alarm 2!";
 				Serial << " --> Alarm 2!" << endl;
+//  				lcd.clear();
+//  				lcd << " --> Alarm 2!";
 				relayArray.relayArrayCommand(liftCCW);
 			break;
 				
@@ -174,6 +167,7 @@ int main(void)
 				
 			break;
 		}
+		HMI.UIupdate();
 		delay(100);	// small delay
 	}
 }
