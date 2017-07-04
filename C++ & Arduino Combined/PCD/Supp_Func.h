@@ -53,12 +53,12 @@ Version: 1.0
 
 // Define Buttons for LCD
 #define btnPIN		A0
+#define btnRESET	0
 #define btnSELECT	1
-#define btnRESET	2
-#define btnRIGHT	3
-#define btnUP		4
-#define btnDOWN		5
-#define btnLEFT		6
+#define btnRIGHT	2
+#define btnUP		3
+#define btnDOWN		4
+#define btnLEFT		5
 
 // Declare external global lcd
 extern LiquidCrystal lcd;
@@ -76,9 +76,14 @@ extern LiquidCrystal lcd;
 
 extern LiquidCrystal lcd;
 
-volatile boolean alarmIsrWasCalled = false;	// Variable to check if the interrupt has happened.
-volatile uint16_t T1Timer = 0;
-volatile uint8_t test = 0;
+volatile boolean	alarmIsrWasCalled = false;	// Variable to check if the interrupt has happened.
+volatile uint8_t	buttonstat = 0;	// variable for testing button state every 1 ms.
+volatile uint16_t	UIdelay = 0;
+volatile boolean	UIdelayStat = 0;
+
+// debugging
+// volatile uint16_t T1Timer = 0;
+// volatile uint8_t test = 0;
 
 // addresses of the alarms on the EEPROM
 uint8_t alarm1_addr = 0;
@@ -362,7 +367,18 @@ uint8_t Human_Machine_Interface::read_LCD_buttons(void)
 
 void Human_Machine_Interface::UIupdate(void)
 {
-	uint8_t userState = HMI.read_LCD_buttons();	// insert user input here.
+ 	uint8_t userState = 0;
+// 	UIdelayStat = 1;
+// 	if (UIdelay >= 500)
+// 	{
+// 		UIdelay = 0;
+// 		UIdelayStat = 0;
+// 
+// 		userState = buttonstat;	// insert user input here.
+// 		buttonstat = 0;
+// 	}
+
+	userState = HMI.read_LCD_buttons();
 
 	switch (UIstate)
 	{
@@ -430,27 +446,36 @@ void Human_Machine_Interface::UIupdate(void)
 				case btnUP:
 				/* Your code here */ //Add 10 to variable hours
 				//If variable hours is 23< then subtract 20
-				if (tid.Hour >= 24)
+				if ((0 <= tid.Hour) & (tid.Hour < 14))
 				{
-					tid.Hour =- 20;
+					tid.Hour += 10;
 				} 
+				else if((14 <= tid.Hour) & (tid.Hour < 20))
+				{
+					tid.Hour -= 10;
+				}
 				else
 				{
-					tid.Hour =+ 10;
+					tid.Hour -= 20;
 				}
 				
 				break;
 				case btnDOWN:
 				/* Your code here */ //subtract 10 to variable hours
 				// If variable hours is <0 then add 20
-				if (tid.Hour <= 0)
+				if ((0 <= tid.Hour) & (tid.Hour < 4))
 				{
-					tid.Hour =+ 20;
+					tid.Hour += 20;
+				}
+				else if((4 <= tid.Hour) & (tid.Hour < 10))
+				{
+					tid.Hour += 10;
 				}
 				else
 				{
-					tid.Hour =- 10;
+					tid.Hour -= 10;
 				}
+				
 
 				break;
 				case btnLEFT:
@@ -489,26 +514,34 @@ void Human_Machine_Interface::UIupdate(void)
 				case btnUP:
 				/* Your code here */ //Add 1 to variable hours
 				//If variable hours is 23< then subtract 3
-				if (tid.Hour >= 24)
+				if ((9 == tid.Hour) | (19 == tid.Hour))
 				{
-					tid.Hour =- 3;
+					tid.Hour -= 9;
+				}
+				else if(23 == tid.Hour)
+				{
+					tid.Hour -= 3;
 				}
 				else
 				{
-					tid.Hour =+ 1;
+					tid.Hour += 1;
 				}
 
 				break;
 				case btnDOWN:
 				/* Your code here */ //subtract 1 to variable hours
 				// If variable hours is <0 then add 9
-				if (tid.Hour <= 0)
+				if ((0 == tid.Hour) | (10 == tid.Hour))
 				{
-					tid.Hour =+ 9;
+					tid.Hour += 9;
+				}
+				else if(20 == tid.Hour)
+				{
+					tid.Hour += 3;
 				}
 				else
 				{
-					tid.Hour =- 1;
+					tid.Hour -= 1;
 				}
 
 				break;
@@ -649,7 +682,7 @@ void Human_Machine_Interface::UIupdate(void)
 			// Show Alarm1
 			lcd.clear();
 			lcd.setCursor(0,0);
-			lcd << "Doeren aabner";
+			lcd << "Doeren aabner:";
 			lcd.setCursor(0,1);
 			
 
@@ -860,6 +893,15 @@ void Human_Machine_Interface::UIupdate(void)
 		break;
 		case 20:
 			// Show Alarm2
+			lcd.clear();
+			lcd.setCursor(0,0);
+			lcd << "Doeren Lukker:";
+			lcd.setCursor(0,1);
+			
+
+			tid = HMI.ConvTotm(RTC_alarm.alarm2_get());
+			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+
 			switch (userState)
 			{
 				case btnSELECT:
@@ -876,9 +918,13 @@ void Human_Machine_Interface::UIupdate(void)
 				break;
 				case btnLEFT:
 				/* Your code here */ //Go to UIstate 10, we go to Alarm1
+				UIstate = 10;
+
 				break;
 				case btnRIGHT:
 				/* Your code here */ //Go to UIstate 0, we go to Time
+				UIstate = 0;
+
 				break;
 				default:
 				/* Your code here */
@@ -1168,17 +1214,29 @@ void liftRelayArray::relayArrayCommand(uint8_t cmd)
 
 ISR(TIMER1_COMPA_vect)          // timer compare interrupt service routine
 {
-	if (T1Timer >= 500)
-	{
-		test++;
-		T1Timer = 0;
+// 	if (T1Timer >= 500)
+// 	{
+// 		test++;
+// 		T1Timer = 0;
+// 
+// 		Serial << "Test is: " << test << endl;
+// 	}
+// 	else
+// 	{
+// 		T1Timer++;
+// 	}
 
-		Serial << "Test is: " << test << endl;
-	}
-	else
+	// HMI interface timers:
+	if (HMI.read_LCD_buttons() & (buttonstat == 0))
 	{
-		T1Timer++;
+		buttonstat = HMI.read_LCD_buttons();
 	}
+
+	if (UIdelayStat == 1)
+	{
+		UIdelay++;
+	}
+	
 }
 
 #endif
