@@ -144,30 +144,29 @@ int main(void)
 	while (1)
 	{
 		RTC_alarm.alarm_Check(&alarm_stat);	// get the alarm status.
-		
 		switch(alarm_stat)					// switch statement to decide what should happen if alarm has happened.
 		{
 			case 1:							// alarm1:
 				HMI.printDateTime( RTC.get() );
 				Serial << " --> Alarm 1!" << endl;
-//  				lcd.clear();
-//  				lcd << " --> Alarm 1!";
-				relayArray.relayArrayCommand(liftCW);
+				
+				relayArray.relayAutoCommand(1, 0);
 			break;
 			
 			case 2:							// alarm1:
 				HMI.printDateTime( RTC.get() );
 				Serial << " --> Alarm 2!" << endl;
-//  				lcd.clear();
-//  				lcd << " --> Alarm 2!";
-				relayArray.relayArrayCommand(liftCCW);
+				
+				relayArray.relayAutoCommand(0, 1);
 			break;
 				
 			default:						// if there was no alarm:
 				
 			break;
 		}
+		
 		HMI.UIupdate();
+		
 		delay(100);	// small delay
 	}
 }
