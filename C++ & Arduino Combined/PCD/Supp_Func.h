@@ -21,6 +21,7 @@ Version: 1.1
 	- LCD functionality
 	- UI functionality (Work In Progress)
 	- Added timer1 to make interrupt ever 1 ms
+		- Added counter for relayArray to make relays turn off after x seconds
 	
 	Changed:
 	
@@ -69,20 +70,33 @@ extern LiquidCrystal lcd;
 #define liftCCW		2
 
 // define pins of Relay Array
-#define ARControl1	DDD4
-#define ARControl2	DDD5
-#define ARControl3	DDD6
-#define ARControl4	DDD7
+#define RAControl1	DDD4
+#define RAControl2	DDD5
+#define RAControl3	DDD6
+#define RAControl4	DDD7
+
+// Define time for Relay Array to stop lift again (ms)
+#define RAHold		10000
 
 extern LiquidCrystal lcd;
 
+
+// Global variables:
+
 volatile boolean alarmIsrWasCalled = false;	// Variable to check if the interrupt has happened.
+
+// relayArray:
+volatile uint16_t RACounter1 = 0;
+volatile boolean RACounter1Status = 0;
+
+// Debugging:
 volatile uint16_t T1Timer = 0;
 volatile uint8_t test = 0;
 
 // addresses of the alarms on the EEPROM
 uint8_t alarm1_addr = 0;
 uint8_t alarm2_addr = 7;
+
 
 // Functions:
 
@@ -91,23 +105,6 @@ void alarmIsr()	// INT0 triggered function.
 	alarmIsrWasCalled = true;
 }
 
-/*
-ISR(TIMER1_OVF_vect)
-{
-	TCNT1 = 63535;            // preload timer
-
-	if (T1Timer >= 500)
-	{
-		test++;
-		T1Timer = 0;
-	}
-	else
-	{
-		T1Timer++;
-	}
-}
-
-*/
 
 // Classes
 
@@ -276,6 +273,7 @@ private:
 	} alarm2_time;
 };
 
+
 class liftRelayArray
 {
 public:
@@ -291,6 +289,8 @@ public:
 	 * \return void
 	 */
 	void relayArrayCommand(uint8_t cmd);
+	
+	void relayAutoCommand(boolean alarm1trig, boolean alarm2trig);
 	
 protected:
 private:
@@ -1121,8 +1121,8 @@ liftRelayArray::liftRelayArray()
 void liftRelayArray::relayArrayInit(void)
 {
 	// Initialize Buttons
-	DDRD |= (1 << ARControl1) | (1 << ARControl2) | (1 << ARControl3) | (1 << ARControl4);		// Marks pins as output.
-	PORTD &= ~(1 << ARControl1) & ~(1 << ARControl2) & ~(1 << ARControl3) & ~(1 << ARControl4);	// Puts pins into off state.
+	DDRD |= (1 << RAControl1) | (1 << RAControl2) | (1 << RAControl3) | (1 << RAControl4);		// Marks pins as output.
+	PORTD &= ~(1 << RAControl1) & ~(1 << RAControl2) & ~(1 << RAControl3) & ~(1 << RAControl4);	// Puts pins into off state.
 
 	/*
 	Use ports:
@@ -1148,20 +1148,46 @@ void liftRelayArray::relayArrayCommand(uint8_t cmd)
 	switch (cmd)
 	{
 		case liftCW:
-			PORTD |= (1 << ARControl1);
-			PORTD &= ~(1 << ARControl2);
-			PORTD |= (1 << ARControl3);
+			PORTD |= (1 << RAControl1);
+			PORTD &= ~(1 << RAControl2);
+			PORTD |= (1 << RAControl3);
 		break;
 		case liftCCW:
-			PORTD |= (1 << ARControl1);
-			PORTD |= (1 << ARControl2);
-			PORTD |= (1 << ARControl3);
+			PORTD |= (1 << RAControl1);
+			PORTD |= (1 << RAControl2);
+			PORTD |= (1 << RAControl3);
 		break;
 		default:	// default, aka. liftSTOP
-			PORTD &= ~(1 << ARControl1);
-			PORTD &= ~(1 << ARControl2);
-			PORTD &= ~(1 << ARControl3);
+			PORTD &= ~(1 << RAControl1);
+			PORTD &= ~(1 << RAControl2);
+			PORTD &= ~(1 << RAControl3);
 		break;
+	}
+}
+
+void liftRelayArray::relayAutoCommand(boolean alarm1trig, boolean alarm2trig)
+{
+	if (alarm1trig == 1)		// if alarm 1 was triggered:
+	{
+		// change direction if necessary
+		relayArrayCommand(liftCW);
+		RACounter1 = 0;			// Reset RACounter1.
+		RACounter1Status = 1;	// start timer and stop after x seconds (see defines)
+	} 
+	else if (alarm2trig == 1)	// if alarm 2 was triggered:
+	{
+		// change direction if necessary
+		relayArrayCommand(liftCCW);
+		RACounter1 = 0;			// Reset RACounter1.
+		RACounter1Status = 1;	// start timer and stop after x seconds (see defines)
+	}
+	else						// if none of the alarms were triggered:
+	{
+		if (RACounter1 >= RAHold)
+		{
+			relayArrayCommand(liftSTOP);
+			RACounter1Status = 0;
+		}
 	}
 }
 
@@ -1178,6 +1204,12 @@ ISR(TIMER1_COMPA_vect)          // timer compare interrupt service routine
 	else
 	{
 		T1Timer++;
+	}
+	
+	// RelayArray:
+	if (RACounter1Status == 1)
+	{
+		RACounter1++;
 	}
 }
 
