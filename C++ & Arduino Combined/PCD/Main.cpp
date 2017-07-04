@@ -118,7 +118,8 @@ Materials List:
   * 10K resistor: Mounted
   * ends to +5V and ground
   */
-LiquidCrystal lcd(13, 12, 8, 9, 10, 11);
+LiquidCrystal lcd(8, 9, 4, 5, 6, 7);	//(UNO)
+//LiquidCrystal lcd(13, 12, 8, 9, 10, 11);	//(Pro Mini)
 
 
 int main(void)

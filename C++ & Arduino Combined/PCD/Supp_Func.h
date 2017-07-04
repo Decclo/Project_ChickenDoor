@@ -18,10 +18,14 @@ Version: 1.1
 	Added:
 	- UIupdate in Human_Machine_Interface
 	- EEPROM functionality
+		- Alarm1 and 2 are stored in EEPROM simultaneously with being written to the DS3231
 	- LCD functionality
 	- UI functionality (Work In Progress)
 	- Added timer1 to make interrupt ever 1 ms
 		- Added counter for relayArray to make relays turn off after x seconds
+		- Added timer for UI to make a 300ms delay as a safety against the user
+		- Added the button read function to the timer, so that the UI is more smooth. Hopefully this will not make any complications.
+	- relayArray function to control the relays
 	
 	Changed:
 	
@@ -61,8 +65,8 @@ Version: 1.0
 #define btnDOWN		4
 #define btnLEFT		5
 
-// Declare external global lcd
-extern LiquidCrystal lcd;
+// Define time to wait between buttons presses (change this time to finetune the button handling)
+#define UIbtnHold	500
 
 // Define commands for Relay Array
 #define liftSTOP	0
@@ -78,28 +82,30 @@ extern LiquidCrystal lcd;
 // Define time for Relay Array to stop lift again (ms)
 #define RAHold		10000
 
+// Declare external global lcd
 extern LiquidCrystal lcd;
 
 // Global variables:
 
-volatile boolean alarmIsrWasCalled = false;	// Variable to check if the interrupt has happened.
+volatile boolean	alarmIsrWasCalled = false;	// Variable to check if the interrupt has happened.
 
 // UI:
-volatile uint8_t	buttonstat = 0;	// variable for testing button state every 1 ms.
+volatile uint8_t	btnStat = 0;	// variable for testing button state every 1 ms.
+
 volatile uint16_t	UIdelay = 0;
 volatile boolean	UIdelayStat = 0;
 
 // relayArray:
-volatile uint16_t RACounter1 = 0;
-volatile boolean RACounter1Status = 0;
+volatile uint16_t	RACounter1 = 0;
+volatile boolean	RACounter1Status = 0;
 
 // Debugging:
-volatile uint16_t T1Timer = 0;
-volatile uint8_t test = 0;
+volatile uint16_t	T1Timer = 0;
+volatile uint8_t	test = 0;
 
-// addresses of the alarms on the EEPROM
-uint8_t alarm1_addr = 0;
-uint8_t alarm2_addr = 7;
+// addresses of the alarms on the EEPROM (one time_t object takes 7 bytes)
+uint8_t		alarm1_addr = 0;
+uint8_t		alarm2_addr = 7;
 
 
 // Functions:
@@ -367,17 +373,20 @@ uint8_t Human_Machine_Interface::read_LCD_buttons(void)
 void Human_Machine_Interface::UIupdate(void)
 {
  	uint8_t userState = 0;
-// 	UIdelayStat = 1;
-// 	if (UIdelay >= 500)
-// 	{
-// 		UIdelay = 0;
-// 		UIdelayStat = 0;
-// 
-// 		userState = buttonstat;	// insert user input here.
-// 		buttonstat = 0;
-// 	}
+	if (UIdelay >= UIbtnHold)
+	{
+		UIdelay = 0;
+		UIdelayStat = 0;
 
-	userState = HMI.read_LCD_buttons();
+		userState = btnStat;	// insert user input here.
+		btnStat = 0;
+	}
+	else
+	{
+		UIdelayStat = 1;
+	}
+
+//	userState = HMI.read_LCD_buttons();
 
 	switch (UIstate)
 	{
@@ -1253,9 +1262,9 @@ ISR(TIMER1_COMPA_vect)          // timer compare interrupt service routine
  	}
 
 	// HMI interface timers:
-	if (HMI.read_LCD_buttons() & (buttonstat == 0))
+	if (!btnStat)
 	{
-		buttonstat = HMI.read_LCD_buttons();
+		btnStat = HMI.read_LCD_buttons();
 	}
 
 	if (UIdelayStat == 1)
