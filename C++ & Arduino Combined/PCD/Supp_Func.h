@@ -25,7 +25,7 @@ Version: 1.1
 		- Added counter for relayArray to make relays turn off after x seconds
 		- Added timer for UI to make a 300ms delay as a safety against the user
 		- Added the button read function to the timer, so that the UI is more smooth. Hopefully this will not make any complications.
-	- relayArray function to control the relays
+	- class relayArray to control the relays
 	
 	Changed:
 	
@@ -100,8 +100,8 @@ volatile uint16_t	RACounter1 = 0;
 volatile boolean	RACounter1Status = 0;
 
 // Debugging:
-volatile uint16_t	T1Timer = 0;
-volatile uint8_t	test = 0;
+// volatile uint16_t	T1Timer = 0;
+// volatile uint8_t	test = 0;
 
 // addresses of the alarms on the EEPROM (one time_t object takes 7 bytes)
 uint8_t		alarm1_addr = 0;
@@ -1177,11 +1177,10 @@ void liftRelayArray::relayArrayInit(void)
 	// Initialize Buttons
 	DDRD |= (1 << RAControl1) | (1 << RAControl2) | (1 << RAControl3) | (1 << RAControl4);		// Marks pins as output.
 	PORTD &= ~(1 << RAControl1) & ~(1 << RAControl2) & ~(1 << RAControl3) & ~(1 << RAControl4);	// Puts pins into off state.
-
 	/*
 	Use ports:
-	PORTC |= (1 << DDC1);	// Make PC1 = 1 (on)
-	PORTC &= ~(1 << DDC1);	// Puts PC1 = 0 (off).
+	PORTD |= (1 << DDC1);	// Make PD1 = 1 (on)
+	PORTD &= ~(1 << DDC1);	// Puts PD1 = 0 (off).
 	*/
 
 	// setup timer1 to make an interrupt every 1 ms
@@ -1248,18 +1247,18 @@ void liftRelayArray::relayAutoCommand(boolean alarm1trig, boolean alarm2trig)
 
 ISR(TIMER1_COMPA_vect)          // timer compare interrupt service routine
 {
-	// Debugging
- 	if (T1Timer >= 500)
- 	{
- 		test++;
- 		T1Timer = 0;
- 
- 		Serial << "Test is: " << test << endl;
- 	}
- 	else
- 	{
- 		T1Timer++;
- 	}
+// 	// Debugging
+//  	if (T1Timer >= 500)
+//  	{
+//  		test++;
+//  		T1Timer = 0;
+//  
+//  		Serial << "Test is: " << test << endl;
+//  	}
+//  	else
+//  	{
+//  		T1Timer++;
+//  	}
 
 	// HMI interface timers:
 	if (!btnStat)

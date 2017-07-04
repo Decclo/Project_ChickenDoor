@@ -11,7 +11,7 @@
 Version: 0.83
 
 	Added:
-	- added EEPROM functionality in Supp_Func.h
+	- added EEPROM, relay and UI functionality in Supp_Func.h
 	- Adding LCD functionality, including libraries.
 
 	Changed:
@@ -104,7 +104,7 @@ Materials List:
 // Extra includes and defines:
 #include "Supp_Func.h"
 
-/* Initialize the library with the numbers of the interface pins
+/* Initialize the LiquidCrystal library with the numbers of the interface pins
   The circuit:
   * LCD RS pin to digital pin 13
   * LCD Enable pin to digital pin 12
@@ -167,7 +167,6 @@ int main(void)
 		}
 		
 		HMI.UIupdate();
-		
 		delay(100);	// small delay
 	}
 }
