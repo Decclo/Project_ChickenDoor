@@ -440,7 +440,10 @@ void Human_Machine_Interface::UIupdate(void)
 			lcd << "Skift Klokkeslet";
 			lcd.setCursor(0,1);
 			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
-			
+			lcd.setCursor(0,1);
+			lcd.blink();
+			lcd.noBlink();
+
 			switch (userState)
 			{
 				case btnSELECT:
@@ -483,7 +486,6 @@ void Human_Machine_Interface::UIupdate(void)
 				{
 					tid.Hour -= 10;
 				}
-				
 
 				break;
 				case btnLEFT:
@@ -501,6 +503,7 @@ void Human_Machine_Interface::UIupdate(void)
 				break;
 			}
 		break;
+
 		case 2:
 			// Show time, blink C2
 			lcd.clear();
