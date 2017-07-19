@@ -1251,12 +1251,12 @@ void liftRelayArray::relayAutoCommand(boolean alarm1trig, boolean alarm2trig)
 ISR(TIMER1_COMPA_vect)          // timer compare interrupt service routine
 {
 // 	// Debugging
-//  	if (T1Timer >= 500)
+//  	if (T1Timer >= 1000)
 //  	{
 //  		test++;
 //  		T1Timer = 0;
 //  
-//  		Serial << "Test is: " << test << endl;
+//  		Serial << "Test is: " << test << " and RACounter is: " << RACounter1 << endl;
 //  	}
 //  	else
 //  	{

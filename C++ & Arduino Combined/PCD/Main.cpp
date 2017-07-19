@@ -162,7 +162,7 @@ int main(void)
 			break;
 				
 			default:						// if there was no alarm:
-				
+				relayArray.relayAutoCommand(0, 0);
 			break;
 		}
 		
