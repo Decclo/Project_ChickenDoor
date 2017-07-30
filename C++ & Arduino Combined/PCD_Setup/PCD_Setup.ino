@@ -35,7 +35,7 @@ void setup() {
   tmElements_t TM2; // Alarm2 decides when to close the door.
   TM2.Second = 0; // alarm 2: seconds must be given but are ignored. Will always trigger at 00.
   TM2.Minute = 0;
-  TM2.Hour = 21;
+  TM2.Hour = 22;
 
   // SetAlarm(AlarmType, Seconds, Minutes, Hours, 1);
 

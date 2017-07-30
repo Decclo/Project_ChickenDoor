@@ -1111,12 +1111,12 @@ void Human_Machine_Interface::UIupdate(void)
 }
 
 
-DS3231RTC_Alarms::DS3231RTC_Alarms() : alarm1_time.long_time(0), alarm2_time.long_time(0)
+DS3231RTC_Alarms::DS3231RTC_Alarms()
 {
 	// Constructor for the alarms class.
 
-// 	alarm1_time.long_time = 0;
-// 	alarm2_time.long_time = 0;
+ 	alarm1_time.long_time = 0;
+ 	alarm2_time.long_time = 0;
 }
 
 void DS3231RTC_Alarms::init_alarms(void)
