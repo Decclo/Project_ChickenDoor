@@ -2,12 +2,32 @@
  * Project Chicken Door
  * Author:    Hans V. Rasmussen
  * Created:   30/03-2017 18:42
- * Modified:  30/06-2017 11:43
- * Version:   0.83
+ * Modified:  30/07-2017 16:32
+ * Version:   0.84
 */
 
 //Change log
 /*
+Version: 0.84
+
+Added:
+	- Made the signal for the motor turn off after 10 seconds, to be changed in the future.
+	- Made the program compatible with the Arduino Uno by changing the LCD initialization (must be done manually).
+	- More advanced debugging
+
+Changed:
+	- Minor changes to relay
+	- Changed the time to turn off the motor to 4 seconds.
+
+Removed:
+
+
+Notes:
+	- This version underwent tests to make sure it will work with the electronics. 
+	- Right now the alarms have to be set using a separate program, to be changed before version 1.0
+	- Mechanics and hardware finished, this is the first version actually running the door.
+
+
 Version: 0.83
 
 	Added:
@@ -69,7 +89,7 @@ Version: 0.8
 	
 	Changed:
 	- Now using Arduino DS3232RTC Library v1.0
-	- Got the interrupt to work and fixed the serial problem by doing the interrupt the Arduino way.
+	- Got the interrupt to work and fixed the serial problem by doing the interrupt the Arduino way, serial write still not working.
 	
 	Removed:
 	- Got rid of the sleeping functionality for now.
@@ -84,15 +104,12 @@ Materials List:
 */
 
 
-/*Beginning of Auto generated code by Atmel studio */
-#include <Arduino.h>
-/*End of auto generated code by Atmel studio */
-
-#include <DS3232RTC.h>        //http://github.com/JChristensen/DS3232RTC
-#include <Streaming.h>        //http://arduiniana.org/libraries/streaming/
-#include <TimeLib.h>          //http://playground.arduino.cc/Code/Time
-#include <Wire.h>             //http://arduino.cc/en/Reference/Wire
-#include <LiquidCrystal.h>
+#include <Arduino.h>			// Library that includes all functions for the following Arduino libraries to work:
+#include <DS3232RTC.h>			//http://github.com/JChristensen/DS3232RTC
+#include <Streaming.h>			//http://arduiniana.org/libraries/streaming/
+#include <TimeLib.h>			//http://playground.arduino.cc/Code/Time
+#include <Wire.h>				//http://arduino.cc/en/Reference/Wire
+#include <LiquidCrystal.h>		// Arduino library for LCD
 /* Note about includes:
  *  DS3232RTC are the function to communicate with the timer module.
  *  Streaming is for having a more C++/CLR like way of outputting serial or LCD data.
@@ -101,8 +118,10 @@ Materials List:
  *  LiquidCrystal is standard library included with Arduino for LCD communication.
  */
 
+
 // Extra includes and defines:
-#include "Supp_Func.h"
+#include "Supp_Func.h"			// Self made library containing classes and functions for the main function.
+
 
 /* Initialize the LiquidCrystal library with the numbers of the interface pins
   The circuit:
@@ -119,54 +138,62 @@ Materials List:
   * ends to +5V and ground
   */
 //LiquidCrystal lcd(8, 9, 4, 5, 6, 7);	//(UNO)
-LiquidCrystal lcd(13, 12, 8, 9, 10, 11);	//(Pro Mini)
+LiquidCrystal lcd(13, 12, 8, 9, 10, 11);	//(Nano(Pro Mini))
 
 
 int main(void)
 {
 	init();						// Initializes the Arduino Core.
-	Serial.begin(9600);			// Start the serial communication at 9600 a baud rate.
+	Serial.begin(9600);			// Start the serial communication at 9600 baud rate.
 	lcd.begin(16, 2);			// Start LCD.
 	RTC_alarm.init_alarms();	// Start the alarms.
-	relayArray.relayArrayInit();
+	relayArray.relayArrayInit();// Start the relays.
 	
+
 	// Local Variables:
 	uint8_t alarm_stat = 0;
+	boolean Debug_state = 0;
 	
 	
 	// print he current time:
-	Serial << "Current time is: ";
+	Serial << "PCD going online at: ";
 	HMI.printDateTime(RTC.get());
 	Serial << endl;
 
-	tmElements_t tidtemp = HMI.ConvTotm(RTC.get());
-	HMI.printDateTime(tidtemp);
-	
 	while (1)
 	{
-		RTC_alarm.alarm_Check(&alarm_stat);	// get the alarm status.
-		switch(alarm_stat)					// switch statement to decide what should happen if alarm has happened.
+		// get the alarm status.
+		RTC_alarm.alarm_Check(&alarm_stat);	
+		// switch statement to decide what should happen if alarm has happened.
+		// This step is not really required, as the relayArray.relayAutoCommand() takes in the value of RTC_alarm.alarm_Check.
+		switch(alarm_stat)					
 		{
-			case 1:							// alarm1:
+			case 1:	// alarm1:
+					// Print on serial that alarm has triggered.
 				HMI.printDateTime( RTC.get() );
-				Serial << " --> Alarm 1!" << endl;
+				Serial << " --> Alarm 1 triggered!" << endl;
 				
-				relayArray.relayAutoCommand(1, 0);
+					// Make motor turn CW (Close Door)
+				relayArray.relayAutoCommand(1);	
 			break;
 			
-			case 2:							// alarm1:
+			case 2:	// alarm2:
+					// Print on serial that alarm has triggered.
 				HMI.printDateTime( RTC.get() );
-				Serial << " --> Alarm 2!" << endl;
+				Serial << " --> Alarm 2 triggered!" << endl;
 				
-				relayArray.relayAutoCommand(0, 1);
+					// Make motor turn CCW (Open Door)
+				relayArray.relayAutoCommand(2);
 			break;
 				
 			default:						// if there was no alarm:
-				relayArray.relayAutoCommand(0, 0);
+				relayArray.relayAutoCommand(0);
 			break;
 		}
 		
+		// run standard tasks:
 		HMI.UIupdate();
+		
 		delay(100);	// small delay
 	}
 }

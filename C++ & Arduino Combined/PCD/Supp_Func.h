@@ -4,8 +4,8 @@
  * Supp_Func.h
  * Author:		Hans V. Rasmussen
  * Created:		13/06-2017 18:47
- * Modified:	30/06-2017 11:43
- * Version:		1.1
+ * Modified:	30/07-2017 16:32
+ * Version:		1.2
  * 
  * Description:
  *	This library includes some extra functionality for the DS3231.
@@ -13,6 +13,22 @@
 
 //Change log
 /*
+Version: 1.2
+
+Added:
+
+
+Changed:
+	- Minor changes to relay functions and UI.
+	- Optimized timer1.
+	- Wrote comments for everything besides UIupdate.
+
+Removed:
+
+
+Notes:
+	- Running initial tests, preparing for a full scale test. UI will be finished before PCD v1.0
+
 Version: 1.1
 
 	Added:
@@ -65,13 +81,13 @@ Version: 1.0
 #define btnDOWN		4
 #define btnLEFT		5
 
-// Define time to wait between buttons presses (change this time to finetune the button handling)
+// Define time to wait between buttons presses (change this time to tune the button handling)
 #define UIbtnHold	500
 
 // Define commands for Relay Array
-#define liftSTOP	0
-#define liftCW		1
-#define liftCCW		2
+#define liftSTOP	0	// Stops the lift
+#define liftCW		1	// Opens the door - Retracts in the cable
+#define liftCCW		2	// Closes the door - Extends the cable
 
 // define pins of Relay Array
 #define RAControl1	DDD4
@@ -80,7 +96,7 @@ Version: 1.0
 #define RAControl4	DDD7
 
 // Define time for Relay Array to stop lift again (ms)
-#define RAHold		10000
+#define RAHold		4000
 
 // Declare external global lcd
 extern LiquidCrystal lcd;
@@ -272,9 +288,17 @@ public:
 	
 protected:
 private:
+	// union: make a variable that can be interpreted multiple ways, ex as a long int or as an array of 7 bytes.
+	// This will be used when writing time_t to the EEPROM, as the EEPROM with current libraries only takes chars to store.
+	// By using union one can easily split the unsigned long int time_t into 7 bytes of data and then write them, example:
+	// 	union_name.long_variable = makeTime(TM);
+	// 	for (int i = 0; i < 7; i++)
+	// 	{
+	// 		eeprom_write_byte((uint8_t *)alarm1_addr+i, u.byte_array[0+i]);
+	// 	}
 	union {
 		unsigned long int long_time;
-		 byte byte_array[7];
+		byte byte_array[7];
 	} alarm1_time;
 
 	union {
@@ -289,6 +313,13 @@ class liftRelayArray
 public:
 	liftRelayArray();	// Constructor
 
+	/**
+	 * \brief Initializes the pins required
+	 * 
+	 * \param void
+	 * 
+	 * \return void
+	 */
 	void relayArrayInit(void);
 
 	/**
@@ -300,7 +331,14 @@ public:
 	 */
 	void relayArrayCommand(uint8_t cmd);
 	
-	void relayAutoCommand(boolean alarm1trig, boolean alarm2trig);
+	/**
+	 * \brief Function that controls what actually should happen when alarm happens.
+	 * 
+	 * \param uint8_t alarmtrig
+	 * 
+	 * \return void
+	 */
+	void relayAutoCommand(uint8_t alarmtrig);
 	
 protected:
 private:
@@ -313,18 +351,23 @@ DS3231RTC_Alarms RTC_alarm;	// Make a object of the 'class DS3231RTC_Alarms' nam
 liftRelayArray relayArray;	// Make a object of the 'class liftRelayArray' named 'relayArray'
 
 
-
-Human_Machine_Interface::Human_Machine_Interface()
+Human_Machine_Interface::Human_Machine_Interface() : UIstate(0), tid(HMI.ConvTotm(0))
 {
-	UIstate = 0;
-	time_t temp = 0;
-	tid = HMI.ConvTotm(temp);
-	tid.Hour = 8;
-	tid.Minute = 30;
+	// Standard constructor procedure:
+	//	give variables values by constructor : var_name(var_val) {}
+
+
+// old constructor code
+// 	UIstate = 0;
+// 	time_t temp = 0;
+// 	tid = HMI.ConvTotm(temp);
+// 	tid.Hour = 8;
+// 	tid.Minute = 30;
 }
 
 void Human_Machine_Interface::printDateTime(tmElements_t TM)
 {
+	// Print the current time to serial with tmElements_t as input.
 	Serial << ((TM.Day<10) ? "0" : "") << TM.Day << ' ';
 	Serial << monthShortStr(TM.Month) << ' ';
 	Serial << ((TM.Hour<10) ? "0" : "") << TM.Hour << ':';
@@ -334,6 +377,7 @@ void Human_Machine_Interface::printDateTime(tmElements_t TM)
 
 void Human_Machine_Interface::printDateTime(time_t t)
 {
+	// Print the current time to serial with time_t as input.
 	Serial << ((day(t)<10) ? "0" : "") << _DEC(day(t)) << ' ';
 	Serial << monthShortStr(month(t)) << " " << _DEC(year(t)) << ' ';
 	Serial << ((hour(t)<10) ? "0" : "") << _DEC(hour(t)) << ':';
@@ -343,7 +387,8 @@ void Human_Machine_Interface::printDateTime(time_t t)
 
 tmElements_t Human_Machine_Interface::ConvTotm(time_t t)
 {
-	// to convert back to time_t run makeTime
+	// Converts time_t to tmElements_t.
+	// To convert back to time_t run makeTime.
 	tmElements_t TM;
 	TM.Year = year(t);
 	TM.Day = day(t);
@@ -367,7 +412,7 @@ uint8_t Human_Machine_Interface::read_LCD_buttons(void)
 	if (adc_key_in < 650)  return btnLEFT;
 	if (adc_key_in < 850)  return btnSELECT;
 	
-	return 0;                // when all others fail, return this.
+	return 0;                // when all others fail, return 0.
 }
 
 void Human_Machine_Interface::UIupdate(void)
@@ -1066,10 +1111,12 @@ void Human_Machine_Interface::UIupdate(void)
 }
 
 
-DS3231RTC_Alarms::DS3231RTC_Alarms()
+DS3231RTC_Alarms::DS3231RTC_Alarms() : alarm1_time.long_time(0), alarm2_time.long_time(0)
 {
-	alarm1_time.long_time = 0;
-	alarm2_time.long_time = 0;
+	// Constructor for the alarms class.
+
+// 	alarm1_time.long_time = 0;
+// 	alarm2_time.long_time = 0;
 }
 
 void DS3231RTC_Alarms::init_alarms(void)
@@ -1090,7 +1137,7 @@ void DS3231RTC_Alarms::init_alarms(void)
 	RTC.alarm(ALARM_2);                   //ensure RTC interrupt flag is cleared
 	RTC.alarmInterrupt(ALARM_2, true);
 
-	// Read the alarm time from the eeprom
+	// Read the alarm time from the EEPROM for UI use
 	for (int i = 0; i < 7; i++)
 	{
 		DS3231RTC_Alarms::alarm1_time.byte_array[0+i] = eeprom_read_byte((uint8_t *)alarm1_addr+i);
@@ -1125,25 +1172,32 @@ void DS3231RTC_Alarms::alarm_Check(uint8_t *stat)
 
 time_t DS3231RTC_Alarms::alarm1_get(void)
 {
+	// returns the value from alarm1 read from the EEPROM during setup
 	return DS3231RTC_Alarms::alarm1_time.long_time;
 }
 
 time_t DS3231RTC_Alarms::alarm2_get(void)
 {
+	// returns the value from alarm2 read from the EEPROM during setup
 	return DS3231RTC_Alarms::alarm2_time.long_time;
 }
 
 void DS3231RTC_Alarms::alarm1_set(tmElements_t TM)
 {
+	// Overwrites the current alarm1 both in the DS3231 clock module and in the EEPROM.
+
+	// Make temporary variable to store and convert the time.
 	union {
 		long int long_variable;
 		byte byte_array[7];
 	} u;
 
+	// Overwrite the alarm1 time in the DS3231 clock module.
 	RTC.setAlarm(ALM1_MATCH_HOURS, TM.Second, TM.Minute, TM.Hour, 1);		//daydate parameter should be between 1 and 7
 	RTC.alarm(ALARM_1);														//ensure RTC interrupt flag is cleared
 	RTC.alarmInterrupt(ALARM_1, true);
 
+	// Overwrite the alarm1 time in the EEPROM.
 	u.long_variable = makeTime(TM);
 	for (int i = 0; i < 7; i++)
 	{
@@ -1153,15 +1207,20 @@ void DS3231RTC_Alarms::alarm1_set(tmElements_t TM)
 
 void DS3231RTC_Alarms::alarm2_set(tmElements_t TM)
 {
+	// Overwrites the current alarm2 both in the DS3231 clock module and in the EEPROM.
+
+	// Make temporary variable to store and convert the time.
 	union {
 		long int long_variable;
 		byte byte_array[7];
 	} u;
 
+	// Overwrite the alarm2 time in the DS3231 clock module.
 	RTC.setAlarm(ALM2_MATCH_HOURS, TM.Second, TM.Minute, TM.Hour, 1);		//daydate parameter should be between 1 and 7
 	RTC.alarm(ALARM_2);														//ensure RTC interrupt flag is cleared
 	RTC.alarmInterrupt(ALARM_2, true);
 
+	// Overwrite the alarm2 time in the EEPROM.
 	u.long_variable = makeTime(TM);
 	for (int i = 0; i < 7; i++)
 	{
@@ -1172,7 +1231,7 @@ void DS3231RTC_Alarms::alarm2_set(tmElements_t TM)
 
 liftRelayArray::liftRelayArray()
 {
-
+	// Constructor for the relay class
 }
 
 void liftRelayArray::relayArrayInit(void)
@@ -1201,16 +1260,17 @@ void liftRelayArray::relayArrayInit(void)
 
 void liftRelayArray::relayArrayCommand(uint8_t cmd)
 {
+	// Using the lift made easy.
 	switch (cmd)
 	{
-		case liftCW:
+		case liftCW:	// Make the cable retract - Open door
+		PORTD |= (1 << RAControl1);
+		PORTD |= (1 << RAControl2);
+		PORTD |= (1 << RAControl3);
+		break;
+		case liftCCW:	// Make the cable extend - Close door
 			PORTD |= (1 << RAControl1);
 			PORTD &= ~(1 << RAControl2);
-			PORTD |= (1 << RAControl3);
-		break;
-		case liftCCW:
-			PORTD |= (1 << RAControl1);
-			PORTD |= (1 << RAControl2);
 			PORTD |= (1 << RAControl3);
 		break;
 		default:	// default, aka. liftSTOP
@@ -1221,29 +1281,30 @@ void liftRelayArray::relayArrayCommand(uint8_t cmd)
 	}
 }
 
-void liftRelayArray::relayAutoCommand(boolean alarm1trig, boolean alarm2trig)
+void liftRelayArray::relayAutoCommand(uint8_t alarmtrig)
 {
-	if (alarm1trig == 1)		// if alarm 1 was triggered:
+	switch(alarmtrig)					// switch statement to automatically handle what should happen if alarm has happened.
 	{
-		// change direction if necessary
-		relayArrayCommand(liftCW);
-		RACounter1 = 0;			// Reset RACounter1.
-		RACounter1Status = 1;	// start timer and stop after x seconds (see defines)
-	} 
-	else if (alarm2trig == 1)	// if alarm 2 was triggered:
-	{
-		// change direction if necessary
-		relayArrayCommand(liftCCW);
-		RACounter1 = 0;			// Reset RACounter1.
-		RACounter1Status = 1;	// start timer and stop after x seconds (see defines)
-	}
-	else						// if none of the alarms were triggered:
-	{
-		if (RACounter1 >= RAHold)
-		{
-			relayArrayCommand(liftSTOP);
-			RACounter1Status = 0;
-		}
+		case 1:							// alarm1:
+				// change direction if necessary
+			relayArrayCommand(liftCW);
+			RACounter1Status = 1;	// start timer and stop after x seconds (see defines)
+		break;
+		
+		case 2:							// alarm2:
+				// change direction if necessary
+			relayArrayCommand(liftCCW);
+			RACounter1Status = 1;	// start timer and stop after x seconds (see defines)
+		break;
+		
+		default:						// if there was no alarm:
+			if (RACounter1 >= RAHold)
+			{
+				relayArrayCommand(liftSTOP);
+				RACounter1Status = 0;
+				RACounter1 = 0;			// Reset RACounter1.
+			}
+		break;
 	}
 }
 
@@ -1280,5 +1341,6 @@ ISR(TIMER1_COMPA_vect)          // timer compare interrupt service routine
 		RACounter1++;
 	}
 }
+
 
 #endif

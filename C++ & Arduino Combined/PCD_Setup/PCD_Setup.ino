@@ -27,22 +27,29 @@ void setup() {
   lcd.begin(16, 2);     // Start LCD.
   lcd.clear();
 
-  tmElements_t TM1;
+  tmElements_t TM1; // Alarm 1 decides when to open the door.
   TM1.Second = 0;
-  TM1.Minute = 30;
-  TM1.Hour = 17;
+  TM1.Minute = 0;
+  TM1.Hour = 8;
 
-  tmElements_t TM2;
+  tmElements_t TM2; // Alarm2 decides when to close the door.
   TM2.Second = 0; // alarm 2: seconds must be given but are ignored. Will always trigger at 00.
   TM2.Minute = 0;
-  TM2.Hour = 18;
+  TM2.Hour = 21;
 
   // SetAlarm(AlarmType, Seconds, Minutes, Hours, 1);
+
+  // Set alarm to interrupt ever day
   RTC.setAlarm(ALM1_MATCH_HOURS, TM1.Second, TM1.Minute, TM1.Hour, 1);
   RTC.setAlarm(ALM2_MATCH_HOURS, TM2.Second, TM2.Minute, TM2.Hour, 1);
 
-//   RTC.setAlarm(ALM1_MATCH_SECONDS, TM1.Second, TM1.Minute, TM1.Hour, 1);
-//   RTC.setAlarm(ALM2_EVERY_MINUTE, TM2.Second, TM2.Minute, TM2.Hour, 1);
+  // Set alarm to interrupt every hour
+  //RTC.setAlarm(ALM1_MATCH_MINUTES, TM1.Second, TM1.Minute, TM1.Hour, 1);
+  //RTC.setAlarm(ALM2_MATCH_MINUTES, TM2.Second, TM2.Minute, TM2.Hour, 1);
+
+  // Set alarm to interrupt every minute
+  //RTC.setAlarm(ALM1_MATCH_SECONDS, TM1.Second, TM1.Minute, TM1.Hour, 1);
+  //RTC.setAlarm(ALM2_EVERY_MINUTE, TM2.Second, TM2.Minute, TM2.Hour, 1);
 
   lcd << "Flash Complete";
 
