@@ -137,8 +137,8 @@ Materials List:
   * 10K resistor: Mounted
   * ends to +5V and ground
   */
-//LiquidCrystal lcd(8, 9, 4, 5, 6, 7);	//(UNO)
-LiquidCrystal lcd(13, 12, 8, 9, 10, 11);	//(Nano(Pro Mini))
+LiquidCrystal lcd(8, 9, 4, 5, 6, 7);	//(UNO)
+//LiquidCrystal lcd(13, 12, 8, 9, 10, 11);	//(Nano(Pro Mini))
 
 
 int main(void)
@@ -153,7 +153,6 @@ int main(void)
 	// Local Variables:
 	uint8_t alarm_stat = 0;
 	boolean Debug_state = 0;
-	
 	
 	// print he current time:
 	Serial << "PCD going online at: ";

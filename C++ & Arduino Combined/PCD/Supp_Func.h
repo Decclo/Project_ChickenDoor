@@ -288,9 +288,9 @@ public:
 	
 protected:
 private:
-	// union: make a variable that can be interpreted multiple ways, ex as a long int or as an array of 7 bytes.
+	// union: make a variable that can be interpreted multiple ways, ex as a long int or as an array of 8 bytes.
 	// This will be used when writing time_t to the EEPROM, as the EEPROM with current libraries only takes chars to store.
-	// By using union one can easily split the unsigned long int time_t into 7 bytes of data and then write them, example:
+	// By using union one can easily split the unsigned long int time_t into 8 bytes of data and then write them, example:
 	// 	union_name.long_variable = makeTime(TM);
 	// 	for (int i = 0; i < 7; i++)
 	// 	{
@@ -440,6 +440,7 @@ void Human_Machine_Interface::UIupdate(void)
 			tid = HMI.ConvTotm(RTC.get());
 
 			// Print time here on LCD
+			lcd.noBlink();
 			lcd.clear();
 			lcd.setCursor(0,0);
 			lcd << "Klokkeslaet";
@@ -487,7 +488,7 @@ void Human_Machine_Interface::UIupdate(void)
 			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
 			lcd.setCursor(0,1);
 			lcd.blink();
-			lcd.noBlink();
+
 
 			switch (userState)
 			{
@@ -556,6 +557,8 @@ void Human_Machine_Interface::UIupdate(void)
 			lcd << "Skift Klokkeslet";
 			lcd.setCursor(0,1);
 			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+			lcd.setCursor(1,1);
+			lcd.blink();
 
 			switch (userState)
 			{
@@ -623,6 +626,8 @@ void Human_Machine_Interface::UIupdate(void)
 			lcd << "Skift Klokkeslet";
 			lcd.setCursor(0,1);
 			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+			lcd.setCursor(3,1);
+			lcd.blink();
 
 			switch (userState)
 			{
@@ -637,26 +642,28 @@ void Human_Machine_Interface::UIupdate(void)
 				case btnUP:
 				/* Your code here */ //Add 10 to variable minutes
 				//If variable minutes is 59< then subtract 50
-				if (tid.Hour >= 59)
+
+				if ((50 <= tid.Minute))
 				{
-					tid.Hour =- 50;
+					tid.Minute -= 50;
 				}
 				else
 				{
-					tid.Hour =+ 10;
+					tid.Minute += 10;
 				}
 
 				break;
 				case btnDOWN:
 				/* Your code here */ //subtract 10 to variable minutes
 				// If variable minutes is <0 then add 50
-				if (tid.Hour <= 0)
+				
+				if((0 <= tid.Minute) & (tid.Minute < 9))
 				{
-					tid.Hour =+ 50;
+					tid.Minute += 50;
 				}
 				else
 				{
-					tid.Hour =- 10;
+					tid.Minute -= 10;
 				}
 
 				break;
@@ -681,6 +688,9 @@ void Human_Machine_Interface::UIupdate(void)
 			lcd.setCursor(0,0);
 			lcd << "Skift Klokkeslet";
 			lcd.setCursor(0,1);
+			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+			lcd.setCursor(4,1);
+			lcd.blink();
 
 			switch (userState)
 			{
@@ -697,26 +707,26 @@ void Human_Machine_Interface::UIupdate(void)
 				case btnUP:
 				/* Your code here */ //Add 1 to variable minutes
 				//If variable minutes is 59< then subtract 9
-				if (tid.Hour >= 59)
+				if ((tid.Minute == 9) | (tid.Minute == 19) | (tid.Minute == 29) | (tid.Minute == 39) | (tid.Minute == 49) | (tid.Minute == 59))
 				{
-					tid.Hour =- 9;
+					tid.Minute -= 9;
 				}
 				else
 				{
-					tid.Hour =+ 1;
+					tid.Minute += 1;
 				}
 
 				break;
 				case btnDOWN:
 				/* Your code here */ //subtract 1 to variable minutes
 				// If variable minutes is >0 then add 9
-				if (tid.Hour <= 0)
+				if ((tid.Minute == 0) | (tid.Minute == 10) | (tid.Minute == 20) | (tid.Minute == 30) | (tid.Minute == 40) | (tid.Minute == 50))
 				{
-					tid.Hour =+ 9;
+					tid.Minute += 9;
 				}
 				else
 				{
-					tid.Hour =- 1;
+					tid.Minute -= 1;
 				}
 
 				break;
@@ -736,13 +746,13 @@ void Human_Machine_Interface::UIupdate(void)
 		break;
 		case 10:
 			// Show Alarm1
+			tid = HMI.ConvTotm(RTC_alarm.alarm1_get());
+
+			lcd.noBlink();
 			lcd.clear();
 			lcd.setCursor(0,0);
 			lcd << "Doeren aabner:";
 			lcd.setCursor(0,1);
-			
-
-			tid = HMI.ConvTotm(RTC_alarm.alarm1_get());
 			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
 
 			switch (userState)
@@ -783,8 +793,11 @@ void Human_Machine_Interface::UIupdate(void)
 			// Show Alarm1, blink C1
 			lcd.clear();
 			lcd.setCursor(0,0);
-			lcd << "Skift Abningstid";
+			lcd << "Skift aabning:";
 			lcd.setCursor(0,1);
+			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+			lcd.setCursor(0,1);
+			lcd.blink();
 
 			switch (userState)
 			{
@@ -794,30 +807,39 @@ void Human_Machine_Interface::UIupdate(void)
 				break;
 				case btnRESET:
 				/* Your code here */ //Do nothing
+
 				break;
 				case btnUP:
 				/* Your code here */ //Add 10 to variable hours
 				//If variable hours is 23< then subtract 20
-				if (tid.Hour >= 24)
+				if ((0 <= tid.Hour) & (tid.Hour < 14))
 				{
-					tid.Hour =- 20;
+					tid.Hour += 10;
+				}
+				else if((14 <= tid.Hour) & (tid.Hour < 20))
+				{
+					tid.Hour -= 10;
 				}
 				else
 				{
-					tid.Hour =+ 10;
+					tid.Hour -= 20;
 				}
-
+				
 				break;
 				case btnDOWN:
 				/* Your code here */ //subtract 10 to variable hours
 				// If variable hours is <0 then add 20
-				if (tid.Hour <= 0)
+				if ((0 <= tid.Hour) & (tid.Hour < 4))
 				{
-					tid.Hour =+ 20;
+					tid.Hour += 20;
+				}
+				else if((4 <= tid.Hour) & (tid.Hour < 10))
+				{
+					tid.Hour += 10;
 				}
 				else
 				{
-					tid.Hour =- 10;
+					tid.Hour -= 10;
 				}
 
 				break;
@@ -838,37 +860,55 @@ void Human_Machine_Interface::UIupdate(void)
 		break;
 		case 12:
 			// Show Alarm1, blink C2
+			lcd.clear();
+			lcd.setCursor(0,0);
+			lcd << "Skift aabning:";
+			lcd.setCursor(0,1);
+			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+			lcd.setCursor(1,1);
+			lcd.blink();
+
 			switch (userState)
 			{
 				case btnSELECT:
 				/* Your code here */ //Do nothing
+
 				break;
 				case btnRESET:
 				/* Your code here */ //Do nothing
+
 				break;
 				case btnUP:
 				/* Your code here */ //Add 1 to variable hours
 				//If variable hours is 23< then subtract 3
-				if (tid.Hour <= 0)
+				if ((9 == tid.Hour) | (19 == tid.Hour))
 				{
-					tid.Hour =+ 9;
+					tid.Hour -= 9;
+				}
+				else if(23 == tid.Hour)
+				{
+					tid.Hour -= 3;
 				}
 				else
 				{
-					tid.Hour =- 1;
+					tid.Hour += 1;
 				}
 
 				break;
 				case btnDOWN:
 				/* Your code here */ //subtract 1 to variable hours
-				// If variable hours is >0 then add 9
-				if (tid.Hour <= 0)
+				// If variable hours is <0 then add 9
+				if ((0 == tid.Hour) | (10 == tid.Hour))
 				{
-					tid.Hour =+ 9;
+					tid.Hour += 9;
+				}
+				else if(20 == tid.Hour)
+				{
+					tid.Hour += 3;
 				}
 				else
 				{
-					tid.Hour =- 1;
+					tid.Hour -= 1;
 				}
 
 				break;
@@ -889,27 +929,61 @@ void Human_Machine_Interface::UIupdate(void)
 		break;
 		case 13:
 			// Show Alarm1, blink C3
+			lcd.clear();
+			lcd.setCursor(0,0);
+			lcd << "Skift aabning:";
+			lcd.setCursor(0,1);
+			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+			lcd.setCursor(3,1);
+			lcd.blink();
+
 			switch (userState)
 			{
 				case btnSELECT:
 				/* Your code here */ // Go to UIstate 14, To change C4
+
 				break;
 				case btnRESET:
 				/* Your code here */ //Go to UIstate 12, To change C2
+
 				break;
 				case btnUP:
 				/* Your code here */ //Add 10 to variable minutes
-				//If variable hours is 59< then subtract 50
+				//If variable minutes is 59< then subtract 50
+
+				if ((50 <= tid.Minute))
+				{
+					tid.Minute -= 50;
+				}
+				else
+				{
+					tid.Minute += 10;
+				}
+
 				break;
 				case btnDOWN:
 				/* Your code here */ //subtract 10 to variable minutes
-				// If variable hours is >0 then add 50
+				// If variable minutes is <0 then add 50
+				
+				if((0 <= tid.Minute) & (tid.Minute < 9))
+				{
+					tid.Minute += 50;
+				}
+				else
+				{
+					tid.Minute -= 10;
+				}
+
 				break;
 				case btnLEFT:
 				/* Your code here */ //Do nothing
+				UIstate = 12;
+
 				break;
 				case btnRIGHT:
 				/* Your code here */ //Do nothing
+				UIstate = 14;
+
 				break;
 				default:
 				/* Your code here */
@@ -918,29 +992,60 @@ void Human_Machine_Interface::UIupdate(void)
 		break;
 		case 14:
 			// Show Alarm1, blink C4
+			lcd.clear();
+			lcd.setCursor(0,0);
+			lcd << "Skift aabning:";
+			lcd.setCursor(0,1);
+			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+			lcd.setCursor(4,1);
+			lcd.blink();
+
 			switch (userState)
 			{
 				case btnSELECT:
 				/* Your code here */ // Go to UIstate 10, Write Alarm1 to timer module
+				UIstate = 10;
 				RTC_alarm.alarm1_set(tid);
-
+				
 				break;
 				case btnRESET:
 				/* Your code here */ //Go to UIstate 13, To change C3
+
 				break;
 				case btnUP:
 				/* Your code here */ //Add 1 to variable minutes
-				//If variable hours is 59< then subtract 9
+				//If variable minutes is 59< then subtract 9
+				if ((tid.Minute == 9) | (tid.Minute == 19) | (tid.Minute == 29) | (tid.Minute == 39) | (tid.Minute == 49) | (tid.Minute == 59))
+				{
+					tid.Minute -= 9;
+				}
+				else
+				{
+					tid.Minute += 1;
+				}
+
 				break;
 				case btnDOWN:
 				/* Your code here */ //subtract 1 to variable minutes
-				// If variable hours is >0 then add 9
+				// If variable minutes is >0 then add 9
+				if ((tid.Minute == 0) | (tid.Minute == 10) | (tid.Minute == 20) | (tid.Minute == 30) | (tid.Minute == 40) | (tid.Minute == 50))
+				{
+					tid.Minute += 9;
+				}
+				else
+				{
+					tid.Minute -= 1;
+				}
+
 				break;
 				case btnLEFT:
-				/* Your code here */ //Do nothing
+				/* Your code here */ //Go to UIstate 3, to change C3
+				UIstate = 13;
+
 				break;
 				case btnRIGHT:
 				/* Your code here */ //Do nothing
+
 				break;
 				default:
 				/* Your code here */
@@ -949,28 +1054,35 @@ void Human_Machine_Interface::UIupdate(void)
 		break;
 		case 20:
 			// Show Alarm2
+			tid = HMI.ConvTotm(RTC_alarm.alarm2_get());
+			
+			lcd.noBlink();
 			lcd.clear();
 			lcd.setCursor(0,0);
 			lcd << "Doeren Lukker:";
 			lcd.setCursor(0,1);
 			
 
-			tid = HMI.ConvTotm(RTC_alarm.alarm2_get());
 			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
 
 			switch (userState)
 			{
 				case btnSELECT:
 				/* Your code here */ // Go to UIstate 21, To change C1
+				UIstate = 21;
+
 				break;
 				case btnRESET:
 				/* Your code here */ //Do nothing
+
 				break;
 				case btnUP:
 				/* Your code here */ //Do nothing
+
 				break;
 				case btnDOWN:
 				/* Your code here */ //Do nothing
+
 				break;
 				case btnLEFT:
 				/* Your code here */ //Go to UIstate 10, we go to Alarm1
@@ -989,27 +1101,67 @@ void Human_Machine_Interface::UIupdate(void)
 		break;
 		case 21:
 			// Show Alarm2, blink C1
+			lcd.clear();
+			lcd.setCursor(0,0);
+			lcd << "Skift lukketid:";
+			lcd.setCursor(0,1);
+			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+			lcd.setCursor(0,1);
+			lcd.blink();
+
 			switch (userState)
 			{
 				case btnSELECT:
-				/* Your code here */ // Go to UIstate 22, To change C2
+				/* Your code here */ // Do nothing
+
 				break;
 				case btnRESET:
-				/* Your code here */ //Go to UIstate 20, revert changes, see Alarm2
+				/* Your code here */ // Do nothing
+
 				break;
 				case btnUP:
 				/* Your code here */ //Add 10 to variable hours
 				//If variable hours is 23< then subtract 20
+				if ((0 <= tid.Hour) & (tid.Hour < 14))
+				{
+					tid.Hour += 10;
+				}
+				else if((14 <= tid.Hour) & (tid.Hour < 20))
+				{
+					tid.Hour -= 10;
+				}
+				else
+				{
+					tid.Hour -= 20;
+				}
+				
 				break;
 				case btnDOWN:
 				/* Your code here */ //subtract 10 to variable hours
-				// If variable hours is >0 then add 20
+				// If variable hours is <0 then add 20
+				if ((0 <= tid.Hour) & (tid.Hour < 4))
+				{
+					tid.Hour += 20;
+				}
+				else if((4 <= tid.Hour) & (tid.Hour < 10))
+				{
+					tid.Hour += 10;
+				}
+				else
+				{
+					tid.Hour -= 10;
+				}
+
 				break;
 				case btnLEFT:
-				/* Your code here */ //Do nothing
+				/* Your code here */ //Go to UIstate 20, revert changes, see Alarm2
+				UIstate = 20;
+
 				break;
 				case btnRIGHT:
-				/* Your code here */ //Do nothing
+				/* Your code here */ //Go to UIstate 22
+				UIstate = 22;
+
 				break;
 				default:
 				/* Your code here */
@@ -1018,27 +1170,67 @@ void Human_Machine_Interface::UIupdate(void)
 		break;
 		case 22:
 			// Show Alarm2, blink C2
+			lcd.clear();
+			lcd.setCursor(0,0);
+			lcd << "Skift lukketid:";
+			lcd.setCursor(0,1);
+			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+			lcd.setCursor(1,1);
+			lcd.blink();
+
 			switch (userState)
 			{
 				case btnSELECT:
-				/* Your code here */ // Go to UIstate 23, To change C3
+				/* Your code here */ // Do nothing
+
 				break;
 				case btnRESET:
-				/* Your code here */ //Go to UIstate 21, To change C1
+				/* Your code here */ // Do nothing
+
 				break;
 				case btnUP:
 				/* Your code here */ //Add 1 to variable hours
 				//If variable hours is 23< then subtract 3
+				if ((9 == tid.Hour) | (19 == tid.Hour))
+				{
+					tid.Hour -= 9;
+				}
+				else if(23 == tid.Hour)
+				{
+					tid.Hour -= 3;
+				}
+				else
+				{
+					tid.Hour += 1;
+				}
+
 				break;
 				case btnDOWN:
 				/* Your code here */ //subtract 1 to variable hours
-				// If variable hours is >0 then add 9
+				// If variable hours is <0 then add 9
+				if ((0 == tid.Hour) | (10 == tid.Hour))
+				{
+					tid.Hour += 9;
+				}
+				else if(20 == tid.Hour)
+				{
+					tid.Hour += 3;
+				}
+				else
+				{
+					tid.Hour -= 1;
+				}
+
 				break;
 				case btnLEFT:
-				/* Your code here */ //Do nothing
+				/* Your code here */ //Go to UIstate 21 to change C1
+				UIstate = 21;
+
 				break;
 				case btnRIGHT:
-				/* Your code here */ //Do nothing
+				/* Your code here */ //Go to UIstate 23 to change C3
+				UIstate = 23;
+
 				break;
 				default:
 				/* Your code here */
@@ -1047,27 +1239,63 @@ void Human_Machine_Interface::UIupdate(void)
 		break;
 		case 23:
 			// Show Alarm2, blink C3
+			lcd.clear();
+			lcd.setCursor(0,0);
+			lcd << "Skift lukketid:";
+			lcd.setCursor(0,1);
+			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+			lcd.setCursor(3,1);
+			lcd.blink();
+
 			switch (userState)
 			{
 				case btnSELECT:
-				/* Your code here */ // Go to UIstate 24, To change C4
+				/* Your code here */ // Do nothing
+
 				break;
 				case btnRESET:
-				/* Your code here */ //Go to UIstate 22, To change C2
+				/* Your code here */ // Do nothing
+
 				break;
 				case btnUP:
 				/* Your code here */ //Add 10 to variable minutes
-				//If variable hours is 59< then subtract 50
+				//If variable minutes is 59< then subtract 50
+
+				if ((50 <= tid.Minute))
+				{
+					tid.Minute -= 50;
+				}
+				else
+				{
+					tid.Minute += 10;
+				}
+
 				break;
 				case btnDOWN:
 				/* Your code here */ //subtract 10 to variable minutes
-				// If variable hours is >0 then add 50
+				// If variable minutes is <0 then add 50
+				
+				if((0 <= tid.Minute) & (tid.Minute < 9))
+				{
+					tid.Minute += 50;
+				}
+				else
+				{
+					tid.Minute -= 10;
+				}
+
 				break;
 				case btnLEFT:
-				/* Your code here */ //Do nothing
+				/* Your code here */ // Go to UIstate 22 to change C2
+
+				UIstate = 22;
+
 				break;
 				case btnRIGHT:
-				/* Your code here */ //Do nothing
+				/* Your code here */ // Go to UIstate 24 to change C4
+
+				UIstate = 24;
+
 				break;
 				default:
 				/* Your code here */
@@ -1076,27 +1304,61 @@ void Human_Machine_Interface::UIupdate(void)
 		break;
 		case 24:
 			// Show Alarm2, blink C4
+			lcd.clear();
+			lcd.setCursor(0,0);
+			lcd << "Skift lukketid:";
+			lcd.setCursor(0,1);
+			lcd << ((tid.Hour<10) ? "0" : "") << tid.Hour << ":" << ((tid.Minute<10) ? "0" : "") << tid.Minute << "";
+			lcd.setCursor(4,1);
+			lcd.blink();
+
 			switch (userState)
 			{
 				case btnSELECT:
-				/* Your code here */ // Go to UIstate 23, To change C3
+				/* Your code here */ // Go to UIstate 20, Write Alarm2 to timer module
+				UIstate = 20;
+				RTC_alarm.alarm2_set(tid);
+
 				break;
 				case btnRESET:
-				/* Your code here */ //Go to UIstate 20, write Alarm2 to timer module
+				/* Your code here */ // Do nothing
+
 				break;
 				case btnUP:
 				/* Your code here */ //Add 1 to variable minutes
-				//If variable hours is 59< then subtract 9
+				//If variable minutes is 59< then subtract 9
+				if ((tid.Minute == 9) | (tid.Minute == 19) | (tid.Minute == 29) | (tid.Minute == 39) | (tid.Minute == 49) | (tid.Minute == 59))
+				{
+					tid.Minute -= 9;
+				}
+				else
+				{
+					tid.Minute += 1;
+				}
+
 				break;
 				case btnDOWN:
 				/* Your code here */ //subtract 1 to variable minutes
-				// If variable hours is >0 then add 9
+				// If variable minutes is >0 then add 9
+				if ((tid.Minute == 0) | (tid.Minute == 10) | (tid.Minute == 20) | (tid.Minute == 30) | (tid.Minute == 40) | (tid.Minute == 50))
+				{
+					tid.Minute += 9;
+				}
+				else
+				{
+					tid.Minute -= 1;
+				}
+
 				break;
 				case btnLEFT:
-				/* Your code here */ //Do nothing
+				/* Your code here */ // Go to UIstate 23 to change C3
+
+				UIstate = 23;
+
 				break;
 				case btnRIGHT:
-				/* Your code here */ //Do nothing
+				/* Your code here */ // Do nothing
+
 				break;
 				default:
 				/* Your code here */
@@ -1173,24 +1435,19 @@ void DS3231RTC_Alarms::alarm_Check(uint8_t *stat)
 time_t DS3231RTC_Alarms::alarm1_get(void)
 {
 	// returns the value from alarm1 read from the EEPROM during setup
-	return DS3231RTC_Alarms::alarm1_time.long_time;
+	return alarm1_time.long_time;
 }
 
 time_t DS3231RTC_Alarms::alarm2_get(void)
 {
 	// returns the value from alarm2 read from the EEPROM during setup
-	return DS3231RTC_Alarms::alarm2_time.long_time;
+	return alarm2_time.long_time;
 }
 
 void DS3231RTC_Alarms::alarm1_set(tmElements_t TM)
 {
 	// Overwrites the current alarm1 both in the DS3231 clock module and in the EEPROM.
 
-	// Make temporary variable to store and convert the time.
-	union {
-		long int long_variable;
-		byte byte_array[7];
-	} u;
 
 	// Overwrite the alarm1 time in the DS3231 clock module.
 	RTC.setAlarm(ALM1_MATCH_HOURS, TM.Second, TM.Minute, TM.Hour, 1);		//daydate parameter should be between 1 and 7
@@ -1198,22 +1455,22 @@ void DS3231RTC_Alarms::alarm1_set(tmElements_t TM)
 	RTC.alarmInterrupt(ALARM_1, true);
 
 	// Overwrite the alarm1 time in the EEPROM.
-	u.long_variable = makeTime(TM);
+	alarm1_time.long_time = makeTime(TM);
 	for (int i = 0; i < 7; i++)
 	{
-		eeprom_write_byte((uint8_t *)alarm1_addr+i, u.byte_array[0+i]);
+		eeprom_write_byte((uint8_t *)alarm1_addr+i, alarm1_time.byte_array[0+i]);
 	}
+
+	// Writing debug message to serial
+	Serial << "Alarm1 set to " << alarm1_time.long_time << endl; 
+	Serial << TM.Hour << ":" << TM.Minute << endl;
+	HMI.printDateTime(HMI.ConvTotm(alarm1_time.long_time));
 }
 
 void DS3231RTC_Alarms::alarm2_set(tmElements_t TM)
 {
 	// Overwrites the current alarm2 both in the DS3231 clock module and in the EEPROM.
 
-	// Make temporary variable to store and convert the time.
-	union {
-		long int long_variable;
-		byte byte_array[7];
-	} u;
 
 	// Overwrite the alarm2 time in the DS3231 clock module.
 	RTC.setAlarm(ALM2_MATCH_HOURS, TM.Second, TM.Minute, TM.Hour, 1);		//daydate parameter should be between 1 and 7
@@ -1221,11 +1478,15 @@ void DS3231RTC_Alarms::alarm2_set(tmElements_t TM)
 	RTC.alarmInterrupt(ALARM_2, true);
 
 	// Overwrite the alarm2 time in the EEPROM.
-	u.long_variable = makeTime(TM);
+	alarm2_time.long_time = makeTime(TM);
 	for (int i = 0; i < 7; i++)
 	{
-		eeprom_write_byte((uint8_t *)alarm2_addr+i, u.byte_array[0+i]);
+		eeprom_write_byte((uint8_t *)alarm2_addr+i, alarm2_time.byte_array[0+i]);
 	}
+
+	// Writing debug message to serial
+	Serial << "Alarm2 set to " << alarm2_time.long_time << endl;
+	Serial << TM.Hour << ":" << TM.Minute << endl;
 }
 
 
