@@ -121,7 +121,7 @@ volatile boolean	RACounter1Status = 0;
 
 // addresses of the alarms on the EEPROM (one time_t object takes 7 bytes)
 uint8_t		alarm1_addr = 0;
-uint8_t		alarm2_addr = 7;
+uint8_t		alarm2_addr = 10;
 
 
 // Functions:
@@ -158,15 +158,6 @@ public:
 	 * \return void
 	 */
 	void printDateTime(tmElements_t TM);
-	
-	/**
-	 * \brief Takes in time_t and converts it to tmElements_t.
-	 * 
-	 * \param t
-	 * 
-	 * \return tmElements_t
-	 */
-	tmElements_t ConvTotm(time_t t);
 
 	/**
 	 * \brief Checks LCD buttons and returns value corresponding to button.
@@ -351,8 +342,11 @@ DS3231RTC_Alarms RTC_alarm;	// Make a object of the 'class DS3231RTC_Alarms' nam
 liftRelayArray relayArray;	// Make a object of the 'class liftRelayArray' named 'relayArray'
 
 
-Human_Machine_Interface::Human_Machine_Interface() : UIstate(0), tid(HMI.ConvTotm(0))
+Human_Machine_Interface::Human_Machine_Interface() : UIstate(0)
 {
+
+	breakTime(0, tid);
+
 	// Standard constructor procedure:
 	//	give variables values by constructor : var_name(var_val) {}
 
@@ -383,21 +377,6 @@ void Human_Machine_Interface::printDateTime(time_t t)
 	Serial << ((hour(t)<10) ? "0" : "") << _DEC(hour(t)) << ':';
 	Serial << ((minute(t)<10) ? "0" : "") << _DEC(minute(t)) << ':';
 	Serial << ((second(t)<10) ? "0" : "") << _DEC(second(t));
-}
-
-tmElements_t Human_Machine_Interface::ConvTotm(time_t t)
-{
-	// Converts time_t to tmElements_t.
-	// To convert back to time_t run makeTime.
-	tmElements_t TM;
-	TM.Year = year(t);
-	TM.Day = day(t);
-	TM.Month = month(t);
-	TM.Hour = hour(t);
-	TM.Minute = minute(t);
-	TM.Second = second(t);
-	
-	return TM;
 }
 
 uint8_t Human_Machine_Interface::read_LCD_buttons(void)
@@ -437,7 +416,7 @@ void Human_Machine_Interface::UIupdate(void)
 	{
 		case 0:
 			// Update tid with time from DS3231
-			tid = HMI.ConvTotm(RTC.get());
+			breakTime(RTC.get(), tid);
 
 			// Print time here on LCD
 			lcd.noBlink();
@@ -657,7 +636,7 @@ void Human_Machine_Interface::UIupdate(void)
 				/* Your code here */ //subtract 10 to variable minutes
 				// If variable minutes is <0 then add 50
 				
-				if((0 <= tid.Minute) & (tid.Minute < 9))
+				if((0 <= tid.Minute) & (tid.Minute < 10))
 				{
 					tid.Minute += 50;
 				}
@@ -746,7 +725,7 @@ void Human_Machine_Interface::UIupdate(void)
 		break;
 		case 10:
 			// Show Alarm1
-			tid = HMI.ConvTotm(RTC_alarm.alarm1_get());
+			breakTime(RTC_alarm.alarm1_get(), tid);
 
 			lcd.noBlink();
 			lcd.clear();
@@ -965,7 +944,7 @@ void Human_Machine_Interface::UIupdate(void)
 				/* Your code here */ //subtract 10 to variable minutes
 				// If variable minutes is <0 then add 50
 				
-				if((0 <= tid.Minute) & (tid.Minute < 9))
+				if((0 <= tid.Minute) & (tid.Minute < 10))
 				{
 					tid.Minute += 50;
 				}
@@ -1054,7 +1033,7 @@ void Human_Machine_Interface::UIupdate(void)
 		break;
 		case 20:
 			// Show Alarm2
-			tid = HMI.ConvTotm(RTC_alarm.alarm2_get());
+			breakTime(RTC_alarm.alarm2_get(), tid);
 			
 			lcd.noBlink();
 			lcd.clear();
@@ -1275,7 +1254,7 @@ void Human_Machine_Interface::UIupdate(void)
 				/* Your code here */ //subtract 10 to variable minutes
 				// If variable minutes is <0 then add 50
 				
-				if((0 <= tid.Minute) & (tid.Minute < 9))
+				if((0 <= tid.Minute) & (tid.Minute < 10))
 				{
 					tid.Minute += 50;
 				}
@@ -1366,7 +1345,6 @@ void Human_Machine_Interface::UIupdate(void)
 			}
 		break;
 		default:	// default state, aka state 0.
-			printDateTime(ConvTotm(RTC.get()));
 			// user input
 		break;
 	}
@@ -1464,7 +1442,6 @@ void DS3231RTC_Alarms::alarm1_set(tmElements_t TM)
 	// Writing debug message to serial
 	Serial << "Alarm1 set to " << alarm1_time.long_time << endl; 
 	Serial << TM.Hour << ":" << TM.Minute << endl;
-	HMI.printDateTime(HMI.ConvTotm(alarm1_time.long_time));
 }
 
 void DS3231RTC_Alarms::alarm2_set(tmElements_t TM)
