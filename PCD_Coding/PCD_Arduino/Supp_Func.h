@@ -4,30 +4,31 @@
  * Supp_Func.h
  * Author:		Hans V. Rasmussen
  * Created:		13/06-2017 18:47
- * Modified:	16/07-2018 15:00
+ * Modified:	16/07-2018 15:15
  * Version:		1.3
  * 
  * Description:
- *	This library includes some extra functionality for the DS3231.
+ *	This library includes some extra functionality for the DS3231 and a way to control the lift.
  */
 
 //Change log
 /*
-
-Version: 1.2
+Version: 1.3
 
 Added:
 
 
 Changed:
-	- ifndef changed to comply to arduino's methods
+  - Modified the ifndef to match the arduino way.
+  - Changed the lift control function to match the new lift.
 
 Removed:
 
 
 Notes:
-	
-	
+  - A new lift was installed that only has half the power (100 kg) of the old one, the wiring had to be slightly changed.
+
+
 Version: 1.2
 
 Added:
@@ -1517,19 +1518,34 @@ void liftRelayArray::relayArrayCommand(uint8_t cmd)
 	switch (cmd)
 	{
 		case liftCW:	// Make the cable retract - Open door
-		PORTD |= (1 << RAControl1);
-		PORTD |= (1 << RAControl2);
-		PORTD |= (1 << RAControl3);
+      PORTD &= ~(1 << RAControl1);  // Turn off all relays
+      PORTD &= ~(1 << RAControl2);
+      PORTD &= ~(1 << RAControl3);
+      PORTD &= ~(1 << RAControl4);
+      delay(10);                    // short delay for relay to react
+      PORTD &= ~(1 << RAControl4);  // Set the direction of the capacitor
+      delay(10);
+      PORTD |= (1 << RAControl1);   // Turn on lift
+      PORTD |= (1 << RAControl3);
 		break;
+    
 		case liftCCW:	// Make the cable extend - Close door
-			PORTD |= (1 << RAControl1);
-			PORTD &= ~(1 << RAControl2);
+      PORTD &= ~(1 << RAControl1);
+      PORTD &= ~(1 << RAControl2);
+      PORTD &= ~(1 << RAControl3);
+      PORTD &= ~(1 << RAControl4);
+      delay(10);
+      PORTD |= (1 << RAControl4);
+      delay(10);
+			PORTD |= (1 << RAControl2);
 			PORTD |= (1 << RAControl3);
 		break;
+    
 		default:	// default, aka. liftSTOP
 			PORTD &= ~(1 << RAControl1);
 			PORTD &= ~(1 << RAControl2);
 			PORTD &= ~(1 << RAControl3);
+      PORTD &= ~(1 << RAControl4);
 		break;
 	}
 }
