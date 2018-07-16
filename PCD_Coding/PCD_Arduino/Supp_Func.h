@@ -1,11 +1,11 @@
-#ifndef Supp_Func.h
-#define Supp_Func.h 1
+#ifndef Supp_Func
+#define Supp_Func
 /*
  * Supp_Func.h
  * Author:		Hans V. Rasmussen
  * Created:		13/06-2017 18:47
- * Modified:	30/07-2017 16:32
- * Version:		1.2
+ * Modified:	16/07-2018 15:00
+ * Version:		1.3
  * 
  * Description:
  *	This library includes some extra functionality for the DS3231.
@@ -13,6 +13,21 @@
 
 //Change log
 /*
+
+Version: 1.2
+
+Added:
+
+
+Changed:
+	- ifndef changed to comply to arduino's methods
+
+Removed:
+
+
+Notes:
+	
+	
 Version: 1.2
 
 Added:
