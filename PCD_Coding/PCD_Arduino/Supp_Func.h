@@ -4,31 +4,15 @@
  * Supp_Func.h
  * Author:		Hans V. Rasmussen
  * Created:		13/06-2017 18:47
- * Modified:	16/07-2018 15:15
- * Version:		1.3
+ * Modified:	30/07-2017 16:32
+ * Version:		1.2
  * 
  * Description:
- *	This library includes some extra functionality for the DS3231 and a way to control the lift.
+ *	This library includes some extra functionality for the DS3231.
  */
 
 //Change log
 /*
-Version: 1.3
-
-Added:
-
-
-Changed:
-  - Modified the ifndef to match the arduino way.
-  - Changed the lift control function to match the new lift.
-
-Removed:
-
-
-Notes:
-  - A new lift was installed that only has half the power (100 kg) of the old one, the wiring had to be slightly changed.
-
-
 Version: 1.2
 
 Added:
@@ -83,10 +67,11 @@ Version: 1.0
 		- First working version
 */
 
-#include <DS3232RTC.h>
-#include <TimeLib.h>
-#include <Streaming.h>
-#include <LiquidCrystal.h>
+#include <DS3232RTC.h>				//http://github.com/JChristensen/DS3232RTC
+#include <Streaming.h>				//http://arduiniana.org/libraries/streaming/
+#include <TimeLib.h>					//http://playground.arduino.cc/Code/Time
+#include <Wire.h>						//http://arduino.cc/en/Reference/Wire
+#include <LiquidCrystal.h>			// Arduino library for LCD
 
 // Define Buttons for LCD
 #define btnPIN		A0
@@ -116,6 +101,7 @@ Version: 1.0
 
 // Declare external global lcd
 extern LiquidCrystal lcd;
+extern DS3232RTC RTC;
 
 // Global variables:
 
@@ -262,20 +248,20 @@ public:
 	void alarm2_set(tmElements_t TM);
 	
 	
-	/************************************************************************/
-	/*	To change alarms do the following:                        
+	/************************************************************************
+	To change alarms do the following:                        
 	          
 	RTC.setAlarm(ALM1_MATCH_SECONDS, 0, 0, 0, 1);		//daydate parameter should be between 1 and 7
 	RTC.alarm(ALARM_1);									//ensure RTC interrupt flag is cleared
 	RTC.alarmInterrupt(ALARM_1, true);
 	
-	/*	RTC.setAlarm syntax for alarm1 is 
+	RTC.setAlarm syntax for alarm1 is 
 	void setAlarm(ALARM_TYPES_t alarmType, byte seconds, byte minutes, byte hours, byte daydate);
-	/*
-	/*	RTC.setAlarm syntax for alarm2 is 
+	
+	RTC.setAlarm syntax for alarm2 is 
 	void setAlarm(ALARM_TYPES_t alarmType, byte minutes, byte hours, byte daydate);
-	/*
-	/*
+	
+	
 	Values for Alarm 1
 	ALM1_EVERY_SECOND -- causes an alarm once per second.
 	ALM1_MATCH_SECONDS -- causes an alarm when the seconds match (i.e. once per minute).
@@ -290,8 +276,7 @@ public:
 	ALM2_MATCH_HOURS -- causes an alarm when the hours and minutes match.
 	ALM2_MATCH_DATE -- causes an alarm when the date of the month and hours and minutes match.
 	ALM2_MATCH_DAY -- causes an alarm when the day of the week and hours and minutes match.
-	/*
-	/************************************************************************/
+	************************************************************************/
 	
 protected:
 private:
@@ -375,24 +360,24 @@ Human_Machine_Interface::Human_Machine_Interface() : UIstate(0)
 // 	tid.Minute = 30;
 }
 
-void Human_Machine_Interface::printDateTime(tmElements_t TM)
-{
-	// Print the current time to serial with tmElements_t as input.
-	Serial << ((TM.Day<10) ? "0" : "") << TM.Day << ' ';
-	Serial << monthShortStr(TM.Month) << ' ';
-	Serial << ((TM.Hour<10) ? "0" : "") << TM.Hour << ':';
-	Serial << ((TM.Minute<10) ? "0" : "") << TM.Minute << ':';
-	Serial << ((TM.Second<10) ? "0" : "") << TM.Second << endl;
-}
-
 void Human_Machine_Interface::printDateTime(time_t t)
 {
 	// Print the current time to serial with time_t as input.
 	Serial << ((day(t)<10) ? "0" : "") << _DEC(day(t)) << ' ';
-	Serial << monthShortStr(month(t)) << " " << _DEC(year(t)) << ' ';
+	Serial << (month(t)) << " " << _DEC(year(t)) << ' ';
 	Serial << ((hour(t)<10) ? "0" : "") << _DEC(hour(t)) << ':';
 	Serial << ((minute(t)<10) ? "0" : "") << _DEC(minute(t)) << ':';
 	Serial << ((second(t)<10) ? "0" : "") << _DEC(second(t));
+}
+
+void Human_Machine_Interface::printDateTime(tmElements_t TM)
+{
+	// Print the current time to serial with tmElements_t as input.
+	Serial << ((TM.Day<10) ? "0" : "") << TM.Day << ' ';
+	Serial << (TM.Month) << ' ';
+	Serial << ((TM.Hour<10) ? "0" : "") << TM.Hour << ':';
+	Serial << ((TM.Minute<10) ? "0" : "") << TM.Minute << ':';
+	Serial << ((TM.Second<10) ? "0" : "") << TM.Second << endl;
 }
 
 uint8_t Human_Machine_Interface::read_LCD_buttons(void)

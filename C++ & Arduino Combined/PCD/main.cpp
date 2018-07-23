@@ -8,6 +8,22 @@
 
 //Change log
 /*
+Version: 0.90
+
+Added:
+	- Debugging tools
+
+Changed:
+	- Moved away from the homebrew Atmel Studio Environment.
+
+Removed:
+
+
+Notes:
+	- PCD can currently be used with either the Arduino IDE or with a makefile. Makefile is included.
+
+
+
 Version: 0.84
 
 Added:
@@ -138,22 +154,99 @@ Materials List:
   */
 //LiquidCrystal lcd(8, 9, 4, 5, 6, 7);	//(UNO)
 LiquidCrystal lcd(13, 12, 8, 9, 10, 11);	//(Nano(Pro Mini))
-//DS3232RTC RTC;      // instantiate an RTC object
 
 
 int main(void)
 {
 	init();						// Initializes the Arduino Core.
 	Serial.begin(9600);			// Start the serial communication at 9600 baud rate.
+	relayArray.relayArrayInit();// Start the relays.
+	bool debug = false;			// Wether debugging is in progress.
+
+	// Give debug info over serial:
+	Serial << "Project Chicken Door - version 0.90" << endl << endl;
+	Serial << "Please press Enter to engage debugging mode." << endl;
+	Serial << "PCD going online in" << endl;
+	Serial << "3..." << endl;
+	delay(1000);
+	Serial << "2..." << endl;
+	delay(1000);
+	Serial << "1..." << endl;
+	delay(1000);
+
+	// check wether to enter debug mode:
+	if(Serial.available())
+	{
+		debug = true;
+		Serial << "\n\n\nDebugging engaged at ";
+		HMI.printDateTime(RTC.get());
+		Serial << endl;
+
+		char serialInput = NULL;			// a String to hold incoming data
+
+		while(1)
+		{
+			if(serialInput)
+			{
+				Serial << "Please Choose from one of the following categories:" << endl;
+				Serial << "    1. Lift Extend" << endl;
+				Serial << "    2. Lift Retract" << endl;
+				Serial << "    3. Lift Stop" << endl;
+				Serial << "    0. Continue running the program" << endl;
+			}
+
+			while(!Serial.available())
+			{
+				delay(10);
+			}
+			serialInput = Serial.read();
+			switch (serialInput)
+			{
+				case 49: // 1
+					Serial << "\nLift Extending!\n" << endl;
+					relayArray.relayArrayCommand(liftCCW);
+					break;
+
+				case 50: // 2
+					Serial << "\nLift Retracting!\n" << endl;
+					relayArray.relayArrayCommand(liftCW);
+					break;
+
+				case 51: // 3
+					Serial << "\nLift Stopping!\n" << endl;
+					relayArray.relayArrayCommand(liftSTOP);
+					break;
+
+				case 48: // 0
+					Serial << "\nDebugger Exiting\nResuming normal operation...\n" << endl;
+					debug = false;
+					break;
+				
+				case 0: // NULL
+					break;
+				
+				default:
+					Serial << "Command not recognized, try again:" << endl;
+					break;
+			}
+
+			if(!debug)
+			{
+				relayArray.relayArrayCommand(liftSTOP);
+				break;
+			}
+		}
+	}
+
+
 	lcd.begin(16, 2);			// Start LCD.
 	RTC_alarm.init_alarms();	// Start the alarms.
-	relayArray.relayArrayInit();// Start the relays.
 	
 
 	// Local Variables:
 	uint8_t alarm_stat = 0;
 	
-	// print he current time:
+	// Print the current time:
 	Serial << "PCD going online at: ";
 	HMI.printDateTime(RTC.get());
 	Serial << endl;

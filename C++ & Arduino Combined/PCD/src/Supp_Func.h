@@ -248,20 +248,20 @@ public:
 	void alarm2_set(tmElements_t TM);
 	
 	
-	/************************************************************************/
-	/*	To change alarms do the following:                        
+	/************************************************************************
+	To change alarms do the following:                        
 	          
 	RTC.setAlarm(ALM1_MATCH_SECONDS, 0, 0, 0, 1);		//daydate parameter should be between 1 and 7
 	RTC.alarm(ALARM_1);									//ensure RTC interrupt flag is cleared
 	RTC.alarmInterrupt(ALARM_1, true);
 	
-	/*	RTC.setAlarm syntax for alarm1 is 
+	RTC.setAlarm syntax for alarm1 is 
 	void setAlarm(ALARM_TYPES_t alarmType, byte seconds, byte minutes, byte hours, byte daydate);
-	/*
-	/*	RTC.setAlarm syntax for alarm2 is 
+	
+	RTC.setAlarm syntax for alarm2 is 
 	void setAlarm(ALARM_TYPES_t alarmType, byte minutes, byte hours, byte daydate);
-	/*
-	/*
+	
+	
 	Values for Alarm 1
 	ALM1_EVERY_SECOND -- causes an alarm once per second.
 	ALM1_MATCH_SECONDS -- causes an alarm when the seconds match (i.e. once per minute).
@@ -276,8 +276,7 @@ public:
 	ALM2_MATCH_HOURS -- causes an alarm when the hours and minutes match.
 	ALM2_MATCH_DATE -- causes an alarm when the date of the month and hours and minutes match.
 	ALM2_MATCH_DAY -- causes an alarm when the day of the week and hours and minutes match.
-	/*
-	/************************************************************************/
+	************************************************************************/
 	
 protected:
 private:
