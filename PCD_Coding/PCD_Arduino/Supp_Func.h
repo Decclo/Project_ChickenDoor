@@ -1518,25 +1518,25 @@ void liftRelayArray::relayArrayCommand(uint8_t cmd)
 	switch (cmd)
 	{
 		case liftCW:	// Make the cable retract - Open door
-      PORTD &= ~(1 << RAControl1);  // Turn off all relays
-      PORTD &= ~(1 << RAControl2);
-      PORTD &= ~(1 << RAControl3);
-      PORTD &= ~(1 << RAControl4);
-      delay(10);                    // short delay for relay to react
-      PORTD &= ~(1 << RAControl4);  // Set the direction of the capacitor
-      delay(10);
-      PORTD |= (1 << RAControl1);   // Turn on lift
-      PORTD |= (1 << RAControl3);
+    		PORTD &= ~(1 << RAControl1);  // Turn off all relays
+    		PORTD &= ~(1 << RAControl2);
+    		PORTD &= ~(1 << RAControl3);
+    		PORTD &= ~(1 << RAControl4);
+    		delay(10);                    // short delay for relay to react
+    		PORTD &= ~(1 << RAControl4);  // Set the direction of the capacitor
+    		delay(10);
+    		PORTD |= (1 << RAControl1);   // Turn on lift
+    		PORTD |= (1 << RAControl3);
 		break;
     
 		case liftCCW:	// Make the cable extend - Close door
-      PORTD &= ~(1 << RAControl1);
-      PORTD &= ~(1 << RAControl2);
-      PORTD &= ~(1 << RAControl3);
-      PORTD &= ~(1 << RAControl4);
-      delay(10);
-      PORTD |= (1 << RAControl4);
-      delay(10);
+    		PORTD &= ~(1 << RAControl1);
+     		PORTD &= ~(1 << RAControl2);
+    		PORTD &= ~(1 << RAControl3);
+    		PORTD &= ~(1 << RAControl4);
+    		delay(10);
+    		PORTD |= (1 << RAControl4);
+    		delay(10);
 			PORTD |= (1 << RAControl2);
 			PORTD |= (1 << RAControl3);
 		break;
@@ -1545,7 +1545,7 @@ void liftRelayArray::relayArrayCommand(uint8_t cmd)
 			PORTD &= ~(1 << RAControl1);
 			PORTD &= ~(1 << RAControl2);
 			PORTD &= ~(1 << RAControl3);
-      PORTD &= ~(1 << RAControl4);
+      		PORTD &= ~(1 << RAControl4);
 		break;
 	}
 }
