@@ -1507,10 +1507,8 @@ void liftRelayArray::relayArrayCommand(uint8_t cmd)
     		PORTD &= ~(1 << RAControl2);
     		PORTD &= ~(1 << RAControl3);
     		PORTD &= ~(1 << RAControl4);
-    		delay(10);                    // short delay for relay to react
-    		PORTD &= ~(1 << RAControl4);  // Set the direction of the capacitor
     		delay(10);
-    		PORTD |= (1 << RAControl1);   // Turn on lift
+    		PORTD |= (1 << RAControl2);   // Turn on lift
     		PORTD |= (1 << RAControl3);
 		break;
     
@@ -1520,10 +1518,8 @@ void liftRelayArray::relayArrayCommand(uint8_t cmd)
     		PORTD &= ~(1 << RAControl3);
     		PORTD &= ~(1 << RAControl4);
     		delay(10);
-    		PORTD |= (1 << RAControl4);
-    		delay(10);
-			PORTD |= (1 << RAControl2);
-			PORTD |= (1 << RAControl3);
+			PORTD |= (1 << RAControl1);
+			PORTD |= (1 << RAControl4);
 		break;
     
 		default:	// default, aka. liftSTOP
