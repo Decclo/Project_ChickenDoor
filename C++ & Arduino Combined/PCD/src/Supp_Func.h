@@ -1508,8 +1508,8 @@ void liftRelayArray::relayArrayCommand(uint8_t cmd)
     		PORTD &= ~(1 << RAControl3);
     		PORTD &= ~(1 << RAControl4);
     		delay(10);
-    		PORTD |= (1 << RAControl2);   // Turn on lift
-    		PORTD |= (1 << RAControl3);
+    		PORTD |= (1 << RAControl1);   // Turn on lift
+    		PORTD |= (1 << RAControl4);
 		break;
     
 		case liftCCW:	// Make the cable extend - Close door
@@ -1518,8 +1518,8 @@ void liftRelayArray::relayArrayCommand(uint8_t cmd)
     		PORTD &= ~(1 << RAControl3);
     		PORTD &= ~(1 << RAControl4);
     		delay(10);
-			PORTD |= (1 << RAControl1);
-			PORTD |= (1 << RAControl4);
+			PORTD |= (1 << RAControl2);
+			PORTD |= (1 << RAControl3);
 		break;
     
 		default:	// default, aka. liftSTOP
