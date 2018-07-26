@@ -285,6 +285,6 @@ int main(void)
 		// run standard tasks:
 		HMI.UIupdate();
 		
-		delay(1000);	// small delay
+		delay(100);	// small delay
 	}
 }
