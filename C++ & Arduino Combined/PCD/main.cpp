@@ -264,7 +264,7 @@ int main(void)
 				HMI.printDateTime( RTC.get() );
 				Serial << " --> Alarm 1 triggered!" << endl;
 				
-					// Make motor turn CW (Close Door)
+					// Make motor turn CW (Open Door)
 				relayArray.relayAutoCommand(1);	
 			break;
 			
@@ -273,7 +273,7 @@ int main(void)
 				HMI.printDateTime( RTC.get() );
 				Serial << " --> Alarm 2 triggered!" << endl;
 				
-					// Make motor turn CCW (Open Door)
+					// Make motor turn CCW (Close Door)
 				relayArray.relayAutoCommand(2);
 			break;
 				
@@ -285,6 +285,6 @@ int main(void)
 		// run standard tasks:
 		HMI.UIupdate();
 		
-		delay(100);	// small delay
+		delay(1000);	// small delay
 	}
 }

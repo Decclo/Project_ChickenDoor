@@ -1536,16 +1536,20 @@ void liftRelayArray::relayAutoCommand(uint8_t alarmtrig)
 	switch(alarmtrig)					// switch statement to automatically handle what should happen if alarm has happened.
 	{
 		case 1:							// alarm1:
-				// change direction if necessary
-			relayArrayCommand(liftCW);
-			RACounter1Status = 1;	// start timer and stop after x seconds (see defines)
-		break;
+			if(!RACounter1Status)
+			{
+				relayArrayCommand(liftCW);
+				RACounter1Status = 1;	// start timer and stop after x seconds (see defines)
+			}
+			break;
 		
 		case 2:							// alarm2:
-				// change direction if necessary
-			relayArrayCommand(liftCCW);
-			RACounter1Status = 1;	// start timer and stop after x seconds (see defines)
-		break;
+			if(!RACounter1Status)
+			{
+				relayArrayCommand(liftCCW);
+				RACounter1Status = 1;	// start timer and stop after x seconds (see defines)
+			}
+			break;
 		
 		default:						// if there was no alarm:
 			if (RACounter1 >= RAHold)
@@ -1554,7 +1558,7 @@ void liftRelayArray::relayAutoCommand(uint8_t alarmtrig)
 				RACounter1Status = 0;
 				RACounter1 = 0;			// Reset RACounter1.
 			}
-		break;
+			break;
 	}
 }
 
