@@ -67,6 +67,7 @@ Version: 1.0
 		- First working version
 */
 
+#include <avr/eeprom.h>
 #include <DS3232RTC.h>				//http://github.com/JChristensen/DS3232RTC
 #include <Streaming.h>				//http://arduiniana.org/libraries/streaming/
 #include <TimeLib.h>					//http://playground.arduino.cc/Code/Time
@@ -1477,7 +1478,8 @@ void liftRelayArray::relayArrayInit(void)
 {
 	// Initialize Buttons
 	DDRD |= (1 << RAControl1) | (1 << RAControl2) | (1 << RAControl3) | (1 << RAControl4);		// Marks pins as output.
-	PORTD &= ~(1 << RAControl1) & ~(1 << RAControl2) & ~(1 << RAControl3) & ~(1 << RAControl4);	// Puts pins into off state.
+	//PORTD &= ~(1 << RAControl1) & ~(1 << RAControl2) & ~(1 << RAControl3) & ~(1 << RAControl4);	// Puts pins into off state.
+	PORTD |= (1 << RAControl1) | (1 << RAControl2) | (1 << RAControl3) | (1 << RAControl4);
 	/*
 	Use ports:
 	PORTD |= (1 << DDC1);	// Make PD1 = 1 (on)
@@ -1503,6 +1505,7 @@ void liftRelayArray::relayArrayCommand(uint8_t cmd)
 	switch (cmd)
 	{
 		case liftCW:	// Make the cable retract - Open door
+			/*
     		PORTD &= ~(1 << RAControl1);  // Turn off all relays
     		PORTD &= ~(1 << RAControl2);
     		PORTD &= ~(1 << RAControl3);
@@ -1510,23 +1513,42 @@ void liftRelayArray::relayArrayCommand(uint8_t cmd)
     		delay(10);
     		PORTD |= (1 << RAControl1);   // Turn on lift
     		PORTD |= (1 << RAControl4);
+			*/
+
+			PORTD |= (1 << RAControl1);  // Turn off all relays
+    		PORTD |= (1 << RAControl2);
+    		PORTD |= (1 << RAControl3);
+    		PORTD |= (1 << RAControl4);
+    		_delay_ms(10);
+    		PORTD &= ~(1 << RAControl1);   // Turn on lift
+    		PORTD &= ~(1 << RAControl4);
 		break;
     
 		case liftCCW:	// Make the cable extend - Close door
-    		PORTD &= ~(1 << RAControl1);
-     		PORTD &= ~(1 << RAControl2);
+			/*
+    		PORTD &= ~(1 << RAControl1);  // Turn off all relays
+    		PORTD &= ~(1 << RAControl2);
     		PORTD &= ~(1 << RAControl3);
     		PORTD &= ~(1 << RAControl4);
     		delay(10);
-			PORTD |= (1 << RAControl2);
-			PORTD |= (1 << RAControl3);
+    		PORTD |= (1 << RAControl2);   // Turn on lift
+    		PORTD |= (1 << RAControl3);
+			*/
+
+			PORTD |= (1 << RAControl1);  // Turn off all relays
+    		PORTD |= (1 << RAControl2);
+    		PORTD |= (1 << RAControl3);
+    		PORTD |= (1 << RAControl4);
+    		_delay_ms(10);
+    		PORTD &= ~(1 << RAControl2);   // Turn on lift
+    		PORTD &= ~(1 << RAControl3);
 		break;
     
 		default:	// default, aka. liftSTOP
-			PORTD &= ~(1 << RAControl1);
-			PORTD &= ~(1 << RAControl2);
-			PORTD &= ~(1 << RAControl3);
-      		PORTD &= ~(1 << RAControl4);
+			PORTD |= (1 << RAControl1);  // Turn off all relays
+    		PORTD |= (1 << RAControl2);
+    		PORTD |= (1 << RAControl3);
+    		PORTD |= (1 << RAControl4);
 		break;
 	}
 }
