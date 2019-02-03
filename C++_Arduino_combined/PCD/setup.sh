@@ -15,7 +15,7 @@ tar xf arduino-1.8.8-linux64.tar.xz -C ..
 
 # Download and add the needed libraries:
 wget http://arduiniana.org/Streaming/Streaming5.zip
-unzip Streamin5.zip -d ../arduino-1.8.8/libraries/
+unzip Streaming5.zip -d ../arduino-1.8.8/libraries/
 cd ../arduino-1.8.8/libraries/
 git clone https://github.com/JChristensen/DS3232RTC.git
 git clone https://github.com/PaulStoffregen/Time.git
