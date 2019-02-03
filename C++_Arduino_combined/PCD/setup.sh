@@ -3,7 +3,7 @@
 
 # Install python-serial (and git)
 sudo apt update
-sudo apt install python-serial git
+sudo apt install python-serial git unzip
 
 # Clone the arduino-mk project by sudar into the PCD directory
 git clone https://github.com/sudar/Arduino-Makefile.git
@@ -15,7 +15,7 @@ tar xf arduino-1.8.8-linux64.tar.xz -C ..
 
 # Download and add the needed libraries:
 wget http://arduiniana.org/Streaming/Streaming5.zip
-tar xf Streamin5.zip -C ../arduino-1.8.8/libraries/
+unzip Streamin5.zip -d ../arduino-1.8.8/libraries/
 cd ../arduino-1.8.8/libraries/
 git clone https://github.com/JChristensen/DS3232RTC.git
 git clone https://github.com/PaulStoffregen/Time.git
