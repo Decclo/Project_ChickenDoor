@@ -1444,7 +1444,7 @@ void DS3231RTC_Alarms::alarm1_set(tmElements_t TM)
 
 	// Writing debug message to serial
 	Serial << "Alarm1 set to " << alarm1_time.long_time << " or "; 
-	Serial << TM.Hour << ":" << TM.Minute << endl;
+	Serial << TM.Hour << ":" << TM.Minute << ":" << TM.Second << endl;
 }
 
 void DS3231RTC_Alarms::alarm2_set(tmElements_t TM)
@@ -1465,8 +1465,8 @@ void DS3231RTC_Alarms::alarm2_set(tmElements_t TM)
 	}
 
 	// Writing debug message to serial
-	Serial << "Alarm2 set to " << alarm2_time.long_time << endl;
-	Serial << TM.Hour << ":" << TM.Minute << endl;
+	Serial << "Alarm2 set to " << alarm2_time.long_time << " or ";
+	Serial << TM.Hour << ":" << TM.Minute << ":" << TM.Second << endl;
 }
 
 

@@ -3,7 +3,7 @@
  * Author:    Hans Vanselow-Rasmussen
  * Created:   03/07-2019 13:36
  * Modified:  03/07-2019 13:36
- * Version:   0.1
+ * Version:   0.91
  * Description:
  *  Code to open and close a door by controlling a relay H-bridge for a AC lift.
  *  Uses a DS3231 for timekeeping, and has LCD for runtime adjustments.
@@ -22,6 +22,7 @@
 // Support functions
 #include "Supp_Func.h"
 
+//LiquidCrystal lcd(8, 9, 4, 5, 6, 7);  //(UNO)
 LiquidCrystal lcd(13, 12, 8, 9, 10, 11);  // Start the LCD display (Nano(Pro Mini))
 
 /*** Setup ***/
@@ -42,8 +43,8 @@ void setup() {
   tmElements_t tm;
   
   // Give debug info over serial:
-  Serial << "Project Chicken Door - version 0.90" << endl << endl;
-  Serial << "Please press Enter to engage debugging mode." << endl;
+  Serial << "Project Chicken Door - version 0.91" << endl << endl;
+  Serial << "Please press any key to engage debugging mode." << endl;
   Serial << "PCD going online in" << endl;
   Serial << "3..." << endl;
   delay(1000);
@@ -74,8 +75,8 @@ void setup() {
         Serial << "    2. Lift Retract" << endl;
         Serial << "    3. Lift Stop" << endl;
         Serial << "    4. Set Current Time" << endl;
-        Serial << "    5. Set Alarm 1 (open door)" << endl;
-        Serial << "    6. Set Alarm 2 (close door)" << endl;
+        Serial << "    5. Set Alarm 1 (open door) -- Doesn't work!" << endl;
+        Serial << "    6. Set Alarm 2 (close door) -- Doesn't work!" << endl;
         Serial << "    0. Continue running the program" << endl;
       }
 
