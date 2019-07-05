@@ -1,6 +1,8 @@
 # Project Chicken Door
 A project to make a mechanism that can open and close each day at predefined times.
 ![Photo of the finished chicken door.](https://raw.githubusercontent.com/Decclo/Project_ChickenDoor/README/Documentation/IMG_20190705_160842.jpg) 
+
+## Mechanics and Power Eletroncis
 The project utilizes the following components:
 - Mechanics and power electronics:
      - An 100kg AC lift.
@@ -18,3 +20,7 @@ A very basic schematic of how I connected the mechanics electronically can be se
 ![A very crude schematic of the connections of the lift, limit switches, and relays.](https://raw.githubusercontent.com/Decclo/Project_ChickenDoor/README/Documentation/Schematics/Lift%20Schematic.jpg).
 
 The door itself was renovated so that it could run up and down without getting stuck. Furthermore, a triangle was welded to the door, as to trigger the limit switches (as can be seen from the first photo).
+
+## Control and electronics
+A Arduino Nano is used for control, utilizing a DS3231 Real Time Clock module for timekeeping and alarms. The clock and alarms can be set by using the LCD screen. The alarms trigger a high on the SQW, which triggers an interrupt on INT0. A schematic of the controller can be seen below.
+![Schematic of controller.](https://raw.githubusercontent.com/Decclo/Project_ChickenDoor/README/Documentation/Schematics/Control_bb.jpg)
