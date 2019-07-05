@@ -15,6 +15,6 @@ The project utilizes the following components:
 
 The lift should be connected so that the limit switches prevent the lift from opening/closing the door beyond its maximum, and the relay should be connected to act as a second remote. If you use a DC motor, then you can change the behaviour of the relay into a basic H-bridge in the 'Supp_Func.h' file.
 A very basic schematic of how I connected the mechanics electronically can be seen in the figure below.
-![A very crude schematic of the connections of the lift, limit switches, and relays.](https://raw.githubusercontent.com/Decclo/Project_ChickenDoor/README/Documentation/Lift%20Schematic.jpg).
+![A very crude schematic of the connections of the lift, limit switches, and relays.](https://raw.githubusercontent.com/Decclo/Project_ChickenDoor/README/Documentation/Schematics/Lift%20Schematic.jpg).
 
 The door itself was renovated so that it could run up and down without getting stuck. Furthermore, a triangle was welded to the door, as to trigger the limit switches (as can be seen from the first photo).
