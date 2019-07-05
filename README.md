@@ -11,6 +11,5 @@ Project to make a mechanism that can open and close each day at predefined times
      - [Keypad shield for Arduino](https://www.banggood.com/Keypad-Shield-Blue-Backlight-For-Arduino-Robot-LCD-1602-Board-p-79326.html?rmmds=search&cur_warehouse=CN)
      - [4x relays](https://www.banggood.com/5V-4-Channel-Relay-Module-For-Arduino-PIC-ARM-DSP-AVR-MSP430-Blue-p-87987.html?rmmds=search&cur_warehouse=CN)
 
-The lift should be connected so that the limit switches prevent the lift from opening/closing the door beyond the chosen points, and the relay should be connected to act as a second remote preferably reusing the capacitor of the actual remote. The way I connected it can be seen below.
-
-![Figure 1: Image of wiring of lift, limit switches, and relays.]()
+The lift should be connected so that the limit switches prevent the lift from opening/closing the door beyond its maximum, and the relay should be connected to act as a second remote. If you use a DC motor, then you can change the behaviour of the relay into a basic H-bridge in the 'Supp_Func.h' file.
+A very basic schematic of how I connected the mechanics electronically can be seen ![here]().
